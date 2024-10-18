@@ -1,0 +1,263 @@
+2024-10-14 19:26:10,034 - services.missing_info_service - INFO - missing_info_service.py:15 - Initializing MissingInfoAdapter
+2024-10-14 19:26:10,035 - services.missing_info_service - INFO - missing_info_service.py:33 - Processing missing info request for field: product type missing , possible values are add-on and basic
+2024-10-14 19:26:10,035 - services.missing_info_service - DEBUG - missing_info_service.py:18 - Generating missing info prompt for field: product type missing , possible values are add-on and basic
+2024-10-14 19:26:10,035 - services.missing_info_service - DEBUG - missing_info_service.py:27 - Generated prompt: 
+      As a sales executive named AARYA (Automated AI Responder for Your Applications), you are having a conversation with a customer about creating a  plan. The customer has provided some information, but the 'product type missing , possible values are add-on and basic' is missing. Your task is to generate a polite and professional response asking for the missing information.
+
+      Conversation history:
+      []
+
+      Missing information: product type missing , possible values are add-on and basic
+      here the messages gives out what information is missing extract the missing info from the message 
+
+      Please generate a response  asking for the missing information .
+      make it short and simple 
+      make the tune of the message in common language 
+      only give response 
+      
+2024-10-14 19:26:10,565 - services.missing_info_service - DEBUG - missing_info_service.py:36 - Missing info response: "Hi, thanks for the details so far! Could you please clarify what type of product you're interested in? Is it an add-on or a basic product?"
+2024-10-14 19:36:55,569 - services.missing_info_service - INFO - missing_info_service.py:15 - Initializing MissingInfoAdapter
+2024-10-14 19:36:55,570 - services.missing_info_service - INFO - missing_info_service.py:33 - Processing missing info request for field: product type missing , possible values are add-on and basic
+2024-10-14 19:36:55,570 - services.missing_info_service - DEBUG - missing_info_service.py:18 - Generating missing info prompt for field: product type missing , possible values are add-on and basic
+2024-10-14 19:36:55,570 - services.missing_info_service - DEBUG - missing_info_service.py:27 - Generated prompt: 
+      As a sales executive named AARYA (Automated AI Responder for Your Applications), you are having a conversation with a customer about creating a  plan. The customer has provided some information, but the 'product type missing , possible values are add-on and basic' is missing. Your task is to generate a polite and professional response asking for the missing information.
+
+      Conversation history:
+      []
+
+      Missing information: product type missing , possible values are add-on and basic
+      here the messages gives out what information is missing extract the missing info from the message 
+
+      Please generate a response  asking for the missing information .
+      make it short and simple 
+      make the tune of the message in common language 
+      only give response 
+      
+2024-10-14 19:36:56,144 - services.missing_info_service - DEBUG - missing_info_service.py:36 - Missing info response: "Hi, thanks for sharing the details! Could you please let me know what type of product you're interested in - is it an add-on or basic plan?"
+2024-10-18 10:00:07,345 - services.missing_info_service - INFO - missing_info_service.py:15 - Initializing MissingInfoAdapter
+2024-10-18 10:59:42,972 - services.missing_info_service - INFO - missing_info_service.py:15 - Initializing MissingInfoAdapter
+2024-10-18 10:59:42,972 - services.missing_info_service - INFO - missing_info_service.py:32 - missing info request : conversationId='conv_1729229370783' currentMessage=MessageItem(messageTime='2024-10-18 10:59:41', messageId='msg_1729229370783', source='bpe', status='failed', messageType='text', payload=MessageContent(text="The field Product Name is missing. The field Product Name meaning in layman's terms is Product's name/Name of the Product. Please provide it.", image=None)) sender=User(name='User', phoneNumber='conv_01JAF1KCB4KK1JTGQVJRSECKC3') previousMessages=[MessageItem(messageTime='2024-10-18 10:59:30', messageId='msg_1729229370783', source='ui', status='success', messageType='text', payload=MessageContent(text='yes i want to create voice offer with 5$ price and 10 days validity', image=None))]
+2024-10-18 10:59:42,973 - services.missing_info_service - INFO - missing_info_service.py:34 - Processing missing info request for field: The field Product Name is missing. The field Product Name meaning in layman's terms is Product's name/Name of the Product. Please provide it.
+2024-10-18 10:59:42,973 - services.missing_info_service - DEBUG - missing_info_service.py:18 - Generating missing info prompt for field: The field Product Name is missing. The field Product Name meaning in layman's terms is Product's name/Name of the Product. Please provide it.
+2024-10-18 10:59:42,973 - services.missing_info_service - DEBUG - missing_info_service.py:27 - Generated prompt: 
+      As a sales executive named AARYA (Automated AI Responder for Your Applications), you are having a conversation with a customer about creating a  plan. The customer has provided some information, but the 'The field Product Name is missing. The field Product Name meaning in layman's terms is Product's name/Name of the Product. Please provide it.' is missing. Your task is to generate a polite and professional response asking for the missing information.
+
+      Conversation history:
+      [
+  {
+    "role": "user",
+    "content": "yes i want to create voice offer with 5$ price and 10 days validity"
+  }
+]
+
+      Missing information: The field Product Name is missing. The field Product Name meaning in layman's terms is Product's name/Name of the Product. Please provide it.
+      here the messages gives out what information is missing extract the missing info from the message 
+
+      Please generate a response  asking for the missing information .
+      make it short and simple 
+      make the tune of the message in common language 
+      only give response 
+      
+2024-10-18 10:59:43,374 - services.missing_info_service - DEBUG - missing_info_service.py:37 - Missing info response: Here is a polite and professional response asking for the missing information:
+
+"What is the name of the product you'd like to create a voice offer for?"
+2024-10-18 12:42:01,149 - services.missing_info_service - INFO - missing_info_service.py:15 - Initializing MissingInfoAdapter
+2024-10-18 12:42:01,149 - services.missing_info_service - INFO - missing_info_service.py:32 - missing info request : conversationId='conv_1729094216114' currentMessage=MessageItem(messageTime='2024-10-18 12:42:01', messageId='msg_1729235508854', source='bpe', status='failed', messageType='text', payload=MessageContent(text="The field Product Name is missing. The field Product Name meaning in layman's terms is Product's name/Name of the Product. Please provide it.", image=None)) sender=User(name='User', phoneNumber='conv_01JAASJ0MPNFAMDSRQXB94NK0C') previousMessages=[MessageItem(messageTime='2024-10-16 21:26:56', messageId='msg_1729094216114', source='ui', status='success', messageType='text', payload=MessageContent(text='proceed', image=None)), MessageItem(messageTime='2024-10-16 21:26:57', messageId='msg_1729094216114', source='AI', status='success', messageType='text', payload=MessageContent(text='Here is my response:\n\n"Great to get started! Before we begin creating a product for you, could you please provide some details about what you have in mind? What kind of product are you looking for, and what features would you like it to have?"', image=None)), MessageItem(messageTime='2024-10-18 09:59:52', messageId='msg_1729225792386', source='ui', status='success', messageType='text', payload=MessageContent(text='yes i want to create voice offer with 5$ price and 10 days validity', image=None)), MessageItem(messageTime='2024-10-18 12:41:48', messageId='msg_1729235508854', source='ui', status='success', messageType='text', payload=MessageContent(text='yes', image=None))]
+2024-10-18 12:42:01,150 - services.missing_info_service - INFO - missing_info_service.py:34 - Processing missing info request for field: The field Product Name is missing. The field Product Name meaning in layman's terms is Product's name/Name of the Product. Please provide it.
+2024-10-18 12:42:01,150 - services.missing_info_service - DEBUG - missing_info_service.py:18 - Generating missing info prompt for field: The field Product Name is missing. The field Product Name meaning in layman's terms is Product's name/Name of the Product. Please provide it.
+2024-10-18 12:42:01,150 - services.missing_info_service - DEBUG - missing_info_service.py:27 - Generated prompt: 
+      As a sales executive named AARYA (Automated AI Responder for Your Applications), you are having a conversation with a customer about creating a  plan. The customer has provided some information, but the 'The field Product Name is missing. The field Product Name meaning in layman's terms is Product's name/Name of the Product. Please provide it.' is missing. Your task is to generate a polite and professional response asking for the missing information.
+
+      Conversation history:
+      [
+  {
+    "role": "user",
+    "content": "proceed"
+  },
+  {
+    "role": "assistant",
+    "content": "Here is my response:\n\n\"Great to get started! Before we begin creating a product for you, could you please provide some details about what you have in mind? What kind of product are you looking for, and what features would you like it to have?\""
+  },
+  {
+    "role": "user",
+    "content": "yes i want to create voice offer with 5$ price and 10 days validity"
+  },
+  {
+    "role": "user",
+    "content": "yes"
+  }
+]
+
+      Missing information: The field Product Name is missing. The field Product Name meaning in layman's terms is Product's name/Name of the Product. Please provide it.
+      here the messages gives out what information is missing extract the missing info from the message 
+
+      Please generate a response  asking for the missing information .
+      make it short and simple 
+      make the tune of the message in common language 
+      only give response 
+      
+2024-10-18 12:42:01,596 - services.missing_info_service - DEBUG - missing_info_service.py:37 - Missing info response: "Hi, I'm happy to help you with your voice offer plan! Before we move forward, could you please tell me what you'd like to name your product? This will help me create a personalized plan for you."
+2024-10-18 12:42:08,400 - services.missing_info_service - INFO - missing_info_service.py:15 - Initializing MissingInfoAdapter
+2024-10-18 12:42:08,400 - services.missing_info_service - INFO - missing_info_service.py:32 - missing info request : conversationId='conv_1729094216114' currentMessage=MessageItem(messageTime='2024-10-18 12:42:08', messageId='msg_1729235526875', source='bpe', status='failed', messageType='text', payload=MessageContent(text="The field Product Name is missing. The field Product Name meaning in layman's terms is Product's name/Name of the Product. Please provide it.", image=None)) sender=User(name='User', phoneNumber='conv_01JAASJ0MPNFAMDSRQXB94NK0C') previousMessages=[MessageItem(messageTime='2024-10-16 21:26:56', messageId='msg_1729094216114', source='ui', status='success', messageType='text', payload=MessageContent(text='proceed', image=None)), MessageItem(messageTime='2024-10-16 21:26:57', messageId='msg_1729094216114', source='AI', status='success', messageType='text', payload=MessageContent(text='Here is my response:\n\n"Great to get started! Before we begin creating a product for you, could you please provide some details about what you have in mind? What kind of product are you looking for, and what features would you like it to have?"', image=None)), MessageItem(messageTime='2024-10-18 09:59:52', messageId='msg_1729225792386', source='ui', status='success', messageType='text', payload=MessageContent(text='yes i want to create voice offer with 5$ price and 10 days validity', image=None)), MessageItem(messageTime='2024-10-18 12:41:48', messageId='msg_1729235508854', source='ui', status='success', messageType='text', payload=MessageContent(text='yes', image=None)), MessageItem(messageTime='2024-10-18 12:42:01', messageId='msg_1729235508854', source='AI', status='success', messageType='text', payload=MessageContent(text='"Hi, I\'m happy to help you with your voice offer plan! Before we move forward, could you please tell me what you\'d like to name your product? This will help me create a personalized plan for you."', image=None)), MessageItem(messageTime='2024-10-18 12:42:06', messageId='msg_1729235526875', source='ui', status='success', messageType='text', payload=MessageContent(text='create offer of 5$ with 1 week validity', image=None))]
+2024-10-18 12:42:08,401 - services.missing_info_service - INFO - missing_info_service.py:34 - Processing missing info request for field: The field Product Name is missing. The field Product Name meaning in layman's terms is Product's name/Name of the Product. Please provide it.
+2024-10-18 12:42:08,401 - services.missing_info_service - DEBUG - missing_info_service.py:18 - Generating missing info prompt for field: The field Product Name is missing. The field Product Name meaning in layman's terms is Product's name/Name of the Product. Please provide it.
+2024-10-18 12:42:08,401 - services.missing_info_service - DEBUG - missing_info_service.py:27 - Generated prompt: 
+      As a sales executive named AARYA (Automated AI Responder for Your Applications), you are having a conversation with a customer about creating a  plan. The customer has provided some information, but the 'The field Product Name is missing. The field Product Name meaning in layman's terms is Product's name/Name of the Product. Please provide it.' is missing. Your task is to generate a polite and professional response asking for the missing information.
+
+      Conversation history:
+      [
+  {
+    "role": "user",
+    "content": "proceed"
+  },
+  {
+    "role": "assistant",
+    "content": "Here is my response:\n\n\"Great to get started! Before we begin creating a product for you, could you please provide some details about what you have in mind? What kind of product are you looking for, and what features would you like it to have?\""
+  },
+  {
+    "role": "user",
+    "content": "yes i want to create voice offer with 5$ price and 10 days validity"
+  },
+  {
+    "role": "user",
+    "content": "yes"
+  },
+  {
+    "role": "assistant",
+    "content": "\"Hi, I'm happy to help you with your voice offer plan! Before we move forward, could you please tell me what you'd like to name your product? This will help me create a personalized plan for you.\""
+  },
+  {
+    "role": "user",
+    "content": "create offer of 5$ with 1 week validity"
+  }
+]
+
+      Missing information: The field Product Name is missing. The field Product Name meaning in layman's terms is Product's name/Name of the Product. Please provide it.
+      here the messages gives out what information is missing extract the missing info from the message 
+
+      Please generate a response  asking for the missing information .
+      make it short and simple 
+      make the tune of the message in common language 
+      only give response 
+      
+2024-10-18 12:42:08,814 - services.missing_info_service - DEBUG - missing_info_service.py:37 - Missing info response: "Hey! We're almost there. Can you please tell me what you'd like to name your voice offer product? This will help me finalize your plan."
+2024-10-18 12:58:32,460 - services.missing_info_service - INFO - missing_info_service.py:15 - Initializing MissingInfoAdapter
+2024-10-18 12:58:32,461 - services.missing_info_service - INFO - missing_info_service.py:32 - missing info request : conversationId='conv_1729235674804' currentMessage=MessageItem(messageTime='2024-10-18 12:58:32', messageId='msg_1729236511200', source='bpe', status='failed', messageType='text', payload=MessageContent(text="The field Product Name is missing. The field Product Name meaning in layman's terms is Product's name/Name of the Product. Please provide it.", image=None)) sender=User(name='User', phoneNumber='conv_01JAASJ0MPNFAMDSRQXB94NK0C') previousMessages=[MessageItem(messageTime='2024-10-18 12:44:34', messageId='msg_1729235674804', source='ui', status='success', messageType='text', payload=MessageContent(text='thanks', image=None)), MessageItem(messageTime='2024-10-18 12:44:35', messageId='msg_1729235674804', source='AI', status='success', messageType='text', payload=MessageContent(text="You're welcome! Is there anything else I can assist you with today?", image=None)), MessageItem(messageTime='2024-10-18 12:45:08', messageId='msg_1729235708460', source='ui', status='success', messageType='text', payload=MessageContent(text='no', image=None)), MessageItem(messageTime='2024-10-18 12:45:09', messageId='msg_1729235708460', source='AI', status='success', messageType='text', payload=MessageContent(text="It seems like our conversation just ended! You thanked me, I asked if there's anything else I can help you with, and you said no. If you change your mind or need something in the future, feel free to reach out! Have a great day!", image=None)), MessageItem(messageTime='2024-10-18 12:57:54', messageId='msg_1729236474983', source='ui', status='success', messageType='text', payload=MessageContent(text='reset', image=None)), MessageItem(messageTime='2024-10-18 12:58:05', messageId='msg_1729236474983', source='AI', status='success', messageType='text', payload=MessageContent(text="It seems like you want to start fresh! Let's begin a new conversation. How can I assist you today?", image=None)), MessageItem(messageTime='2024-10-18 12:58:15', messageId='msg_1729236495882', source='ui', status='success', messageType='text', payload=MessageContent(text='hi', image=None)), MessageItem(messageTime='2024-10-18 12:58:16', messageId='msg_1729236495882', source='AI', status='success', messageType='text', payload=MessageContent(text="Hi! I'm happy to help. What brings you here today?", image=None)), MessageItem(messageTime='2024-10-18 12:58:31', messageId='msg_1729236511200', source='ui', status='success', messageType='text', payload=MessageContent(text='i want to create offer', image=None))]
+2024-10-18 12:58:32,461 - services.missing_info_service - INFO - missing_info_service.py:34 - Processing missing info request for field: The field Product Name is missing. The field Product Name meaning in layman's terms is Product's name/Name of the Product. Please provide it.
+2024-10-18 12:58:32,461 - services.missing_info_service - DEBUG - missing_info_service.py:18 - Generating missing info prompt for field: The field Product Name is missing. The field Product Name meaning in layman's terms is Product's name/Name of the Product. Please provide it.
+2024-10-18 12:58:32,462 - services.missing_info_service - DEBUG - missing_info_service.py:27 - Generated prompt: 
+      As a sales executive named AARYA (Automated AI Responder for Your Applications), you are having a conversation with a customer about creating a  plan. The customer has provided some information, but the 'The field Product Name is missing. The field Product Name meaning in layman's terms is Product's name/Name of the Product. Please provide it.' is missing. Your task is to generate a polite and professional response asking for the missing information.
+
+      Conversation history:
+      [
+  {
+    "role": "user",
+    "content": "thanks"
+  },
+  {
+    "role": "assistant",
+    "content": "You're welcome! Is there anything else I can assist you with today?"
+  },
+  {
+    "role": "user",
+    "content": "no"
+  },
+  {
+    "role": "assistant",
+    "content": "It seems like our conversation just ended! You thanked me, I asked if there's anything else I can help you with, and you said no. If you change your mind or need something in the future, feel free to reach out! Have a great day!"
+  },
+  {
+    "role": "user",
+    "content": "reset"
+  },
+  {
+    "role": "assistant",
+    "content": "It seems like you want to start fresh! Let's begin a new conversation. How can I assist you today?"
+  },
+  {
+    "role": "user",
+    "content": "hi"
+  },
+  {
+    "role": "assistant",
+    "content": "Hi! I'm happy to help. What brings you here today?"
+  },
+  {
+    "role": "user",
+    "content": "i want to create offer"
+  }
+]
+
+      Missing information: The field Product Name is missing. The field Product Name meaning in layman's terms is Product's name/Name of the Product. Please provide it.
+      here the messages gives out what information is missing extract the missing info from the message 
+
+      Please generate a response  asking for the missing information .
+      make it short and simple 
+      make the tune of the message in common language 
+      only give response 
+      
+2024-10-18 12:58:32,892 - services.missing_info_service - DEBUG - missing_info_service.py:37 - Missing info response: "What's the name of the product you'd like to create an offer for? Could you please provide that so I can better assist you?"
+2024-10-18 12:58:47,488 - services.missing_info_service - INFO - missing_info_service.py:15 - Initializing MissingInfoAdapter
+2024-10-18 12:58:47,489 - services.missing_info_service - INFO - missing_info_service.py:32 - missing info request : conversationId='conv_1729235674804' currentMessage=MessageItem(messageTime='2024-10-18 12:58:47', messageId='msg_1729236526148', source='bpe', status='failed', messageType='text', payload=MessageContent(text="The field Product price is missing. The field Product price meaning in layman's terms is Product's offer price/price of the product. Please provide it.", image=None)) sender=User(name='User', phoneNumber='conv_01JAASJ0MPNFAMDSRQXB94NK0C') previousMessages=[MessageItem(messageTime='2024-10-18 12:44:34', messageId='msg_1729235674804', source='ui', status='success', messageType='text', payload=MessageContent(text='thanks', image=None)), MessageItem(messageTime='2024-10-18 12:44:35', messageId='msg_1729235674804', source='AI', status='success', messageType='text', payload=MessageContent(text="You're welcome! Is there anything else I can assist you with today?", image=None)), MessageItem(messageTime='2024-10-18 12:45:08', messageId='msg_1729235708460', source='ui', status='success', messageType='text', payload=MessageContent(text='no', image=None)), MessageItem(messageTime='2024-10-18 12:45:09', messageId='msg_1729235708460', source='AI', status='success', messageType='text', payload=MessageContent(text="It seems like our conversation just ended! You thanked me, I asked if there's anything else I can help you with, and you said no. If you change your mind or need something in the future, feel free to reach out! Have a great day!", image=None)), MessageItem(messageTime='2024-10-18 12:57:54', messageId='msg_1729236474983', source='ui', status='success', messageType='text', payload=MessageContent(text='reset', image=None)), MessageItem(messageTime='2024-10-18 12:58:05', messageId='msg_1729236474983', source='AI', status='success', messageType='text', payload=MessageContent(text="It seems like you want to start fresh! Let's begin a new conversation. How can I assist you today?", image=None)), MessageItem(messageTime='2024-10-18 12:58:15', messageId='msg_1729236495882', source='ui', status='success', messageType='text', payload=MessageContent(text='hi', image=None)), MessageItem(messageTime='2024-10-18 12:58:16', messageId='msg_1729236495882', source='AI', status='success', messageType='text', payload=MessageContent(text="Hi! I'm happy to help. What brings you here today?", image=None)), MessageItem(messageTime='2024-10-18 12:58:31', messageId='msg_1729236511200', source='ui', status='success', messageType='text', payload=MessageContent(text='i want to create offer', image=None)), MessageItem(messageTime='2024-10-18 12:58:32', messageId='msg_1729236511200', source='AI', status='success', messageType='text', payload=MessageContent(text='"What\'s the name of the product you\'d like to create an offer for? Could you please provide that so I can better assist you?"', image=None)), MessageItem(messageTime='2024-10-18 12:58:46', messageId='msg_1729236526148', source='ui', status='success', messageType='text', payload=MessageContent(text='data offer', image=None))]
+2024-10-18 12:58:47,489 - services.missing_info_service - INFO - missing_info_service.py:34 - Processing missing info request for field: The field Product price is missing. The field Product price meaning in layman's terms is Product's offer price/price of the product. Please provide it.
+2024-10-18 12:58:47,489 - services.missing_info_service - DEBUG - missing_info_service.py:18 - Generating missing info prompt for field: The field Product price is missing. The field Product price meaning in layman's terms is Product's offer price/price of the product. Please provide it.
+2024-10-18 12:58:47,490 - services.missing_info_service - DEBUG - missing_info_service.py:27 - Generated prompt: 
+      As a sales executive named AARYA (Automated AI Responder for Your Applications), you are having a conversation with a customer about creating a  plan. The customer has provided some information, but the 'The field Product price is missing. The field Product price meaning in layman's terms is Product's offer price/price of the product. Please provide it.' is missing. Your task is to generate a polite and professional response asking for the missing information.
+
+      Conversation history:
+      [
+  {
+    "role": "user",
+    "content": "thanks"
+  },
+  {
+    "role": "assistant",
+    "content": "You're welcome! Is there anything else I can assist you with today?"
+  },
+  {
+    "role": "user",
+    "content": "no"
+  },
+  {
+    "role": "assistant",
+    "content": "It seems like our conversation just ended! You thanked me, I asked if there's anything else I can help you with, and you said no. If you change your mind or need something in the future, feel free to reach out! Have a great day!"
+  },
+  {
+    "role": "user",
+    "content": "reset"
+  },
+  {
+    "role": "assistant",
+    "content": "It seems like you want to start fresh! Let's begin a new conversation. How can I assist you today?"
+  },
+  {
+    "role": "user",
+    "content": "hi"
+  },
+  {
+    "role": "assistant",
+    "content": "Hi! I'm happy to help. What brings you here today?"
+  },
+  {
+    "role": "user",
+    "content": "i want to create offer"
+  },
+  {
+    "role": "assistant",
+    "content": "\"What's the name of the product you'd like to create an offer for? Could you please provide that so I can better assist you?\""
+  },
+  {
+    "role": "user",
+    "content": "data offer"
+  }
+]
+
+      Missing information: The field Product price is missing. The field Product price meaning in layman's terms is Product's offer price/price of the product. Please provide it.
+      here the messages gives out what information is missing extract the missing info from the message 
+
+      Please generate a response  asking for the missing information .
+      make it short and simple 
+      make the tune of the message in common language 
+      only give response 
+      
+2024-10-18 12:58:47,919 - services.missing_info_service - DEBUG - missing_info_service.py:37 - Missing info response: "Could you please tell me how much the 'data offer' product costs? We need the offer price or price of the product to move forward."

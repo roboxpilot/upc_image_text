@@ -1,0 +1,46 @@
+2024-10-15 18:04:30,591 - services.image_processor_service - INFO - image_processor_service.py:10 - Extracting content from image
+2024-10-15 18:07:46,991 - services.image_processor_service - INFO - image_processor_service.py:10 - Extracting content from image
+2024-10-15 18:08:44,017 - services.image_processor_service - INFO - image_processor_service.py:10 - Extracting content from image
+2024-10-15 18:13:25,633 - services.image_processor_service - INFO - image_processor_service.py:10 - Extracting content from image
+2024-10-17 17:49:23,402 - services.image_processor_service - INFO - image_processor_service.py:10 - Extracting content from image
+2024-10-17 17:49:36,544 - services.image_processor_service - DEBUG - image_processor_service.py:12 - Extracted image content: Based on the content from the image, here is the extracted JSON representation:
+
+```json
+{
+  "plan_name": "Giga Pack",
+  "validity": "N/A",
+  "units": "GSM",
+  "duration": "N/A",
+  "price": "N/A"
+}
+```
+
+Note: Some values are marked as "N/A" since they are not present in the image.
+2024-10-17 18:01:12,681 - services.image_processor_service - INFO - image_processor_service.py:10 - Extracting content from image
+2024-10-17 18:01:19,422 - services.image_processor_service - DEBUG - image_processor_service.py:12 - Extracted image content: Here’s the extracted content in JSON format:
+
+```json
+{
+  "plan_name": "Hayyak 20",
+  "validity": "4 Weeks",
+  "units": {
+    "data_allowance": "34 GB",
+    "flexi_minutes": "650 min"
+  },
+  "duration": "4 Weeks",
+  "price": "20 OMR"
+}
+```
+2024-10-17 18:05:00,798 - services.image_processor_service - INFO - image_processor_service.py:10 - Extracting content from image
+2024-10-17 18:05:15,588 - services.image_processor_service - DEBUG - image_processor_service.py:12 - Extracted image content: ```json
+{
+  "plan_name": "Hayyak 20",
+  "validity": "4 Weeks",
+  "units": {
+    "data_allowance": "34 GB",
+    "flexi_minutes": "650 min"
+  },
+  "duration": null,
+  "price": "20 OMR"
+}
+```

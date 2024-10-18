@@ -1,0 +1,133 @@
+2024-10-17 17:49:36,545 - utils.helpers - INFO - helpers.py:13 - Checking if message is product-related
+2024-10-17 17:49:36,545 - utils.helpers - DEBUG - helpers.py:18 - Sending classification prompt to AI: 
+You are an AI assistant tasked with determining whether a given conversation message is related to ...
+2024-10-17 17:49:40,265 - utils.helpers - DEBUG - helpers.py:20 - Received classification response: {
+"classification": "product_related"
+}
+2024-10-17 17:49:40,265 - utils.helpers - INFO - helpers.py:24 - Message classified as: product_related
+2024-10-17 18:01:19,423 - utils.helpers - INFO - helpers.py:13 - Checking if message is product-related
+2024-10-17 18:01:19,423 - utils.helpers - DEBUG - helpers.py:18 - Sending classification prompt to AI: 
+You are an AI assistant tasked with determining whether a given conversation message is related to ...
+2024-10-17 18:01:28,710 - utils.helpers - DEBUG - helpers.py:20 - Received classification response: {
+  "classification": "product_related"
+}
+2024-10-17 18:01:28,710 - utils.helpers - INFO - helpers.py:24 - Message classified as: product_related
+2024-10-17 18:05:15,589 - utils.helpers - INFO - helpers.py:13 - Checking if message is product-related
+2024-10-17 18:05:15,589 - utils.helpers - DEBUG - helpers.py:18 - Sending classification prompt to AI: 
+You are an AI assistant tasked with determining whether a given conversation message is related to ...
+2024-10-17 18:05:16,089 - utils.helpers - DEBUG - helpers.py:20 - Received classification response: {
+"classification": "product_related"
+}
+2024-10-17 18:05:16,090 - utils.helpers - INFO - helpers.py:24 - Message classified as: product_related
+2024-10-17 18:05:41,304 - utils.helpers - INFO - helpers.py:13 - Checking if message is product-related
+2024-10-17 18:05:41,305 - utils.helpers - DEBUG - helpers.py:18 - Sending classification prompt to AI: 
+You are an AI assistant tasked with determining whether a given conversation message is related to ...
+2024-10-17 18:05:41,655 - utils.helpers - DEBUG - helpers.py:20 - Received classification response: {"classification": "product_related"}
+2024-10-17 18:05:41,656 - utils.helpers - INFO - helpers.py:24 - Message classified as: product_related
+2024-10-17 18:05:54,723 - utils.helpers - INFO - helpers.py:13 - Checking if message is product-related
+2024-10-17 18:05:54,723 - utils.helpers - DEBUG - helpers.py:18 - Sending classification prompt to AI: 
+You are an AI assistant tasked with determining whether a given conversation message is related to ...
+2024-10-17 18:05:55,090 - utils.helpers - DEBUG - helpers.py:20 - Received classification response: {
+"classification": "product_related"
+}
+2024-10-17 18:05:55,090 - utils.helpers - INFO - helpers.py:24 - Message classified as: product_related
+2024-10-18 09:59:52,482 - utils.helpers - INFO - helpers.py:13 - Checking if message is product-related
+2024-10-18 09:59:52,483 - utils.helpers - DEBUG - helpers.py:18 - Sending classification prompt to AI: 
+You are an AI assistant tasked with determining whether a given conversation message is related to ...
+2024-10-18 10:00:06,444 - utils.helpers - DEBUG - helpers.py:20 - Received classification response: {
+"classification": "product_related"
+}
+2024-10-18 10:00:06,444 - utils.helpers - INFO - helpers.py:24 - Message classified as: product_related
+2024-10-18 10:59:30,870 - utils.helpers - INFO - helpers.py:13 - Checking if message is product-related
+2024-10-18 10:59:30,871 - utils.helpers - DEBUG - helpers.py:18 - Sending classification prompt to AI: 
+You are an AI assistant tasked with determining whether a given conversation message is related to ...
+2024-10-18 10:59:40,846 - utils.helpers - DEBUG - helpers.py:20 - Received classification response: {
+"classification": "product_related"
+}
+2024-10-18 10:59:40,846 - utils.helpers - INFO - helpers.py:24 - Message classified as: product_related
+2024-10-18 12:41:48,951 - utils.helpers - INFO - helpers.py:13 - Checking if message is product-related
+2024-10-18 12:41:48,951 - utils.helpers - DEBUG - helpers.py:18 - Sending classification prompt to AI: 
+You are an AI assistant tasked with determining whether a given conversation message is related to ...
+2024-10-18 12:42:00,235 - utils.helpers - DEBUG - helpers.py:20 - Received classification response: {
+"classification": "product_related"
+}
+2024-10-18 12:42:00,235 - utils.helpers - INFO - helpers.py:24 - Message classified as: product_related
+2024-10-18 12:42:06,989 - utils.helpers - INFO - helpers.py:13 - Checking if message is product-related
+2024-10-18 12:42:06,989 - utils.helpers - DEBUG - helpers.py:18 - Sending classification prompt to AI: 
+You are an AI assistant tasked with determining whether a given conversation message is related to ...
+2024-10-18 12:42:07,362 - utils.helpers - DEBUG - helpers.py:20 - Received classification response: {
+"classification": "product_related"
+}
+2024-10-18 12:42:07,362 - utils.helpers - INFO - helpers.py:24 - Message classified as: product_related
+2024-10-18 12:42:29,868 - utils.helpers - INFO - helpers.py:13 - Checking if message is product-related
+2024-10-18 12:42:29,868 - utils.helpers - DEBUG - helpers.py:18 - Sending classification prompt to AI: 
+You are an AI assistant tasked with determining whether a given conversation message is related to ...
+2024-10-18 12:42:30,248 - utils.helpers - DEBUG - helpers.py:20 - Received classification response: {
+"classification": "product_related"
+}
+2024-10-18 12:42:30,248 - utils.helpers - INFO - helpers.py:24 - Message classified as: product_related
+2024-10-18 12:42:42,693 - utils.helpers - INFO - helpers.py:13 - Checking if message is product-related
+2024-10-18 12:42:42,693 - utils.helpers - DEBUG - helpers.py:18 - Sending classification prompt to AI: 
+You are an AI assistant tasked with determining whether a given conversation message is related to ...
+2024-10-18 12:42:55,998 - utils.helpers - DEBUG - helpers.py:20 - Received classification response: { "classification": "product_related" }
+2024-10-18 12:42:55,998 - utils.helpers - INFO - helpers.py:24 - Message classified as: product_related
+2024-10-18 12:44:34,864 - utils.helpers - INFO - helpers.py:13 - Checking if message is product-related
+2024-10-18 12:44:34,865 - utils.helpers - DEBUG - helpers.py:18 - Sending classification prompt to AI: 
+You are an AI assistant tasked with determining whether a given conversation message is related to ...
+2024-10-18 12:44:35,259 - utils.helpers - DEBUG - helpers.py:20 - Received classification response: {"classification": "general_conversation"}
+2024-10-18 12:44:35,259 - utils.helpers - INFO - helpers.py:24 - Message classified as: general_conversation
+2024-10-18 12:45:08,521 - utils.helpers - INFO - helpers.py:13 - Checking if message is product-related
+2024-10-18 12:45:08,521 - utils.helpers - DEBUG - helpers.py:18 - Sending classification prompt to AI: 
+You are an AI assistant tasked with determining whether a given conversation message is related to ...
+2024-10-18 12:45:09,043 - utils.helpers - DEBUG - helpers.py:20 - Received classification response: {"classification": "general_conversation"}
+2024-10-18 12:45:09,043 - utils.helpers - INFO - helpers.py:24 - Message classified as: general_conversation
+2024-10-18 12:57:55,067 - utils.helpers - INFO - helpers.py:13 - Checking if message is product-related
+2024-10-18 12:57:55,067 - utils.helpers - DEBUG - helpers.py:18 - Sending classification prompt to AI: 
+You are an AI assistant tasked with determining whether a given conversation message is related to ...
+2024-10-18 12:58:04,458 - utils.helpers - DEBUG - helpers.py:20 - Received classification response: {
+"classification": "general_conversation"
+}
+2024-10-18 12:58:04,458 - utils.helpers - INFO - helpers.py:24 - Message classified as: general_conversation
+2024-10-18 12:58:15,973 - utils.helpers - INFO - helpers.py:13 - Checking if message is product-related
+2024-10-18 12:58:15,973 - utils.helpers - DEBUG - helpers.py:18 - Sending classification prompt to AI: 
+You are an AI assistant tasked with determining whether a given conversation message is related to ...
+2024-10-18 12:58:16,363 - utils.helpers - DEBUG - helpers.py:20 - Received classification response: {
+"classification": "general_conversation"
+}
+2024-10-18 12:58:16,363 - utils.helpers - INFO - helpers.py:24 - Message classified as: general_conversation
+2024-10-18 12:58:31,257 - utils.helpers - INFO - helpers.py:13 - Checking if message is product-related
+2024-10-18 12:58:31,257 - utils.helpers - DEBUG - helpers.py:18 - Sending classification prompt to AI: 
+You are an AI assistant tasked with determining whether a given conversation message is related to ...
+2024-10-18 12:58:31,646 - utils.helpers - DEBUG - helpers.py:20 - Received classification response: { "classification": "product_related" }
+2024-10-18 12:58:31,646 - utils.helpers - INFO - helpers.py:24 - Message classified as: product_related
+2024-10-18 12:58:46,229 - utils.helpers - INFO - helpers.py:13 - Checking if message is product-related
+2024-10-18 12:58:46,229 - utils.helpers - DEBUG - helpers.py:18 - Sending classification prompt to AI: 
+You are an AI assistant tasked with determining whether a given conversation message is related to ...
+2024-10-18 12:58:46,660 - utils.helpers - DEBUG - helpers.py:20 - Received classification response: {
+"classification": "product_related"
+}
+2024-10-18 12:58:46,660 - utils.helpers - INFO - helpers.py:24 - Message classified as: product_related
+2024-10-18 12:59:01,460 - utils.helpers - INFO - helpers.py:13 - Checking if message is product-related
+2024-10-18 12:59:01,460 - utils.helpers - DEBUG - helpers.py:18 - Sending classification prompt to AI: 
+You are an AI assistant tasked with determining whether a given conversation message is related to ...
+2024-10-18 12:59:01,869 - utils.helpers - DEBUG - helpers.py:20 - Received classification response: { "classification": "product_related" }
+2024-10-18 12:59:01,869 - utils.helpers - INFO - helpers.py:24 - Message classified as: product_related
+2024-10-18 12:59:34,429 - utils.helpers - INFO - helpers.py:13 - Checking if message is product-related
+2024-10-18 12:59:34,429 - utils.helpers - DEBUG - helpers.py:18 - Sending classification prompt to AI: 
+You are an AI assistant tasked with determining whether a given conversation message is related to ...
+2024-10-18 12:59:34,862 - utils.helpers - DEBUG - helpers.py:20 - Received classification response: {
+"classification": "product_related"
+}
+2024-10-18 12:59:34,862 - utils.helpers - INFO - helpers.py:24 - Message classified as: product_related
+2024-10-18 13:01:30,114 - utils.helpers - INFO - helpers.py:13 - Checking if message is product-related
+2024-10-18 13:01:30,114 - utils.helpers - DEBUG - helpers.py:18 - Sending classification prompt to AI: 
+You are an AI assistant tasked with determining whether a given conversation message is related to ...
+2024-10-18 13:01:30,559 - utils.helpers - DEBUG - helpers.py:20 - Received classification response: {
+"classification": "product_related"
+}
+2024-10-18 13:01:30,560 - utils.helpers - INFO - helpers.py:24 - Message classified as: product_related
+2024-10-18 13:02:13,648 - utils.helpers - INFO - helpers.py:13 - Checking if message is product-related
+2024-10-18 13:02:13,648 - utils.helpers - DEBUG - helpers.py:18 - Sending classification prompt to AI: 
+You are an AI assistant tasked with determining whether a given conversation message is related to ...
+2024-10-18 13:02:14,061 - utils.helpers - DEBUG - helpers.py:20 - Received classification response: { "classification": "general_conversation" }
+2024-10-18 13:02:14,062 - utils.helpers - INFO - helpers.py:24 - Message classified as: general_conversation

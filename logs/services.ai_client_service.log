@@ -1,0 +1,428 @@
+2024-10-14 19:25:56,505 - services.ai_client_service - INFO - ai_client_service.py:16 - Initializing AI clients
+2024-10-14 19:25:56,519 - services.ai_client_service - INFO - ai_client_service.py:19 - Initialized Groq client
+2024-10-14 19:25:56,531 - services.ai_client_service - INFO - ai_client_service.py:32 - Initialized OpenAI image client
+2024-10-14 19:26:10,035 - services.ai_client_service - INFO - ai_client_service.py:36 - Making API call to groq
+2024-10-14 19:26:10,565 - services.ai_client_service - DEBUG - ai_client_service.py:47 - Groq API response: "Hi, thanks for the details so far! Could you please clarify what type of product you're interested in? Is it an add-on or a basic product?"
+2024-10-14 19:36:49,256 - services.ai_client_service - INFO - ai_client_service.py:16 - Initializing AI clients
+2024-10-14 19:36:49,271 - services.ai_client_service - INFO - ai_client_service.py:19 - Initialized Groq client
+2024-10-14 19:36:49,283 - services.ai_client_service - INFO - ai_client_service.py:32 - Initialized OpenAI image client
+2024-10-14 19:36:55,570 - services.ai_client_service - INFO - ai_client_service.py:36 - Making API call to groq
+2024-10-14 19:36:56,143 - services.ai_client_service - DEBUG - ai_client_service.py:47 - Groq API response: "Hi, thanks for sharing the details! Could you please let me know what type of product you're interested in - is it an add-on or basic plan?"
+2024-10-15 14:13:39,791 - services.ai_client_service - INFO - ai_client_service.py:16 - Initializing AI clients
+2024-10-15 14:13:39,805 - services.ai_client_service - INFO - ai_client_service.py:19 - Initialized Groq client
+2024-10-15 14:13:39,816 - services.ai_client_service - INFO - ai_client_service.py:32 - Initialized OpenAI image client
+2024-10-15 18:04:30,592 - services.ai_client_service - INFO - ai_client_service.py:75 - Making image API call to OpenAI
+2024-10-15 18:04:44,635 - services.ai_client_service - ERROR - ai_client_service.py:92 - Error in OpenAI image API call: RetryError[<Future at 0x7fa7fa052140 state=finished raised BadRequestError>]
+Traceback (most recent call last):
+  File "/opt/env/anaconda/envs/upc/lib/python3.10/site-packages/instructor/retry.py", line 180, in retry_sync
+    response = func(*args, **kwargs)
+  File "/opt/env/anaconda/envs/upc/lib/python3.10/site-packages/openai/_utils/_utils.py", line 274, in wrapper
+    return func(*args, **kwargs)
+  File "/opt/env/anaconda/envs/upc/lib/python3.10/site-packages/openai/resources/chat/completions.py", line 679, in create
+    return self._post(
+  File "/opt/env/anaconda/envs/upc/lib/python3.10/site-packages/openai/_base_client.py", line 1260, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+  File "/opt/env/anaconda/envs/upc/lib/python3.10/site-packages/openai/_base_client.py", line 937, in request
+    return self._request(
+  File "/opt/env/anaconda/envs/upc/lib/python3.10/site-packages/openai/_base_client.py", line 997, in _request
+    return self._retry_request(
+  File "/opt/env/anaconda/envs/upc/lib/python3.10/site-packages/openai/_base_client.py", line 1075, in _retry_request
+    return self._request(
+  File "/opt/env/anaconda/envs/upc/lib/python3.10/site-packages/openai/_base_client.py", line 1041, in _request
+    raise self._make_status_error_from_response(err.response) from None
+openai.BadRequestError: Error code: 400 - {'error': {'message': "You uploaded an unsupported image. Please make sure your image is below 20 MB in size and is of one the following formats: ['png', 'jpeg', 'gif', 'webp'].", 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_image_format'}}
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/opt/env/anaconda/envs/upc/lib/python3.10/site-packages/instructor/retry.py", line 177, in retry_sync
+    for attempt in max_retries:
+  File "/opt/env/anaconda/envs/upc/lib/python3.10/site-packages/tenacity/__init__.py", line 443, in __iter__
+    do = self.iter(retry_state=retry_state)
+  File "/opt/env/anaconda/envs/upc/lib/python3.10/site-packages/tenacity/__init__.py", line 376, in iter
+    result = action(retry_state)
+  File "/opt/env/anaconda/envs/upc/lib/python3.10/site-packages/tenacity/__init__.py", line 419, in exc_check
+    raise retry_exc from fut.exception()
+tenacity.RetryError: RetryError[<Future at 0x7fa7fa052140 state=finished raised BadRequestError>]
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/opt/upc_bot/upc_bot/services/ai_client_service.py", line 76, in make_image_api_call
+    response = image_client.chat.completions.create(
+  File "/opt/env/anaconda/envs/upc/lib/python3.10/site-packages/instructor/patch.py", line 143, in new_create_sync
+    response = retry_sync(
+  File "/opt/env/anaconda/envs/upc/lib/python3.10/site-packages/instructor/retry.py", line 215, in retry_sync
+    raise InstructorRetryException(
+instructor.exceptions.InstructorRetryException: RetryError[<Future at 0x7fa7fa052140 state=finished raised BadRequestError>]
+2024-10-15 18:07:46,991 - services.ai_client_service - INFO - ai_client_service.py:75 - Making image API call to OpenAI
+2024-10-15 18:07:53,457 - services.ai_client_service - ERROR - ai_client_service.py:92 - Error in OpenAI image API call: RetryError[<Future at 0x7fa7fa086c20 state=finished raised BadRequestError>]
+Traceback (most recent call last):
+  File "/opt/env/anaconda/envs/upc/lib/python3.10/site-packages/instructor/retry.py", line 180, in retry_sync
+    response = func(*args, **kwargs)
+  File "/opt/env/anaconda/envs/upc/lib/python3.10/site-packages/openai/_utils/_utils.py", line 274, in wrapper
+    return func(*args, **kwargs)
+  File "/opt/env/anaconda/envs/upc/lib/python3.10/site-packages/openai/resources/chat/completions.py", line 679, in create
+    return self._post(
+  File "/opt/env/anaconda/envs/upc/lib/python3.10/site-packages/openai/_base_client.py", line 1260, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+  File "/opt/env/anaconda/envs/upc/lib/python3.10/site-packages/openai/_base_client.py", line 937, in request
+    return self._request(
+  File "/opt/env/anaconda/envs/upc/lib/python3.10/site-packages/openai/_base_client.py", line 1041, in _request
+    raise self._make_status_error_from_response(err.response) from None
+openai.BadRequestError: Error code: 400 - {'error': {'message': "You uploaded an unsupported image. Please make sure your image is below 20 MB in size and is of one the following formats: ['png', 'jpeg', 'gif', 'webp'].", 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_image_format'}}
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/opt/env/anaconda/envs/upc/lib/python3.10/site-packages/instructor/retry.py", line 177, in retry_sync
+    for attempt in max_retries:
+  File "/opt/env/anaconda/envs/upc/lib/python3.10/site-packages/tenacity/__init__.py", line 443, in __iter__
+    do = self.iter(retry_state=retry_state)
+  File "/opt/env/anaconda/envs/upc/lib/python3.10/site-packages/tenacity/__init__.py", line 376, in iter
+    result = action(retry_state)
+  File "/opt/env/anaconda/envs/upc/lib/python3.10/site-packages/tenacity/__init__.py", line 419, in exc_check
+    raise retry_exc from fut.exception()
+tenacity.RetryError: RetryError[<Future at 0x7fa7fa086c20 state=finished raised BadRequestError>]
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/opt/upc_bot/upc_bot/services/ai_client_service.py", line 76, in make_image_api_call
+    response = image_client.chat.completions.create(
+  File "/opt/env/anaconda/envs/upc/lib/python3.10/site-packages/instructor/patch.py", line 143, in new_create_sync
+    response = retry_sync(
+  File "/opt/env/anaconda/envs/upc/lib/python3.10/site-packages/instructor/retry.py", line 215, in retry_sync
+    raise InstructorRetryException(
+instructor.exceptions.InstructorRetryException: RetryError[<Future at 0x7fa7fa086c20 state=finished raised BadRequestError>]
+2024-10-15 18:08:44,018 - services.ai_client_service - INFO - ai_client_service.py:75 - Making image API call to OpenAI
+2024-10-15 18:08:48,780 - services.ai_client_service - ERROR - ai_client_service.py:92 - Error in OpenAI image API call: RetryError[<Future at 0x7fa7f8d31f00 state=finished raised BadRequestError>]
+Traceback (most recent call last):
+  File "/opt/env/anaconda/envs/upc/lib/python3.10/site-packages/instructor/retry.py", line 180, in retry_sync
+    response = func(*args, **kwargs)
+  File "/opt/env/anaconda/envs/upc/lib/python3.10/site-packages/openai/_utils/_utils.py", line 274, in wrapper
+    return func(*args, **kwargs)
+  File "/opt/env/anaconda/envs/upc/lib/python3.10/site-packages/openai/resources/chat/completions.py", line 679, in create
+    return self._post(
+  File "/opt/env/anaconda/envs/upc/lib/python3.10/site-packages/openai/_base_client.py", line 1260, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+  File "/opt/env/anaconda/envs/upc/lib/python3.10/site-packages/openai/_base_client.py", line 937, in request
+    return self._request(
+  File "/opt/env/anaconda/envs/upc/lib/python3.10/site-packages/openai/_base_client.py", line 1041, in _request
+    raise self._make_status_error_from_response(err.response) from None
+openai.BadRequestError: Error code: 400 - {'error': {'message': "You uploaded an unsupported image. Please make sure your image is below 20 MB in size and is of one the following formats: ['png', 'jpeg', 'gif', 'webp'].", 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_image_format'}}
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/opt/env/anaconda/envs/upc/lib/python3.10/site-packages/instructor/retry.py", line 177, in retry_sync
+    for attempt in max_retries:
+  File "/opt/env/anaconda/envs/upc/lib/python3.10/site-packages/tenacity/__init__.py", line 443, in __iter__
+    do = self.iter(retry_state=retry_state)
+  File "/opt/env/anaconda/envs/upc/lib/python3.10/site-packages/tenacity/__init__.py", line 376, in iter
+    result = action(retry_state)
+  File "/opt/env/anaconda/envs/upc/lib/python3.10/site-packages/tenacity/__init__.py", line 419, in exc_check
+    raise retry_exc from fut.exception()
+tenacity.RetryError: RetryError[<Future at 0x7fa7f8d31f00 state=finished raised BadRequestError>]
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/opt/upc_bot/upc_bot/services/ai_client_service.py", line 76, in make_image_api_call
+    response = image_client.chat.completions.create(
+  File "/opt/env/anaconda/envs/upc/lib/python3.10/site-packages/instructor/patch.py", line 143, in new_create_sync
+    response = retry_sync(
+  File "/opt/env/anaconda/envs/upc/lib/python3.10/site-packages/instructor/retry.py", line 215, in retry_sync
+    raise InstructorRetryException(
+instructor.exceptions.InstructorRetryException: RetryError[<Future at 0x7fa7f8d31f00 state=finished raised BadRequestError>]
+2024-10-15 18:13:25,634 - services.ai_client_service - INFO - ai_client_service.py:75 - Making image API call to OpenAI
+2024-10-15 18:13:35,764 - services.ai_client_service - ERROR - ai_client_service.py:92 - Error in OpenAI image API call: RetryError[<Future at 0x7fa7f8d51120 state=finished raised BadRequestError>]
+Traceback (most recent call last):
+  File "/opt/env/anaconda/envs/upc/lib/python3.10/site-packages/instructor/retry.py", line 180, in retry_sync
+    response = func(*args, **kwargs)
+  File "/opt/env/anaconda/envs/upc/lib/python3.10/site-packages/openai/_utils/_utils.py", line 274, in wrapper
+    return func(*args, **kwargs)
+  File "/opt/env/anaconda/envs/upc/lib/python3.10/site-packages/openai/resources/chat/completions.py", line 679, in create
+    return self._post(
+  File "/opt/env/anaconda/envs/upc/lib/python3.10/site-packages/openai/_base_client.py", line 1260, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+  File "/opt/env/anaconda/envs/upc/lib/python3.10/site-packages/openai/_base_client.py", line 937, in request
+    return self._request(
+  File "/opt/env/anaconda/envs/upc/lib/python3.10/site-packages/openai/_base_client.py", line 1041, in _request
+    raise self._make_status_error_from_response(err.response) from None
+openai.BadRequestError: Error code: 400 - {'error': {'message': "You uploaded an unsupported image. Please make sure your image is below 20 MB in size and is of one the following formats: ['png', 'jpeg', 'gif', 'webp'].", 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_image_format'}}
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/opt/env/anaconda/envs/upc/lib/python3.10/site-packages/instructor/retry.py", line 177, in retry_sync
+    for attempt in max_retries:
+  File "/opt/env/anaconda/envs/upc/lib/python3.10/site-packages/tenacity/__init__.py", line 443, in __iter__
+    do = self.iter(retry_state=retry_state)
+  File "/opt/env/anaconda/envs/upc/lib/python3.10/site-packages/tenacity/__init__.py", line 376, in iter
+    result = action(retry_state)
+  File "/opt/env/anaconda/envs/upc/lib/python3.10/site-packages/tenacity/__init__.py", line 419, in exc_check
+    raise retry_exc from fut.exception()
+tenacity.RetryError: RetryError[<Future at 0x7fa7f8d51120 state=finished raised BadRequestError>]
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/opt/upc_bot/upc_bot/services/ai_client_service.py", line 76, in make_image_api_call
+    response = image_client.chat.completions.create(
+  File "/opt/env/anaconda/envs/upc/lib/python3.10/site-packages/instructor/patch.py", line 143, in new_create_sync
+    response = retry_sync(
+  File "/opt/env/anaconda/envs/upc/lib/python3.10/site-packages/instructor/retry.py", line 215, in retry_sync
+    raise InstructorRetryException(
+instructor.exceptions.InstructorRetryException: RetryError[<Future at 0x7fa7f8d51120 state=finished raised BadRequestError>]
+2024-10-17 17:47:18,183 - services.ai_client_service - INFO - ai_client_service.py:16 - Initializing AI clients
+2024-10-17 17:47:18,201 - services.ai_client_service - INFO - ai_client_service.py:19 - Initialized Groq client
+2024-10-17 17:47:18,213 - services.ai_client_service - INFO - ai_client_service.py:32 - Initialized OpenAI image client
+2024-10-17 17:49:08,219 - services.ai_client_service - INFO - ai_client_service.py:16 - Initializing AI clients
+2024-10-17 17:49:08,231 - services.ai_client_service - INFO - ai_client_service.py:19 - Initialized Groq client
+2024-10-17 17:49:08,243 - services.ai_client_service - INFO - ai_client_service.py:32 - Initialized OpenAI image client
+2024-10-17 17:49:23,403 - services.ai_client_service - INFO - ai_client_service.py:75 - Making image API call to OpenAI
+2024-10-17 17:49:36,544 - services.ai_client_service - DEBUG - ai_client_service.py:89 - OpenAI image API response: Based on the content from the image, here is the extracted JSON representation:
+
+```json
+{
+  "plan_name": "Giga Pack",
+  "validity": "N/A",
+  "units": "GSM",
+  "duration": "N/A",
+  "price": "N/A"
+}
+```
+
+Note: Some values are marked as "N/A" since they are not present in the image.
+2024-10-17 17:49:36,545 - services.ai_client_service - INFO - ai_client_service.py:36 - Making API call to groq
+2024-10-17 17:49:40,264 - services.ai_client_service - DEBUG - ai_client_service.py:47 - Groq API response: {
+"classification": "product_related"
+}
+2024-10-17 18:01:12,681 - services.ai_client_service - INFO - ai_client_service.py:75 - Making image API call to OpenAI
+2024-10-17 18:01:19,422 - services.ai_client_service - DEBUG - ai_client_service.py:89 - OpenAI image API response: Here’s the extracted content in JSON format:
+
+```json
+{
+  "plan_name": "Hayyak 20",
+  "validity": "4 Weeks",
+  "units": {
+    "data_allowance": "34 GB",
+    "flexi_minutes": "650 min"
+  },
+  "duration": "4 Weeks",
+  "price": "20 OMR"
+}
+```
+2024-10-17 18:01:19,423 - services.ai_client_service - INFO - ai_client_service.py:36 - Making API call to groq
+2024-10-17 18:01:28,709 - services.ai_client_service - DEBUG - ai_client_service.py:47 - Groq API response: {
+  "classification": "product_related"
+}
+2024-10-17 18:01:29,598 - services.ai_client_service - INFO - ai_client_service.py:36 - Making API call to groq
+2024-10-17 18:01:29,892 - services.ai_client_service - DEBUG - ai_client_service.py:47 - Groq API response: False
+2024-10-17 18:01:29,893 - services.ai_client_service - INFO - ai_client_service.py:36 - Making API call to groq
+2024-10-17 18:01:30,495 - services.ai_client_service - DEBUG - ai_client_service.py:47 - Groq API response: Here are the details of your product with all mandatory default parameters enabled:
+
+• Product Name: Hayyak 20
+• Product Description: (Not Provided)
+• Product Family: GSM
+• Product Group: Prepaid
+• Product Offer Price: 20
+• Pop Type: Normal
+• Price Category: Base Price
+• Price Mode: Non-Recurring
+• Product Specification Type: ADDON
+
+Would you like to update any of these details or proceed as is?
+2024-10-17 18:04:35,340 - services.ai_client_service - INFO - ai_client_service.py:16 - Initializing AI clients
+2024-10-17 18:04:35,352 - services.ai_client_service - INFO - ai_client_service.py:19 - Initialized Groq client
+2024-10-17 18:04:35,361 - services.ai_client_service - INFO - ai_client_service.py:32 - Initialized OpenAI image client
+2024-10-17 18:05:00,798 - services.ai_client_service - INFO - ai_client_service.py:75 - Making image API call to OpenAI
+2024-10-17 18:05:15,588 - services.ai_client_service - DEBUG - ai_client_service.py:89 - OpenAI image API response: ```json
+{
+  "plan_name": "Hayyak 20",
+  "validity": "4 Weeks",
+  "units": {
+    "data_allowance": "34 GB",
+    "flexi_minutes": "650 min"
+  },
+  "duration": null,
+  "price": "20 OMR"
+}
+```
+2024-10-17 18:05:15,589 - services.ai_client_service - INFO - ai_client_service.py:36 - Making API call to groq
+2024-10-17 18:05:16,089 - services.ai_client_service - DEBUG - ai_client_service.py:47 - Groq API response: {
+"classification": "product_related"
+}
+2024-10-17 18:05:16,930 - services.ai_client_service - INFO - ai_client_service.py:36 - Making API call to groq
+2024-10-17 18:05:17,259 - services.ai_client_service - DEBUG - ai_client_service.py:47 - Groq API response: False
+2024-10-17 18:05:17,259 - services.ai_client_service - INFO - ai_client_service.py:36 - Making API call to groq
+2024-10-17 18:05:17,854 - services.ai_client_service - DEBUG - ai_client_service.py:47 - Groq API response: Here are the details of your product with all mandatory default parameters enabled:
+
+* Product Name: Hayyak 20
+* Product Description: null
+* Product Family: GSM
+* Product Group: Prepaid
+* Product Offer Price: 20
+* Pop Type: Normal
+* Price Category: Base Price
+* Price Mode: Non-Recurring
+* Product Specification Type: ADDON
+
+Would you like to update any of these details or proceed as is?
+2024-10-17 18:05:41,305 - services.ai_client_service - INFO - ai_client_service.py:36 - Making API call to groq
+2024-10-17 18:05:41,655 - services.ai_client_service - DEBUG - ai_client_service.py:47 - Groq API response: {"classification": "product_related"}
+2024-10-17 18:05:42,471 - services.ai_client_service - INFO - ai_client_service.py:36 - Making API call to groq
+2024-10-17 18:05:42,756 - services.ai_client_service - DEBUG - ai_client_service.py:47 - Groq API response: False
+2024-10-17 18:05:42,756 - services.ai_client_service - INFO - ai_client_service.py:36 - Making API call to groq
+2024-10-17 18:05:43,334 - services.ai_client_service - DEBUG - ai_client_service.py:47 - Groq API response: Here are the details of your product with all mandatory default parameters enabled:
+
+• Product Name: hyakk
+• Product Description: null
+• Product Family: GSM
+• Product Group: Prepaid
+• Product Offer Price: 25
+• Pop Type: Normal
+• Price Category: Base Price
+• Price Mode: Non-Recurring
+• Product Specification Type: ADDON
+
+Would you like to update any of these details or proceed as is?
+2024-10-17 18:05:54,723 - services.ai_client_service - INFO - ai_client_service.py:36 - Making API call to groq
+2024-10-17 18:05:55,089 - services.ai_client_service - DEBUG - ai_client_service.py:47 - Groq API response: {
+"classification": "product_related"
+}
+2024-10-17 18:05:55,860 - services.ai_client_service - INFO - ai_client_service.py:36 - Making API call to groq
+2024-10-17 18:05:56,166 - services.ai_client_service - DEBUG - ai_client_service.py:47 - Groq API response: True
+2024-10-18 09:59:52,483 - services.ai_client_service - INFO - ai_client_service.py:36 - Making API call to groq
+2024-10-18 10:00:06,444 - services.ai_client_service - DEBUG - ai_client_service.py:47 - Groq API response: {
+"classification": "product_related"
+}
+2024-10-18 10:57:21,828 - services.ai_client_service - INFO - ai_client_service.py:16 - Initializing AI clients
+2024-10-18 10:57:21,861 - services.ai_client_service - INFO - ai_client_service.py:19 - Initialized Groq client
+2024-10-18 10:57:21,878 - services.ai_client_service - INFO - ai_client_service.py:32 - Initialized OpenAI image client
+2024-10-18 10:58:36,956 - services.ai_client_service - INFO - ai_client_service.py:16 - Initializing AI clients
+2024-10-18 10:58:36,967 - services.ai_client_service - INFO - ai_client_service.py:19 - Initialized Groq client
+2024-10-18 10:58:36,977 - services.ai_client_service - INFO - ai_client_service.py:32 - Initialized OpenAI image client
+2024-10-18 10:59:30,871 - services.ai_client_service - INFO - ai_client_service.py:36 - Making API call to groq
+2024-10-18 10:59:40,845 - services.ai_client_service - DEBUG - ai_client_service.py:47 - Groq API response: {
+"classification": "product_related"
+}
+2024-10-18 10:59:42,973 - services.ai_client_service - INFO - ai_client_service.py:36 - Making API call to groq
+2024-10-18 10:59:43,373 - services.ai_client_service - DEBUG - ai_client_service.py:47 - Groq API response: Here is a polite and professional response asking for the missing information:
+
+"What is the name of the product you'd like to create a voice offer for?"
+2024-10-18 12:41:48,952 - services.ai_client_service - INFO - ai_client_service.py:36 - Making API call to groq
+2024-10-18 12:42:00,235 - services.ai_client_service - DEBUG - ai_client_service.py:47 - Groq API response: {
+"classification": "product_related"
+}
+2024-10-18 12:42:01,150 - services.ai_client_service - INFO - ai_client_service.py:36 - Making API call to groq
+2024-10-18 12:42:01,596 - services.ai_client_service - DEBUG - ai_client_service.py:47 - Groq API response: "Hi, I'm happy to help you with your voice offer plan! Before we move forward, could you please tell me what you'd like to name your product? This will help me create a personalized plan for you."
+2024-10-18 12:42:06,989 - services.ai_client_service - INFO - ai_client_service.py:36 - Making API call to groq
+2024-10-18 12:42:07,362 - services.ai_client_service - DEBUG - ai_client_service.py:47 - Groq API response: {
+"classification": "product_related"
+}
+2024-10-18 12:42:08,401 - services.ai_client_service - INFO - ai_client_service.py:36 - Making API call to groq
+2024-10-18 12:42:08,814 - services.ai_client_service - DEBUG - ai_client_service.py:47 - Groq API response: "Hey! We're almost there. Can you please tell me what you'd like to name your voice offer product? This will help me finalize your plan."
+2024-10-18 12:42:29,868 - services.ai_client_service - INFO - ai_client_service.py:36 - Making API call to groq
+2024-10-18 12:42:30,247 - services.ai_client_service - DEBUG - ai_client_service.py:47 - Groq API response: {
+"classification": "product_related"
+}
+2024-10-18 12:42:31,021 - services.ai_client_service - INFO - ai_client_service.py:36 - Making API call to groq
+2024-10-18 12:42:31,330 - services.ai_client_service - DEBUG - ai_client_service.py:47 - Groq API response: False
+2024-10-18 12:42:31,330 - services.ai_client_service - INFO - ai_client_service.py:36 - Making API call to groq
+2024-10-18 12:42:33,175 - services.ai_client_service - DEBUG - ai_client_service.py:47 - Groq API response: Here are the details of your product with all mandatory default parameters enabled:
+
+• Product Name: voice econet offer
+• Product Description: 
+• Product Family: GSM
+• Product Group: Prepaid
+• Product Offer Price: 5
+• Pop Type: Normal
+• Price Category: Base Price
+• Price Mode: Non-Recurring
+• Product Specification Type: ADDON
+
+Would you like to update any of these details or proceed as is?
+2024-10-18 12:42:42,694 - services.ai_client_service - INFO - ai_client_service.py:36 - Making API call to groq
+2024-10-18 12:42:55,998 - services.ai_client_service - DEBUG - ai_client_service.py:47 - Groq API response: { "classification": "product_related" }
+2024-10-18 12:43:03,000 - services.ai_client_service - INFO - ai_client_service.py:36 - Making API call to groq
+2024-10-18 12:43:22,639 - services.ai_client_service - DEBUG - ai_client_service.py:47 - Groq API response: True
+2024-10-18 12:44:34,865 - services.ai_client_service - INFO - ai_client_service.py:36 - Making API call to groq
+2024-10-18 12:44:35,258 - services.ai_client_service - DEBUG - ai_client_service.py:47 - Groq API response: {"classification": "general_conversation"}
+2024-10-18 12:44:35,259 - services.ai_client_service - INFO - ai_client_service.py:36 - Making API call to groq
+2024-10-18 12:44:35,621 - services.ai_client_service - DEBUG - ai_client_service.py:47 - Groq API response: You're welcome! Is there anything else I can assist you with today?
+2024-10-18 12:45:08,521 - services.ai_client_service - INFO - ai_client_service.py:36 - Making API call to groq
+2024-10-18 12:45:09,042 - services.ai_client_service - DEBUG - ai_client_service.py:47 - Groq API response: {"classification": "general_conversation"}
+2024-10-18 12:45:09,044 - services.ai_client_service - INFO - ai_client_service.py:36 - Making API call to groq
+2024-10-18 12:45:09,574 - services.ai_client_service - DEBUG - ai_client_service.py:47 - Groq API response: It seems like our conversation just ended! You thanked me, I asked if there's anything else I can help you with, and you said no. If you change your mind or need something in the future, feel free to reach out! Have a great day!
+2024-10-18 12:57:55,067 - services.ai_client_service - INFO - ai_client_service.py:36 - Making API call to groq
+2024-10-18 12:58:04,457 - services.ai_client_service - DEBUG - ai_client_service.py:47 - Groq API response: {
+"classification": "general_conversation"
+}
+2024-10-18 12:58:04,458 - services.ai_client_service - INFO - ai_client_service.py:36 - Making API call to groq
+2024-10-18 12:58:05,515 - services.ai_client_service - DEBUG - ai_client_service.py:47 - Groq API response: It seems like you want to start fresh! Let's begin a new conversation. How can I assist you today?
+2024-10-18 12:58:15,974 - services.ai_client_service - INFO - ai_client_service.py:36 - Making API call to groq
+2024-10-18 12:58:16,363 - services.ai_client_service - DEBUG - ai_client_service.py:47 - Groq API response: {
+"classification": "general_conversation"
+}
+2024-10-18 12:58:16,364 - services.ai_client_service - INFO - ai_client_service.py:36 - Making API call to groq
+2024-10-18 12:58:16,725 - services.ai_client_service - DEBUG - ai_client_service.py:47 - Groq API response: Hi! I'm happy to help. What brings you here today?
+2024-10-18 12:58:31,257 - services.ai_client_service - INFO - ai_client_service.py:36 - Making API call to groq
+2024-10-18 12:58:31,646 - services.ai_client_service - DEBUG - ai_client_service.py:47 - Groq API response: { "classification": "product_related" }
+2024-10-18 12:58:32,462 - services.ai_client_service - INFO - ai_client_service.py:36 - Making API call to groq
+2024-10-18 12:58:32,891 - services.ai_client_service - DEBUG - ai_client_service.py:47 - Groq API response: "What's the name of the product you'd like to create an offer for? Could you please provide that so I can better assist you?"
+2024-10-18 12:58:46,229 - services.ai_client_service - INFO - ai_client_service.py:36 - Making API call to groq
+2024-10-18 12:58:46,660 - services.ai_client_service - DEBUG - ai_client_service.py:47 - Groq API response: {
+"classification": "product_related"
+}
+2024-10-18 12:58:47,490 - services.ai_client_service - INFO - ai_client_service.py:36 - Making API call to groq
+2024-10-18 12:58:47,919 - services.ai_client_service - DEBUG - ai_client_service.py:47 - Groq API response: "Could you please tell me how much the 'data offer' product costs? We need the offer price or price of the product to move forward."
+2024-10-18 12:59:01,460 - services.ai_client_service - INFO - ai_client_service.py:36 - Making API call to groq
+2024-10-18 12:59:01,869 - services.ai_client_service - DEBUG - ai_client_service.py:47 - Groq API response: { "classification": "product_related" }
+2024-10-18 12:59:02,739 - services.ai_client_service - INFO - ai_client_service.py:36 - Making API call to groq
+2024-10-18 12:59:06,348 - services.ai_client_service - DEBUG - ai_client_service.py:47 - Groq API response: False
+2024-10-18 12:59:06,349 - services.ai_client_service - INFO - ai_client_service.py:36 - Making API call to groq
+2024-10-18 12:59:09,233 - services.ai_client_service - DEBUG - ai_client_service.py:47 - Groq API response: Here are the details of your product with all mandatory default parameters enabled:
+
+• Product Name: data offer
+• Product Description: No Description
+• Product Family: GSM
+• Product Group: Prepaid
+• Product Offer Price: 6
+• Pop Type: Normal
+• Price Category: Base Price
+• Price Mode: Non-Recurring
+• Product Specification Type: ADDON
+
+Would you like to update any of these details or proceed as is?
+2024-10-18 12:59:34,430 - services.ai_client_service - INFO - ai_client_service.py:36 - Making API call to groq
+2024-10-18 12:59:34,861 - services.ai_client_service - DEBUG - ai_client_service.py:47 - Groq API response: {
+"classification": "product_related"
+}
+2024-10-18 12:59:35,645 - services.ai_client_service - INFO - ai_client_service.py:36 - Making API call to groq
+2024-10-18 12:59:46,405 - services.ai_client_service - DEBUG - ai_client_service.py:47 - Groq API response: False
+2024-10-18 12:59:46,405 - services.ai_client_service - INFO - ai_client_service.py:36 - Making API call to groq
+2024-10-18 12:59:49,326 - services.ai_client_service - DEBUG - ai_client_service.py:47 - Groq API response: Here are the details of your product with all mandatory default parameters enabled:
+
+• Product Name: data offer
+• Product Description: No Description
+• Product Family: GSM
+• Product Group: Prepaid
+• Product Offer Price: 6
+• POP Type: Normal
+• Price Category: Base Price
+• Price Mode: Non-Recurring
+• Product Specification Type: ADDON
+
+Would you like to update any of these details or proceed as is?
+2024-10-18 13:01:30,114 - services.ai_client_service - INFO - ai_client_service.py:36 - Making API call to groq
+2024-10-18 13:01:30,559 - services.ai_client_service - DEBUG - ai_client_service.py:47 - Groq API response: {
+"classification": "product_related"
+}
+2024-10-18 13:01:31,396 - services.ai_client_service - INFO - ai_client_service.py:36 - Making API call to groq
+2024-10-18 13:01:31,772 - services.ai_client_service - DEBUG - ai_client_service.py:47 - Groq API response: True
+2024-10-18 13:02:13,648 - services.ai_client_service - INFO - ai_client_service.py:36 - Making API call to groq
+2024-10-18 13:02:14,061 - services.ai_client_service - DEBUG - ai_client_service.py:47 - Groq API response: { "classification": "general_conversation" }
+2024-10-18 13:02:14,062 - services.ai_client_service - INFO - ai_client_service.py:36 - Making API call to groq
+2024-10-18 13:02:14,450 - services.ai_client_service - DEBUG - ai_client_service.py:47 - Groq API response: Hi there! It seems like you're ready to start creating a product. What kind of product are you thinking of?

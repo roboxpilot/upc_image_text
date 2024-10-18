@@ -1,0 +1,17 @@
+2024-10-14 19:26:10,034 - controllers.missing_info_controller - INFO - missing_info_controller.py:14 - Received missing info request for conversation ID: conv-12345
+2024-10-14 19:26:10,566 - controllers.missing_info_controller - DEBUG - missing_info_controller.py:18 - Missing info response: "Hi, thanks for the details so far! Could you please clarify what type of product you're interested in? Is it an add-on or a basic product?"
+2024-10-14 19:36:55,569 - controllers.missing_info_controller - INFO - missing_info_controller.py:14 - Received missing info request for conversation ID: conv-12345
+2024-10-14 19:36:56,145 - controllers.missing_info_controller - DEBUG - missing_info_controller.py:18 - Missing info response: "Hi, thanks for sharing the details! Could you please let me know what type of product you're interested in - is it an add-on or basic plan?"
+2024-10-18 10:00:07,343 - controllers.missing_info_controller - INFO - missing_info_controller.py:14 - Received missing info request for conversation ID: conv_1729094216114
+2024-10-18 10:59:42,972 - controllers.missing_info_controller - INFO - missing_info_controller.py:14 - Received missing info request for conversation ID: conv_1729229370783
+2024-10-18 10:59:43,374 - controllers.missing_info_controller - DEBUG - missing_info_controller.py:18 - Missing info response: Here is a polite and professional response asking for the missing information:
+
+"What is the name of the product you'd like to create a voice offer for?"
+2024-10-18 12:42:01,149 - controllers.missing_info_controller - INFO - missing_info_controller.py:14 - Received missing info request for conversation ID: conv_1729094216114
+2024-10-18 12:42:01,596 - controllers.missing_info_controller - DEBUG - missing_info_controller.py:18 - Missing info response: "Hi, I'm happy to help you with your voice offer plan! Before we move forward, could you please tell me what you'd like to name your product? This will help me create a personalized plan for you."
+2024-10-18 12:42:08,400 - controllers.missing_info_controller - INFO - missing_info_controller.py:14 - Received missing info request for conversation ID: conv_1729094216114
+2024-10-18 12:42:08,814 - controllers.missing_info_controller - DEBUG - missing_info_controller.py:18 - Missing info response: "Hey! We're almost there. Can you please tell me what you'd like to name your voice offer product? This will help me finalize your plan."
+2024-10-18 12:58:32,460 - controllers.missing_info_controller - INFO - missing_info_controller.py:14 - Received missing info request for conversation ID: conv_1729235674804
+2024-10-18 12:58:32,892 - controllers.missing_info_controller - DEBUG - missing_info_controller.py:18 - Missing info response: "What's the name of the product you'd like to create an offer for? Could you please provide that so I can better assist you?"
+2024-10-18 12:58:47,488 - controllers.missing_info_controller - INFO - missing_info_controller.py:14 - Received missing info request for conversation ID: conv_1729235674804
+2024-10-18 12:58:47,919 - controllers.missing_info_controller - DEBUG - missing_info_controller.py:18 - Missing info response: "Could you please tell me how much the 'data offer' product costs? We need the offer price or price of the product to move forward."
