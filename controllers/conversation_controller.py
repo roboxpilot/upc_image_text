@@ -1,6 +1,8 @@
 from fastapi import APIRouter, HTTPException, FastAPI
 from markdown_it.rules_inline import image
-
+import threading
+import  time
+from services.notification_service import  notify_image_processing
 from models.conversation_models import ConversationRequest
 from models.response_models import PlanResponse
 from services.conversation_service import handle_conversation, handle_conversation_general
@@ -14,6 +16,19 @@ from logger import setup_logger
 logger = setup_logger(__name__)
 
 router = APIRouter()
+def periodic_notifications(conversationId, stop_event):
+    messages = [
+        "Processing your image...",
+        "This might take a few more seconds...",
+        "Almost there! Thanks for your patience.",
+        "Just a bit longer...",
+        "Finalizing the image processing..."
+    ]
+    message_index = 0
+    while not stop_event.is_set():
+        notify_image_processing(conversationId, messages[message_index])
+        message_index = (message_index + 1) % len(messages)
+        time.sleep(2)  # Wait for 2 seconds before sending the next notification
 
 @router.post("/conversation", response_model=PlanResponse)
 async def conversation_endpoint(request: ConversationRequest):
@@ -40,12 +55,16 @@ async def conversation_endpoint(request: ConversationRequest):
                 print(f"Failed to send notification: {e}")
 
             logger.info("Processing image message")
+            stop_event = threading.Event()
+            notification_thread = threading.Thread(target=periodic_notifications, args=(conversationId, stop_event))
+            notification_thread.start()
             image_processor = ImageProcessor()
             image_data = request.currentMessage.payload.text
 
             extracted_content = image_processor.extract_image_content(image_data)
             logger.debug(f"Extracted content from image: {extracted_content}")
-
+            stop_event.set()
+            notification_thread.join()
             # Replace the image payload with the extracted content
             request.currentMessage.payload.text = extracted_content
             request.currentMessage.messageType = "text"
