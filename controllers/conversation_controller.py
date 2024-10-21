@@ -1,4 +1,6 @@
-from fastapi import APIRouter, HTTPException
+from fastapi import APIRouter, HTTPException, FastAPI
+from markdown_it.rules_inline import image
+
 from models.conversation_models import ConversationRequest
 from models.response_models import PlanResponse
 from services.conversation_service import handle_conversation, handle_conversation_general
@@ -16,12 +18,14 @@ router = APIRouter()
 @router.post("/conversation", response_model=PlanResponse)
 async def conversation_endpoint(request: ConversationRequest):
     logger.info(f"Received conversation request for conversation ID: {request.conversationId}")
+    image_boolean = False
     try:
         # print("Received request", request.dict())
         conversationId = request.sender.phoneNumber
         print("IDDDDDDDDDDD", conversationId)
         # Handle image messages
         if request.currentMessage.messageType == "image":
+            image_boolean = True
             # Notify the external service about the image processing
             notification_url = "http://10.0.13.74:8099/BPE/api/v1/message/notification"
             notification_params = {
@@ -61,20 +65,21 @@ async def conversation_endpoint(request: ConversationRequest):
             logger.info("Conversation is product-related")
             extracted_plan = await handle_conversation(request)
             logger.debug(f"Extracted plan: {extracted_plan}")
-            if all(value is not None and value != "" for key, value in extracted_plan.items() if
-                   key != "product_description"):
-                if check_confirmation(messages):
-                    logger.info("Product creation confirmed")
-                    final_message = "the product has been created successfully "
-                    return PlanResponse(
-                        conversationId=request.conversationId,
-                        currentMessage={
-                            "source": "AI",
-                            "status": "success",
-                            "messageType": "product",
-                            "payload": extracted_plan
-                        }
-                    )
+#             if all(value is not None and value != "" for key, value in extracted_plan.items() if
+# key != "product_description"):
+            if image_boolean:
+                # if check_confirmation(messages):
+                #     logger.info("Product creation confirmed")
+                #     final_message = "the product has been created successfully "
+                #     return PlanResponse(
+                #         conversationId=request.conversationId,
+                #         currentMessage={
+                #             "source": "AI",
+                #             "status": "success",
+                #             "messageType": "product",
+                #             "payload": extracted_plan
+                #         }
+                #     )
 
                 final_message = form_final_message(extracted_plan)
                 logger.info("Sending final confirmation message")
