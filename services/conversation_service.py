@@ -37,7 +37,9 @@ async def handle_conversation(request: ConversationRequest) -> Dict[str, Any]:
         "pop_type": "Normal",
         "price_category": "Base Price",
         "price_mode": "Non-Recurring",
-        "product_specification_type": "ADDON"
+        "product_specification_type": "ADDON",
+        "data_allowance":"",
+        "voice_allowance":""
     }
     logger.debug(f"Extracting plan with schema: {product_schema}")
     extracted_plan = extract_plan(formatted_messages, product_schema)

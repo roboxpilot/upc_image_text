@@ -61,6 +61,8 @@ class Prompts:
       product_offer_price the field means  the price of the product  / cost of the product . anything related to  price extract it in this field 
       special discount price will be Product_offer_price
       keep the default value as it is unless asked to change it 
+      extract the data allowance part like 20 gb , 10 mb etc
+      extract the voice allowance part like 100 minutes ,100 sec  etc
       Expected output: 
       just  json don't  include any text every value should be string
        I JUST WANT ONLY JSON , NO QUOTES BEFORE OR AFTER IT"""

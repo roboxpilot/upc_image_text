@@ -11,6 +11,8 @@ class ProductMessage(BaseModel):
     price_category: Optional[str] = None
     price_mode: Optional[str] = None
     product_specification_type: Optional[str] = None
+    data_allowance: Optional[str] = None
+    voice_allowance: Optional[str] = None
 
 class ProductSchema(BaseModel):
     price: int = Field(0, example=10)
