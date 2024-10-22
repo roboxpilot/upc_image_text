@@ -3510,3 +3510,6 @@ You are an AI assistant tasked with determining whether a given conversation mes
 
 Would you like to update any of these details or proceed as is?
 2024-10-21 15:45:25,901 - controllers.conversation_controller - INFO - conversation_controller.py:85 - Sending final confirmation message
+2024-10-21 19:34:30,403 - services.ai_client_service - INFO - ai_client_service.py:16 - Initializing AI clients
+2024-10-21 19:34:30,416 - services.ai_client_service - INFO - ai_client_service.py:19 - Initialized Groq client
+2024-10-21 19:34:30,427 - services.ai_client_service - INFO - ai_client_service.py:32 - Initialized OpenAI image client

@@ -27,6 +27,8 @@ def handle_greeting(username: str) -> str:
 async def handle_conversation(request: ConversationRequest) -> Dict[str, Any]:
     logger.info(f"Handling conversation for conversation ID: {request.conversationId}")
     all_messages = request.previousMessages + [request.currentMessage]
+    if len(all_messages) > 4:
+        all_messages = all_messages[-4:]
     formatted_messages = format_messages(all_messages)
     product_schema = {
         "product_name": "",

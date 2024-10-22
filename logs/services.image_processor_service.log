@@ -44,3 +44,279 @@ Note: Some values are marked as "N/A" since they are not present in the image.
   "price": "20 OMR"
 }
 ```
+2024-10-21 12:55:00,851 - services.image_processor_service - INFO - image_processor_service.py:10 - Extracting content from image
+2024-10-21 12:56:42,421 - services.image_processor_service - INFO - image_processor_service.py:10 - Extracting content from image
+2024-10-21 12:58:09,681 - services.image_processor_service - INFO - image_processor_service.py:10 - Extracting content from image
+2024-10-21 13:00:10,501 - services.image_processor_service - INFO - image_processor_service.py:10 - Extracting content from image
+2024-10-21 13:01:12,158 - services.image_processor_service - INFO - image_processor_service.py:10 - Extracting content from image
+2024-10-21 13:01:51,493 - services.image_processor_service - DEBUG - image_processor_service.py:12 - Extracted image content: Here’s the extracted content in JSON format based on the provided image:
+
+```json
+{
+  "plan_name": "BOJ",
+  "validity": "Not specified",
+  "units": {
+    "off_net_minutes": 0,
+    "on_net_minutes": 20,
+    "peak_minutes": 10
+  },
+  "duration": "Not specified",
+  "price": 0.60
+}
+``` 
+
+Feel free to adjust any fields as necessary!
+2024-10-21 13:37:06,098 - services.image_processor_service - INFO - image_processor_service.py:10 - Extracting content from image
+2024-10-21 13:37:10,646 - services.image_processor_service - DEBUG - image_processor_service.py:12 - Extracted image content: Based on the content extracted from the image, here is the corresponding JSON representation:
+
+```json
+{
+    "plan_name": "BOJ",
+    "validity": "unknown",
+    "units": {
+        "offnet_minutes": 0,
+        "onnet_minutes": 20,
+        "peak_minutes": 10
+    },
+    "duration": "unknown",
+    "price": "$0.60"
+}
+``` 
+
+Note: Validity and duration are not specified in the image, so they are marked as "unknown."
+2024-10-21 13:43:16,961 - services.image_processor_service - INFO - image_processor_service.py:10 - Extracting content from image
+2024-10-21 13:43:20,880 - services.image_processor_service - DEBUG - image_processor_service.py:12 - Extracted image content: Here is the extracted content in JSON format:
+
+```json
+{
+  "plan_name": "Hayyak 20",
+  "validity": "4 Weeks",
+  "units": {
+    "data_allowance": "34 GB",
+    "flexi_minutes": "650 min"
+  },
+  "duration": "4 Weeks",
+  "price": "20 OMR"
+}
+```
+2024-10-21 13:49:16,795 - services.image_processor_service - INFO - image_processor_service.py:10 - Extracting content from image
+2024-10-21 13:49:19,971 - services.image_processor_service - DEBUG - image_processor_service.py:12 - Extracted image content: Here is the extracted content formatted in JSON:
+
+```json
+{
+  "plan_name": "Hayyak 20",
+  "validity": "4 Weeks",
+  "units": {
+    "data_allowance": "34 GB",
+    "flexi_minutes": "650 min"
+  },
+  "price": "20 OMR"
+}
+```
+2024-10-21 13:52:12,041 - services.image_processor_service - INFO - image_processor_service.py:10 - Extracting content from image
+2024-10-21 13:52:14,976 - services.image_processor_service - DEBUG - image_processor_service.py:12 - Extracted image content: Based on the provided image, here is the extracted content formatted as JSON:
+
+```json
+{
+  "plan_name": "BOJ",
+  "validity": "Not specified",
+  "units": {
+    "OffNet": "0 Min",
+    "OnNet": "20 Min",
+    "Peak": "10 Min"
+  },
+  "duration": "Not specified",
+  "price": "$0.60"
+}
+```
+
+Note: The validity and duration were not specified in the image content.
+2024-10-21 13:53:46,083 - services.image_processor_service - INFO - image_processor_service.py:10 - Extracting content from image
+2024-10-21 13:53:48,813 - services.image_processor_service - DEBUG - image_processor_service.py:12 - Extracted image content: Here’s the extracted content in JSON format:
+
+```json
+{
+  "plan_name": "BOJ",
+  "validity": "",
+  "units": {
+    "off_net": "0 Min",
+    "on_net": "20 Min",
+    "peak": "10 Min"
+  },
+  "duration": "",
+  "price": "$0.60"
+}
+``` 
+
+Note: The validity and duration fields are empty because that information is not provided in the text.
+2024-10-21 13:57:13,197 - services.image_processor_service - INFO - image_processor_service.py:10 - Extracting content from image
+2024-10-21 13:57:16,395 - services.image_processor_service - DEBUG - image_processor_service.py:12 - Extracted image content: Based on the content extracted from the image, here is the JSON representation:
+
+```json
+{
+  "plan_name": "BOJ",
+  "validity": "0 Min OffNet, 20 Min OnNet",
+  "units": {
+    "OffNet": "0 Min",
+    "OnNet": "20 Min"
+  },
+  "duration": "Peak 10 Min",
+  "price": "$0.60"
+}
+```
+2024-10-21 14:00:12,321 - services.image_processor_service - INFO - image_processor_service.py:10 - Extracting content from image
+2024-10-21 14:00:19,040 - services.image_processor_service - DEBUG - image_processor_service.py:12 - Extracted image content: Based on the content of the image, here is the JSON representation:
+
+```json
+{
+  "plan_name": "BOJ OffNet",
+  "validity": "Not specified",
+  "units": {
+    "off_net_minutes": 0,
+    "on_net_minutes": 20,
+    "peak_minutes": 10
+  },
+  "duration": "Not specified",
+  "price": "$0.60"
+}
+``` 
+
+Feel free to modify any of the values as needed!
+2024-10-21 14:01:45,066 - services.image_processor_service - INFO - image_processor_service.py:10 - Extracting content from image
+2024-10-21 14:01:49,357 - services.image_processor_service - DEBUG - image_processor_service.py:12 - Extracted image content: Here's the extracted content from the image formatted in JSON:
+
+```json
+{
+  "plan_name": "BOJ",
+  "validity": "N/A",
+  "units": {
+    "off_net": "0 Min",
+    "on_net": "20 Min",
+    "peak": "10 Min"
+  },
+  "duration": "N/A",
+  "price": "$0.60"
+}
+```
+2024-10-21 14:05:18,592 - services.image_processor_service - INFO - image_processor_service.py:10 - Extracting content from image
+2024-10-21 14:05:22,557 - services.image_processor_service - DEBUG - image_processor_service.py:12 - Extracted image content: Based on the content extracted from the image, here's the JSON representation:
+
+```json
+{
+  "plan_name": "BOJ",
+  "validity": "Not specified",
+  "units": {
+    "off_net_minutes": "0",
+    "on_net_minutes": "20",
+    "peak_minutes": "10"
+  },
+  "duration": "Not specified",
+  "price": "$0.60"
+}
+```
+2024-10-21 14:11:10,965 - services.image_processor_service - INFO - image_processor_service.py:10 - Extracting content from image
+2024-10-21 14:11:14,404 - services.image_processor_service - DEBUG - image_processor_service.py:12 - Extracted image content: Here is the extracted content from the image formatted in JSON:
+
+```json
+{
+  "plan_name": "BOJ OffNet",
+  "validity": null,
+  "units": {
+    "off_net_minutes": 0,
+    "on_net_minutes": 20,
+    "peak_minutes": 10
+  },
+  "duration": null,
+  "price": "$0.60"
+}
+```
+
+Note: The validity and duration fields are marked as null since that information is not provided in the image.
+2024-10-21 14:31:10,548 - services.image_processor_service - INFO - image_processor_service.py:10 - Extracting content from image
+2024-10-21 14:31:15,882 - services.image_processor_service - DEBUG - image_processor_service.py:12 - Extracted image content: Based on the content extracted from the image, here is the JSON representation:
+
+```json
+{
+  "plan_name": "BOJ",
+  "validity": "Not specified",
+  "units": {
+    "off_net": "0 Min",
+    "on_net": "20 Min",
+    "peak": "10 Min"
+  },
+  "duration": "Not specified",
+  "price": "$0.60"
+}
+```
+2024-10-21 15:26:27,852 - services.image_processor_service - INFO - image_processor_service.py:10 - Extracting content from image
+2024-10-21 15:26:33,998 - services.image_processor_service - DEBUG - image_processor_service.py:12 - Extracted image content: Here's the extracted content in JSON format:
+
+```json
+{
+  "plan_name": "Hayyak 20",
+  "validity": "4 Weeks",
+  "units": {
+    "data_allowance": "34 GB",
+    "flexi_minutes": "650 min"
+  },
+  "duration": "4 Weeks",
+  "price": "20 OMR"
+}
+```
+2024-10-21 15:34:36,186 - services.image_processor_service - INFO - image_processor_service.py:10 - Extracting content from image
+2024-10-21 15:34:40,186 - services.image_processor_service - DEBUG - image_processor_service.py:12 - Extracted image content: Here's the extracted content in JSON format:
+
+```json
+{
+  "plan_name": "Hayyak 20",
+  "validity": "4 Weeks",
+  "units": {
+    "data_allowance": "34 GB",
+    "flexi_minutes": "650 min"
+  },
+  "price": "20 OMR"
+}
+```
+2024-10-21 15:37:50,026 - services.image_processor_service - INFO - image_processor_service.py:10 - Extracting content from image
+2024-10-21 15:38:04,730 - services.image_processor_service - DEBUG - image_processor_service.py:12 - Extracted image content: Here is the extracted content in JSON format:
+
+```json
+{
+  "plan_name": "Hayyak 20",
+  "validity": "4 Weeks",
+  "units": {
+    "data_allowance": "34 GB",
+    "flexi_minutes": "650 min"
+  },
+  "price": "20 OMR",
+  "duration": "5% VAT included"
+}
+```
+2024-10-21 15:43:44,027 - services.image_processor_service - INFO - image_processor_service.py:10 - Extracting content from image
+2024-10-21 15:43:49,155 - services.image_processor_service - DEBUG - image_processor_service.py:12 - Extracted image content: Here’s the JSON representation based on the content extracted from the image:
+
+```json
+{
+  "plan_name": "Hayyak 20",
+  "validity": "4 Weeks",
+  "units": {
+    "data_allowance": "34 GB",
+    "flexi_minutes": "650 min"
+  },
+  "price": "20 OMR"
+}
+```
+2024-10-21 15:45:19,346 - services.image_processor_service - INFO - image_processor_service.py:10 - Extracting content from image
+2024-10-21 15:45:23,350 - services.image_processor_service - DEBUG - image_processor_service.py:12 - Extracted image content: Here's the extracted content in JSON format:
+
+```json
+{
+  "plan_name": "Hayyak 20",
+  "validity": "4 Weeks",
+  "units": {
+    "data_allowance": "34 GB",
+    "flexi_minutes": "650 min"
+  },
+  "price": "20 OMR"
+}
+```

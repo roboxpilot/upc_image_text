@@ -426,3 +426,708 @@ Would you like to update any of these details or proceed as is?
 2024-10-18 13:02:14,061 - services.ai_client_service - DEBUG - ai_client_service.py:47 - Groq API response: { "classification": "general_conversation" }
 2024-10-18 13:02:14,062 - services.ai_client_service - INFO - ai_client_service.py:36 - Making API call to groq
 2024-10-18 13:02:14,450 - services.ai_client_service - DEBUG - ai_client_service.py:47 - Groq API response: Hi there! It seems like you're ready to start creating a product. What kind of product are you thinking of?
+2024-10-20 13:23:12,055 - services.ai_client_service - INFO - ai_client_service.py:16 - Initializing AI clients
+2024-10-20 13:23:12,096 - services.ai_client_service - INFO - ai_client_service.py:19 - Initialized Groq client
+2024-10-20 13:23:12,130 - services.ai_client_service - INFO - ai_client_service.py:32 - Initialized OpenAI image client
+2024-10-21 11:08:09,597 - services.ai_client_service - INFO - ai_client_service.py:16 - Initializing AI clients
+2024-10-21 11:08:09,612 - services.ai_client_service - INFO - ai_client_service.py:19 - Initialized Groq client
+2024-10-21 11:08:09,623 - services.ai_client_service - INFO - ai_client_service.py:32 - Initialized OpenAI image client
+2024-10-21 12:55:00,852 - services.ai_client_service - INFO - ai_client_service.py:75 - Making image API call to OpenAI
+2024-10-21 12:55:01,973 - services.ai_client_service - ERROR - ai_client_service.py:92 - Error in OpenAI image API call: Error code: 400 - {'error': {'message': 'Invalid base64 image_url.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_base64'}}
+Traceback (most recent call last):
+  File "/opt/homebrew/anaconda3/envs/upc/lib/python3.11/site-packages/instructor/retry.py", line 192, in retry_sync
+    response = func(*args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/upc/lib/python3.11/site-packages/openai/_utils/_utils.py", line 274, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/upc/lib/python3.11/site-packages/openai/resources/chat/completions.py", line 742, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/upc/lib/python3.11/site-packages/openai/_base_client.py", line 1277, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/upc/lib/python3.11/site-packages/openai/_base_client.py", line 954, in request
+    return self._request(
+           ^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/upc/lib/python3.11/site-packages/openai/_base_client.py", line 1058, in _request
+    raise self._make_status_error_from_response(err.response) from None
+openai.BadRequestError: Error code: 400 - {'error': {'message': 'Invalid base64 image_url.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_base64'}}
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/opt/homebrew/anaconda3/envs/upc/lib/python3.11/site-packages/instructor/retry.py", line 189, in retry_sync
+    for attempt in max_retries:
+  File "/opt/homebrew/anaconda3/envs/upc/lib/python3.11/site-packages/tenacity/__init__.py", line 443, in __iter__
+    do = self.iter(retry_state=retry_state)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/upc/lib/python3.11/site-packages/tenacity/__init__.py", line 376, in iter
+    result = action(retry_state)
+             ^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/upc/lib/python3.11/site-packages/tenacity/__init__.py", line 419, in exc_check
+    raise retry_exc from fut.exception()
+tenacity.RetryError: RetryError[<Future at 0x106602d10 state=finished raised BadRequestError>]
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/sachinpb/PycharmProjects/upc_image_text/services/ai_client_service.py", line 76, in make_image_api_call
+    response = image_client.chat.completions.create(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/upc/lib/python3.11/site-packages/instructor/patch.py", line 291, in new_create_sync
+    response = retry_sync(
+               ^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/upc/lib/python3.11/site-packages/instructor/retry.py", line 227, in retry_sync
+    raise InstructorRetryException(
+instructor.exceptions.InstructorRetryException: Error code: 400 - {'error': {'message': 'Invalid base64 image_url.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_base64'}}
+2024-10-21 12:56:42,421 - services.ai_client_service - INFO - ai_client_service.py:75 - Making image API call to OpenAI
+2024-10-21 12:56:43,445 - services.ai_client_service - ERROR - ai_client_service.py:92 - Error in OpenAI image API call: Error code: 400 - {'error': {'message': 'Invalid base64 image_url.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_base64'}}
+Traceback (most recent call last):
+  File "/opt/homebrew/anaconda3/envs/upc/lib/python3.11/site-packages/instructor/retry.py", line 192, in retry_sync
+    response = func(*args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/upc/lib/python3.11/site-packages/openai/_utils/_utils.py", line 274, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/upc/lib/python3.11/site-packages/openai/resources/chat/completions.py", line 742, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/upc/lib/python3.11/site-packages/openai/_base_client.py", line 1277, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/upc/lib/python3.11/site-packages/openai/_base_client.py", line 954, in request
+    return self._request(
+           ^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/upc/lib/python3.11/site-packages/openai/_base_client.py", line 1058, in _request
+    raise self._make_status_error_from_response(err.response) from None
+openai.BadRequestError: Error code: 400 - {'error': {'message': 'Invalid base64 image_url.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_base64'}}
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/opt/homebrew/anaconda3/envs/upc/lib/python3.11/site-packages/instructor/retry.py", line 189, in retry_sync
+    for attempt in max_retries:
+  File "/opt/homebrew/anaconda3/envs/upc/lib/python3.11/site-packages/tenacity/__init__.py", line 443, in __iter__
+    do = self.iter(retry_state=retry_state)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/upc/lib/python3.11/site-packages/tenacity/__init__.py", line 376, in iter
+    result = action(retry_state)
+             ^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/upc/lib/python3.11/site-packages/tenacity/__init__.py", line 419, in exc_check
+    raise retry_exc from fut.exception()
+tenacity.RetryError: RetryError[<Future at 0x107519690 state=finished raised BadRequestError>]
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/sachinpb/PycharmProjects/upc_image_text/services/ai_client_service.py", line 76, in make_image_api_call
+    response = image_client.chat.completions.create(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/upc/lib/python3.11/site-packages/instructor/patch.py", line 291, in new_create_sync
+    response = retry_sync(
+               ^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/upc/lib/python3.11/site-packages/instructor/retry.py", line 227, in retry_sync
+    raise InstructorRetryException(
+instructor.exceptions.InstructorRetryException: Error code: 400 - {'error': {'message': 'Invalid base64 image_url.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_base64'}}
+2024-10-21 12:58:09,681 - services.ai_client_service - INFO - ai_client_service.py:75 - Making image API call to OpenAI
+2024-10-21 12:58:10,487 - services.ai_client_service - ERROR - ai_client_service.py:92 - Error in OpenAI image API call: Error code: 400 - {'error': {'message': 'Invalid base64 image_url.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_base64'}}
+Traceback (most recent call last):
+  File "/opt/homebrew/anaconda3/envs/upc/lib/python3.11/site-packages/instructor/retry.py", line 192, in retry_sync
+    response = func(*args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/upc/lib/python3.11/site-packages/openai/_utils/_utils.py", line 274, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/upc/lib/python3.11/site-packages/openai/resources/chat/completions.py", line 742, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/upc/lib/python3.11/site-packages/openai/_base_client.py", line 1277, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/upc/lib/python3.11/site-packages/openai/_base_client.py", line 954, in request
+    return self._request(
+           ^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/upc/lib/python3.11/site-packages/openai/_base_client.py", line 1058, in _request
+    raise self._make_status_error_from_response(err.response) from None
+openai.BadRequestError: Error code: 400 - {'error': {'message': 'Invalid base64 image_url.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_base64'}}
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/opt/homebrew/anaconda3/envs/upc/lib/python3.11/site-packages/instructor/retry.py", line 189, in retry_sync
+    for attempt in max_retries:
+  File "/opt/homebrew/anaconda3/envs/upc/lib/python3.11/site-packages/tenacity/__init__.py", line 443, in __iter__
+    do = self.iter(retry_state=retry_state)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/upc/lib/python3.11/site-packages/tenacity/__init__.py", line 376, in iter
+    result = action(retry_state)
+             ^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/upc/lib/python3.11/site-packages/tenacity/__init__.py", line 419, in exc_check
+    raise retry_exc from fut.exception()
+tenacity.RetryError: RetryError[<Future at 0x10752ba10 state=finished raised BadRequestError>]
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/sachinpb/PycharmProjects/upc_image_text/services/ai_client_service.py", line 76, in make_image_api_call
+    response = image_client.chat.completions.create(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/upc/lib/python3.11/site-packages/instructor/patch.py", line 291, in new_create_sync
+    response = retry_sync(
+               ^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/upc/lib/python3.11/site-packages/instructor/retry.py", line 227, in retry_sync
+    raise InstructorRetryException(
+instructor.exceptions.InstructorRetryException: Error code: 400 - {'error': {'message': 'Invalid base64 image_url.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_base64'}}
+2024-10-21 12:59:59,775 - services.ai_client_service - INFO - ai_client_service.py:16 - Initializing AI clients
+2024-10-21 12:59:59,789 - services.ai_client_service - INFO - ai_client_service.py:19 - Initialized Groq client
+2024-10-21 12:59:59,801 - services.ai_client_service - INFO - ai_client_service.py:32 - Initialized OpenAI image client
+2024-10-21 13:00:16,312 - services.ai_client_service - INFO - ai_client_service.py:75 - Making image API call to OpenAI
+2024-10-21 13:01:07,590 - services.ai_client_service - INFO - ai_client_service.py:16 - Initializing AI clients
+2024-10-21 13:01:07,605 - services.ai_client_service - INFO - ai_client_service.py:19 - Initialized Groq client
+2024-10-21 13:01:07,616 - services.ai_client_service - INFO - ai_client_service.py:32 - Initialized OpenAI image client
+2024-10-21 13:01:16,621 - services.ai_client_service - INFO - ai_client_service.py:75 - Making image API call to OpenAI
+2024-10-21 13:01:31,851 - services.ai_client_service - DEBUG - ai_client_service.py:89 - OpenAI image API response: Here’s the extracted content in JSON format based on the provided image:
+
+```json
+{
+  "plan_name": "BOJ",
+  "validity": "Not specified",
+  "units": {
+    "off_net_minutes": 0,
+    "on_net_minutes": 20,
+    "peak_minutes": 10
+  },
+  "duration": "Not specified",
+  "price": 0.60
+}
+``` 
+
+Feel free to adjust any fields as necessary!
+2024-10-21 13:02:30,091 - services.ai_client_service - INFO - ai_client_service.py:36 - Making API call to groq
+2024-10-21 13:02:31,136 - services.ai_client_service - DEBUG - ai_client_service.py:47 - Groq API response: {
+"Classification": "product_related"
+}
+2024-10-21 13:02:34,726 - services.ai_client_service - INFO - ai_client_service.py:36 - Making API call to groq
+2024-10-21 13:02:35,240 - services.ai_client_service - DEBUG - ai_client_service.py:47 - Groq API response: False
+2024-10-21 13:02:35,241 - services.ai_client_service - INFO - ai_client_service.py:36 - Making API call to groq
+2024-10-21 13:02:35,944 - services.ai_client_service - DEBUG - ai_client_service.py:47 - Groq API response: Here are the details of your product with all mandatory default parameters enabled:
+
+• Product Name: BOJ
+• Product Description: None
+• Product Family: GSM
+• Product Group: Prepaid
+• Product Offer Price: 0.60
+• POP Type: Normal
+• Price Category: Base Price
+• Price Mode: Non-Recurring
+• Product Specification Type: ADDON
+
+Would you like to update any of these details or proceed as is?
+2024-10-21 13:36:39,237 - services.ai_client_service - INFO - ai_client_service.py:16 - Initializing AI clients
+2024-10-21 13:36:39,253 - services.ai_client_service - INFO - ai_client_service.py:19 - Initialized Groq client
+2024-10-21 13:36:39,266 - services.ai_client_service - INFO - ai_client_service.py:32 - Initialized OpenAI image client
+2024-10-21 13:37:06,099 - services.ai_client_service - INFO - ai_client_service.py:75 - Making image API call to OpenAI
+2024-10-21 13:37:10,645 - services.ai_client_service - DEBUG - ai_client_service.py:89 - OpenAI image API response: Based on the content extracted from the image, here is the corresponding JSON representation:
+
+```json
+{
+    "plan_name": "BOJ",
+    "validity": "unknown",
+    "units": {
+        "offnet_minutes": 0,
+        "onnet_minutes": 20,
+        "peak_minutes": 10
+    },
+    "duration": "unknown",
+    "price": "$0.60"
+}
+``` 
+
+Note: Validity and duration are not specified in the image, so they are marked as "unknown."
+2024-10-21 13:37:10,648 - services.ai_client_service - INFO - ai_client_service.py:36 - Making API call to groq
+2024-10-21 13:37:11,836 - services.ai_client_service - DEBUG - ai_client_service.py:47 - Groq API response: {
+"classification": "product_related"
+}
+2024-10-21 13:43:16,961 - services.ai_client_service - INFO - ai_client_service.py:75 - Making image API call to OpenAI
+2024-10-21 13:43:20,880 - services.ai_client_service - DEBUG - ai_client_service.py:89 - OpenAI image API response: Here is the extracted content in JSON format:
+
+```json
+{
+  "plan_name": "Hayyak 20",
+  "validity": "4 Weeks",
+  "units": {
+    "data_allowance": "34 GB",
+    "flexi_minutes": "650 min"
+  },
+  "duration": "4 Weeks",
+  "price": "20 OMR"
+}
+```
+2024-10-21 13:43:20,882 - services.ai_client_service - INFO - ai_client_service.py:36 - Making API call to groq
+2024-10-21 13:43:21,789 - services.ai_client_service - DEBUG - ai_client_service.py:47 - Groq API response: {
+"classification": "product_related"
+}
+2024-10-21 13:43:22,915 - services.ai_client_service - INFO - ai_client_service.py:36 - Making API call to groq
+2024-10-21 13:43:23,644 - services.ai_client_service - DEBUG - ai_client_service.py:47 - Groq API response: False
+2024-10-21 13:43:23,645 - services.ai_client_service - INFO - ai_client_service.py:36 - Making API call to groq
+2024-10-21 13:43:24,563 - services.ai_client_service - DEBUG - ai_client_service.py:47 - Groq API response: Here are the details of your product with all mandatory default parameters enabled:
+
+• Product Name: Hayyak 20
+• Product Description: None
+• Product Family: GSM
+• Product Group: Prepaid
+• Product Offer Price: 20
+• POP Type: Normal
+• Price Category: Base Price
+• Price Mode: Non-Recurring
+• Product Specification Type: ADDON
+
+Would you like to update any of these details or proceed as is?
+2024-10-21 13:49:16,796 - services.ai_client_service - INFO - ai_client_service.py:75 - Making image API call to OpenAI
+2024-10-21 13:49:19,970 - services.ai_client_service - DEBUG - ai_client_service.py:89 - OpenAI image API response: Here is the extracted content formatted in JSON:
+
+```json
+{
+  "plan_name": "Hayyak 20",
+  "validity": "4 Weeks",
+  "units": {
+    "data_allowance": "34 GB",
+    "flexi_minutes": "650 min"
+  },
+  "price": "20 OMR"
+}
+```
+2024-10-21 13:49:19,972 - services.ai_client_service - INFO - ai_client_service.py:36 - Making API call to groq
+2024-10-21 13:49:20,703 - services.ai_client_service - DEBUG - ai_client_service.py:47 - Groq API response: {
+"classification": "product_related"
+}
+2024-10-21 13:49:21,834 - services.ai_client_service - INFO - ai_client_service.py:36 - Making API call to groq
+2024-10-21 13:49:22,529 - services.ai_client_service - DEBUG - ai_client_service.py:47 - Groq API response: False
+2024-10-21 13:49:22,530 - services.ai_client_service - INFO - ai_client_service.py:36 - Making API call to groq
+2024-10-21 13:49:23,439 - services.ai_client_service - DEBUG - ai_client_service.py:47 - Groq API response: Here are the details of your product with all mandatory default parameters enabled
+
+• Product Name: Hayyak 20
+• Product Description: null
+• Product Family: GSM
+• Product Group: Prepaid
+• Product Offer Price: 20
+• POP Type: Normal
+• Price Category: Base Price
+• Price Mode: Non-Recurring
+• Product Specification Type: ADDON
+
+Would you like to update any of these details or proceed as is?
+2024-10-21 13:52:12,041 - services.ai_client_service - INFO - ai_client_service.py:75 - Making image API call to OpenAI
+2024-10-21 13:52:14,975 - services.ai_client_service - DEBUG - ai_client_service.py:89 - OpenAI image API response: Based on the provided image, here is the extracted content formatted as JSON:
+
+```json
+{
+  "plan_name": "BOJ",
+  "validity": "Not specified",
+  "units": {
+    "OffNet": "0 Min",
+    "OnNet": "20 Min",
+    "Peak": "10 Min"
+  },
+  "duration": "Not specified",
+  "price": "$0.60"
+}
+```
+
+Note: The validity and duration were not specified in the image content.
+2024-10-21 13:52:14,978 - services.ai_client_service - INFO - ai_client_service.py:36 - Making API call to groq
+2024-10-21 13:52:15,958 - services.ai_client_service - DEBUG - ai_client_service.py:47 - Groq API response: { "classification": "product_related" }
+2024-10-21 13:52:17,127 - services.ai_client_service - INFO - ai_client_service.py:36 - Making API call to groq
+2024-10-21 13:52:17,843 - services.ai_client_service - DEBUG - ai_client_service.py:47 - Groq API response: False
+2024-10-21 13:52:17,844 - services.ai_client_service - INFO - ai_client_service.py:36 - Making API call to groq
+2024-10-21 13:52:18,783 - services.ai_client_service - DEBUG - ai_client_service.py:47 - Groq API response: Here are the details of your product with all mandatory default parameters enabled:
+
+• Product Name: BOJ
+• Product Description: null
+• Product Family: GSM
+• Product Group: Prepaid
+• Product Offer Price: 0.60
+• POP Type: Normal
+• Price Category: Base Price
+• Price Mode: Non-Recurring
+• Product Specification Type: ADDON
+
+Would you like to update any of these details or proceed as is?
+2024-10-21 13:53:46,083 - services.ai_client_service - INFO - ai_client_service.py:75 - Making image API call to OpenAI
+2024-10-21 13:53:48,813 - services.ai_client_service - DEBUG - ai_client_service.py:89 - OpenAI image API response: Here’s the extracted content in JSON format:
+
+```json
+{
+  "plan_name": "BOJ",
+  "validity": "",
+  "units": {
+    "off_net": "0 Min",
+    "on_net": "20 Min",
+    "peak": "10 Min"
+  },
+  "duration": "",
+  "price": "$0.60"
+}
+``` 
+
+Note: The validity and duration fields are empty because that information is not provided in the text.
+2024-10-21 13:53:48,814 - services.ai_client_service - INFO - ai_client_service.py:36 - Making API call to groq
+2024-10-21 13:53:49,550 - services.ai_client_service - DEBUG - ai_client_service.py:47 - Groq API response: {
+"classification": "product_related"
+}
+2024-10-21 13:57:13,198 - services.ai_client_service - INFO - ai_client_service.py:75 - Making image API call to OpenAI
+2024-10-21 13:57:16,394 - services.ai_client_service - DEBUG - ai_client_service.py:89 - OpenAI image API response: Based on the content extracted from the image, here is the JSON representation:
+
+```json
+{
+  "plan_name": "BOJ",
+  "validity": "0 Min OffNet, 20 Min OnNet",
+  "units": {
+    "OffNet": "0 Min",
+    "OnNet": "20 Min"
+  },
+  "duration": "Peak 10 Min",
+  "price": "$0.60"
+}
+```
+2024-10-21 13:57:16,396 - services.ai_client_service - INFO - ai_client_service.py:36 - Making API call to groq
+2024-10-21 13:57:17,229 - services.ai_client_service - DEBUG - ai_client_service.py:47 - Groq API response: {
+"classification": "product_related"
+}
+2024-10-21 13:57:18,389 - services.ai_client_service - INFO - ai_client_service.py:36 - Making API call to groq
+2024-10-21 13:57:19,101 - services.ai_client_service - DEBUG - ai_client_service.py:47 - Groq API response: False
+2024-10-21 13:57:19,102 - services.ai_client_service - INFO - ai_client_service.py:36 - Making API call to groq
+2024-10-21 13:57:20,025 - services.ai_client_service - DEBUG - ai_client_service.py:47 - Groq API response: Here are the details of your product with all mandatory default parameters enabled:
+
+• Product Name: BOJ
+• Product Description: None
+• Product Family: GSM
+• Product Group: Prepaid
+• Product Offer Price: 0.60
+• Pop Type: Normal
+• Price Category: Base Price
+• Price Mode: Non-Recurring
+• Product Specification Type: ADDON
+
+Would you like to update any of these details or proceed as is?
+2024-10-21 14:00:12,322 - services.ai_client_service - INFO - ai_client_service.py:75 - Making image API call to OpenAI
+2024-10-21 14:00:19,039 - services.ai_client_service - DEBUG - ai_client_service.py:89 - OpenAI image API response: Based on the content of the image, here is the JSON representation:
+
+```json
+{
+  "plan_name": "BOJ OffNet",
+  "validity": "Not specified",
+  "units": {
+    "off_net_minutes": 0,
+    "on_net_minutes": 20,
+    "peak_minutes": 10
+  },
+  "duration": "Not specified",
+  "price": "$0.60"
+}
+``` 
+
+Feel free to modify any of the values as needed!
+2024-10-21 14:00:19,041 - services.ai_client_service - INFO - ai_client_service.py:36 - Making API call to groq
+2024-10-21 14:00:19,754 - services.ai_client_service - DEBUG - ai_client_service.py:47 - Groq API response: { "classification": "product_related" }
+2024-10-21 14:00:20,987 - services.ai_client_service - INFO - ai_client_service.py:36 - Making API call to groq
+2024-10-21 14:00:21,596 - services.ai_client_service - DEBUG - ai_client_service.py:47 - Groq API response: False
+2024-10-21 14:00:21,597 - services.ai_client_service - INFO - ai_client_service.py:36 - Making API call to groq
+2024-10-21 14:00:22,621 - services.ai_client_service - DEBUG - ai_client_service.py:47 - Groq API response: Here are the details of your product with all mandatory default parameters enabled:
+
+• Product Name: BOJ OffNet
+• Product Description: No description provided
+• Product Family: GSM
+• Product Group: Prepaid
+• Product Offer Price: 0.60
+• POP Type: Normal
+• Price Category: Base Price
+• Price Mode: Non-Recurring
+• Product Specification Type: ADDON
+
+Would you like to update any of these details or proceed as is?
+2024-10-21 14:01:45,067 - services.ai_client_service - INFO - ai_client_service.py:75 - Making image API call to OpenAI
+2024-10-21 14:01:49,356 - services.ai_client_service - DEBUG - ai_client_service.py:89 - OpenAI image API response: Here's the extracted content from the image formatted in JSON:
+
+```json
+{
+  "plan_name": "BOJ",
+  "validity": "N/A",
+  "units": {
+    "off_net": "0 Min",
+    "on_net": "20 Min",
+    "peak": "10 Min"
+  },
+  "duration": "N/A",
+  "price": "$0.60"
+}
+```
+2024-10-21 14:01:49,358 - services.ai_client_service - INFO - ai_client_service.py:36 - Making API call to groq
+2024-10-21 14:01:50,100 - services.ai_client_service - DEBUG - ai_client_service.py:47 - Groq API response: {
+"classification": "product_related"
+}
+2024-10-21 14:01:51,213 - services.ai_client_service - INFO - ai_client_service.py:36 - Making API call to groq
+2024-10-21 14:01:51,812 - services.ai_client_service - DEBUG - ai_client_service.py:47 - Groq API response: False
+2024-10-21 14:01:51,813 - services.ai_client_service - INFO - ai_client_service.py:36 - Making API call to groq
+2024-10-21 14:01:52,733 - services.ai_client_service - DEBUG - ai_client_service.py:47 - Groq API response: Here are the details of your product with all mandatory default parameters enabled:
+
+• Product Name: BOJ
+• Product Description: None
+• Product Family: GSM
+• Product Group: Prepaid
+• Product Offer Price: 0.60
+• Pop Type: Normal
+• Price Category: Base Price
+• Price Mode: Non-Recurring
+• Product Specification Type: ADDON
+
+Would you like to update any of these details or proceed as is?
+2024-10-21 14:05:18,593 - services.ai_client_service - INFO - ai_client_service.py:75 - Making image API call to OpenAI
+2024-10-21 14:05:22,556 - services.ai_client_service - DEBUG - ai_client_service.py:89 - OpenAI image API response: Based on the content extracted from the image, here's the JSON representation:
+
+```json
+{
+  "plan_name": "BOJ",
+  "validity": "Not specified",
+  "units": {
+    "off_net_minutes": "0",
+    "on_net_minutes": "20",
+    "peak_minutes": "10"
+  },
+  "duration": "Not specified",
+  "price": "$0.60"
+}
+```
+2024-10-21 14:05:22,558 - services.ai_client_service - INFO - ai_client_service.py:36 - Making API call to groq
+2024-10-21 14:05:23,476 - services.ai_client_service - DEBUG - ai_client_service.py:47 - Groq API response: {
+"classification": "product_related"
+}
+2024-10-21 14:11:10,966 - services.ai_client_service - INFO - ai_client_service.py:75 - Making image API call to OpenAI
+2024-10-21 14:11:14,404 - services.ai_client_service - DEBUG - ai_client_service.py:89 - OpenAI image API response: Here is the extracted content from the image formatted in JSON:
+
+```json
+{
+  "plan_name": "BOJ OffNet",
+  "validity": null,
+  "units": {
+    "off_net_minutes": 0,
+    "on_net_minutes": 20,
+    "peak_minutes": 10
+  },
+  "duration": null,
+  "price": "$0.60"
+}
+```
+
+Note: The validity and duration fields are marked as null since that information is not provided in the image.
+2024-10-21 14:11:14,406 - services.ai_client_service - INFO - ai_client_service.py:36 - Making API call to groq
+2024-10-21 14:11:15,243 - services.ai_client_service - DEBUG - ai_client_service.py:47 - Groq API response: {
+"classification": "product_related"
+}
+2024-10-21 14:11:16,556 - services.ai_client_service - INFO - ai_client_service.py:36 - Making API call to groq
+2024-10-21 14:11:17,125 - services.ai_client_service - DEBUG - ai_client_service.py:47 - Groq API response: False
+2024-10-21 14:11:17,126 - services.ai_client_service - INFO - ai_client_service.py:36 - Making API call to groq
+2024-10-21 14:11:18,089 - services.ai_client_service - DEBUG - ai_client_service.py:47 - Groq API response: Here are the details of your product with all mandatory default parameters enabled:
+
+• Product Name: BOJ OffNet
+• Product Description: None
+• Product Family: GSM
+• Product Group: Prepaid
+• Product Offer Price: 0.60
+• Pop Type: Normal
+• Price Category: Base Price
+• Price Mode: Non-Recurring
+• Product Specification Type: ADDON
+
+Would you like to update any of these details or proceed as is?
+2024-10-21 14:30:49,974 - services.ai_client_service - INFO - ai_client_service.py:16 - Initializing AI clients
+2024-10-21 14:30:49,988 - services.ai_client_service - INFO - ai_client_service.py:19 - Initialized Groq client
+2024-10-21 14:30:50,000 - services.ai_client_service - INFO - ai_client_service.py:32 - Initialized OpenAI image client
+2024-10-21 14:31:10,550 - services.ai_client_service - INFO - ai_client_service.py:75 - Making image API call to OpenAI
+2024-10-21 14:31:15,881 - services.ai_client_service - DEBUG - ai_client_service.py:89 - OpenAI image API response: Based on the content extracted from the image, here is the JSON representation:
+
+```json
+{
+  "plan_name": "BOJ",
+  "validity": "Not specified",
+  "units": {
+    "off_net": "0 Min",
+    "on_net": "20 Min",
+    "peak": "10 Min"
+  },
+  "duration": "Not specified",
+  "price": "$0.60"
+}
+```
+2024-10-21 14:31:15,883 - services.ai_client_service - INFO - ai_client_service.py:36 - Making API call to groq
+2024-10-21 14:31:17,104 - services.ai_client_service - DEBUG - ai_client_service.py:47 - Groq API response: {
+"classification": "product_related"
+}
+2024-10-21 14:31:18,350 - services.ai_client_service - INFO - ai_client_service.py:36 - Making API call to groq
+2024-10-21 14:31:19,147 - services.ai_client_service - DEBUG - ai_client_service.py:47 - Groq API response: Here are the details of your product with all mandatory default parameters enabled:
+
+• Product Name: null
+• Product Description: null
+• Product Family: GSM
+• Product Group: Prepaid
+• Product Offer Price: 0.60
+• Pop Type: Normal
+• Price Category: Base Price
+• Price Mode: Non-Recurring
+• Product Specification Type: ADDON
+
+Would you like to update any of these details or proceed as is?
+2024-10-21 14:34:08,074 - services.ai_client_service - INFO - ai_client_service.py:36 - Making API call to groq
+2024-10-21 14:34:08,819 - services.ai_client_service - DEBUG - ai_client_service.py:47 - Groq API response: {
+  "classification": "product_related"
+}
+2024-10-21 15:26:27,852 - services.ai_client_service - INFO - ai_client_service.py:75 - Making image API call to OpenAI
+2024-10-21 15:26:33,998 - services.ai_client_service - DEBUG - ai_client_service.py:89 - OpenAI image API response: Here's the extracted content in JSON format:
+
+```json
+{
+  "plan_name": "Hayyak 20",
+  "validity": "4 Weeks",
+  "units": {
+    "data_allowance": "34 GB",
+    "flexi_minutes": "650 min"
+  },
+  "duration": "4 Weeks",
+  "price": "20 OMR"
+}
+```
+2024-10-21 15:26:34,000 - services.ai_client_service - INFO - ai_client_service.py:36 - Making API call to groq
+2024-10-21 15:26:34,712 - services.ai_client_service - DEBUG - ai_client_service.py:47 - Groq API response: {
+"classification": "product_related"
+}
+2024-10-21 15:26:35,738 - services.ai_client_service - INFO - ai_client_service.py:36 - Making API call to groq
+2024-10-21 15:26:36,450 - services.ai_client_service - DEBUG - ai_client_service.py:47 - Groq API response: Here are the details of your product with all mandatory default parameters enabled:
+
+* Product Name: Hayyak 20
+* Product Description: 
+* Product Family: GSM
+* Product Group: Prepaid
+* Product Offer Price: 20
+* Pop Type: Normal
+* Price Category: Base Price
+* Price Mode: Non-Recurring
+* Product Specification Type: ADDON
+
+Would you like to update any of these details or proceed as is?
+2024-10-21 15:34:10,679 - services.ai_client_service - INFO - ai_client_service.py:16 - Initializing AI clients
+2024-10-21 15:34:10,694 - services.ai_client_service - INFO - ai_client_service.py:19 - Initialized Groq client
+2024-10-21 15:34:10,705 - services.ai_client_service - INFO - ai_client_service.py:32 - Initialized OpenAI image client
+2024-10-21 15:34:36,186 - services.ai_client_service - INFO - ai_client_service.py:75 - Making image API call to OpenAI
+2024-10-21 15:34:40,185 - services.ai_client_service - DEBUG - ai_client_service.py:89 - OpenAI image API response: Here's the extracted content in JSON format:
+
+```json
+{
+  "plan_name": "Hayyak 20",
+  "validity": "4 Weeks",
+  "units": {
+    "data_allowance": "34 GB",
+    "flexi_minutes": "650 min"
+  },
+  "price": "20 OMR"
+}
+```
+2024-10-21 15:34:40,188 - services.ai_client_service - INFO - ai_client_service.py:36 - Making API call to groq
+2024-10-21 15:34:40,903 - services.ai_client_service - DEBUG - ai_client_service.py:47 - Groq API response: {
+  "classification": "product_related"
+}
+2024-10-21 15:34:41,823 - services.ai_client_service - INFO - ai_client_service.py:36 - Making API call to groq
+2024-10-21 15:34:42,532 - services.ai_client_service - DEBUG - ai_client_service.py:47 - Groq API response: Here are the details of your product with all mandatory default parameters enabled:
+
+• Product Name: Hayyak 20
+• Product Description: 
+• Product Family: GSM
+• Product Group: Prepaid
+• Product Offer Price: 20
+• Pop Type: Normal
+• Price Category: Base Price
+• Price Mode: Non-Recurring
+• Product Specification Type: ADDON
+
+Would you like to update any of these details or proceed as is?
+2024-10-21 15:36:44,864 - services.ai_client_service - INFO - ai_client_service.py:16 - Initializing AI clients
+2024-10-21 15:36:44,879 - services.ai_client_service - INFO - ai_client_service.py:19 - Initialized Groq client
+2024-10-21 15:36:44,890 - services.ai_client_service - INFO - ai_client_service.py:32 - Initialized OpenAI image client
+2024-10-21 15:37:59,018 - services.ai_client_service - INFO - ai_client_service.py:75 - Making image API call to OpenAI
+2024-10-21 15:38:03,146 - services.ai_client_service - DEBUG - ai_client_service.py:89 - OpenAI image API response: Here is the extracted content in JSON format:
+
+```json
+{
+  "plan_name": "Hayyak 20",
+  "validity": "4 Weeks",
+  "units": {
+    "data_allowance": "34 GB",
+    "flexi_minutes": "650 min"
+  },
+  "price": "20 OMR",
+  "duration": "5% VAT included"
+}
+```
+2024-10-21 15:38:28,077 - services.ai_client_service - INFO - ai_client_service.py:36 - Making API call to groq
+2024-10-21 15:38:28,842 - services.ai_client_service - DEBUG - ai_client_service.py:47 - Groq API response: {
+"classification": "product_related"
+}
+2024-10-21 15:43:20,801 - services.ai_client_service - INFO - ai_client_service.py:16 - Initializing AI clients
+2024-10-21 15:43:20,816 - services.ai_client_service - INFO - ai_client_service.py:19 - Initialized Groq client
+2024-10-21 15:43:20,827 - services.ai_client_service - INFO - ai_client_service.py:32 - Initialized OpenAI image client
+2024-10-21 15:43:44,028 - services.ai_client_service - INFO - ai_client_service.py:75 - Making image API call to OpenAI
+2024-10-21 15:43:49,154 - services.ai_client_service - DEBUG - ai_client_service.py:89 - OpenAI image API response: Here’s the JSON representation based on the content extracted from the image:
+
+```json
+{
+  "plan_name": "Hayyak 20",
+  "validity": "4 Weeks",
+  "units": {
+    "data_allowance": "34 GB",
+    "flexi_minutes": "650 min"
+  },
+  "price": "20 OMR"
+}
+```
+2024-10-21 15:43:49,156 - services.ai_client_service - INFO - ai_client_service.py:36 - Making API call to groq
+2024-10-21 15:43:49,870 - services.ai_client_service - DEBUG - ai_client_service.py:47 - Groq API response: {
+"classification": "product_related"
+}
+2024-10-21 15:45:08,640 - services.ai_client_service - INFO - ai_client_service.py:16 - Initializing AI clients
+2024-10-21 15:45:08,655 - services.ai_client_service - INFO - ai_client_service.py:19 - Initialized Groq client
+2024-10-21 15:45:08,666 - services.ai_client_service - INFO - ai_client_service.py:32 - Initialized OpenAI image client
+2024-10-21 15:45:19,346 - services.ai_client_service - INFO - ai_client_service.py:75 - Making image API call to OpenAI
+2024-10-21 15:45:23,349 - services.ai_client_service - DEBUG - ai_client_service.py:89 - OpenAI image API response: Here's the extracted content in JSON format:
+
+```json
+{
+  "plan_name": "Hayyak 20",
+  "validity": "4 Weeks",
+  "units": {
+    "data_allowance": "34 GB",
+    "flexi_minutes": "650 min"
+  },
+  "price": "20 OMR"
+}
+```
+2024-10-21 15:45:23,352 - services.ai_client_service - INFO - ai_client_service.py:36 - Making API call to groq
+2024-10-21 15:45:24,062 - services.ai_client_service - DEBUG - ai_client_service.py:47 - Groq API response: {"classification": "product_related"}
+2024-10-21 15:45:25,093 - services.ai_client_service - INFO - ai_client_service.py:36 - Making API call to groq
+2024-10-21 15:45:25,900 - services.ai_client_service - DEBUG - ai_client_service.py:47 - Groq API response: Here are the details of your product with all mandatory default parameters enabled:
+
+• Product Name: Hayyak 20
+• Product Description: None
+• Product Family: GSM
+• Product Group: Prepaid
+• Product Offer Price: 20
+• Pop Type: Normal
+• Price Category: Base Price
+• Price Mode: Non-Recurring
+• Product Specification Type: ADDON
+• Data Allowance: 34 GB
+• Voice Allowance: 650 min
+
+Would you like to update any of these details or proceed as is?
+2024-10-21 19:34:30,403 - services.ai_client_service - INFO - ai_client_service.py:16 - Initializing AI clients
+2024-10-21 19:34:30,416 - services.ai_client_service - INFO - ai_client_service.py:19 - Initialized Groq client
+2024-10-21 19:34:30,427 - services.ai_client_service - INFO - ai_client_service.py:32 - Initialized OpenAI image client

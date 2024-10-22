@@ -948,3 +948,682 @@ Note: Some values are marked as "N/A" since they are not present in the image.
 ]
 2024-10-18 13:02:14,062 - controllers.conversation_controller - INFO - conversation_controller.py:106 - Handling general conversation
 2024-10-18 13:02:14,451 - controllers.conversation_controller - DEBUG - conversation_controller.py:108 - General conversation response: Hi there! It seems like you're ready to start creating a product. What kind of product are you thinking of?
+2024-10-21 12:54:41,519 - controllers.conversation_controller - INFO - conversation_controller.py:18 - Received conversation request for conversation ID: conv-12345
+2024-10-21 12:55:00,851 - controllers.conversation_controller - INFO - conversation_controller.py:38 - Processing image message
+2024-10-21 12:55:01,981 - controllers.conversation_controller - ERROR - conversation_controller.py:120 - Error in conversation_endpoint: 500: Error in Groq API call: Error code: 400 - {'error': {'message': 'Invalid base64 image_url.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_base64'}}
+Traceback (most recent call last):
+  File "/opt/homebrew/anaconda3/envs/upc/lib/python3.11/site-packages/instructor/retry.py", line 192, in retry_sync
+    response = func(*args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/upc/lib/python3.11/site-packages/openai/_utils/_utils.py", line 274, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/upc/lib/python3.11/site-packages/openai/resources/chat/completions.py", line 742, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/upc/lib/python3.11/site-packages/openai/_base_client.py", line 1277, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/upc/lib/python3.11/site-packages/openai/_base_client.py", line 954, in request
+    return self._request(
+           ^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/upc/lib/python3.11/site-packages/openai/_base_client.py", line 1058, in _request
+    raise self._make_status_error_from_response(err.response) from None
+openai.BadRequestError: Error code: 400 - {'error': {'message': 'Invalid base64 image_url.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_base64'}}
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/opt/homebrew/anaconda3/envs/upc/lib/python3.11/site-packages/instructor/retry.py", line 189, in retry_sync
+    for attempt in max_retries:
+  File "/opt/homebrew/anaconda3/envs/upc/lib/python3.11/site-packages/tenacity/__init__.py", line 443, in __iter__
+    do = self.iter(retry_state=retry_state)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/upc/lib/python3.11/site-packages/tenacity/__init__.py", line 376, in iter
+    result = action(retry_state)
+             ^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/upc/lib/python3.11/site-packages/tenacity/__init__.py", line 419, in exc_check
+    raise retry_exc from fut.exception()
+tenacity.RetryError: RetryError[<Future at 0x106602d10 state=finished raised BadRequestError>]
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/sachinpb/PycharmProjects/upc_image_text/services/ai_client_service.py", line 76, in make_image_api_call
+    response = image_client.chat.completions.create(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/upc/lib/python3.11/site-packages/instructor/patch.py", line 291, in new_create_sync
+    response = retry_sync(
+               ^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/upc/lib/python3.11/site-packages/instructor/retry.py", line 227, in retry_sync
+    raise InstructorRetryException(
+instructor.exceptions.InstructorRetryException: Error code: 400 - {'error': {'message': 'Invalid base64 image_url.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_base64'}}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/sachinpb/PycharmProjects/upc_image_text/controllers/conversation_controller.py", line 42, in conversation_endpoint
+    extracted_content = image_processor.extract_image_content(image_data)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sachinpb/PycharmProjects/upc_image_text/services/image_processor_service.py", line 11, in extract_image_content
+    content = make_image_api_call(Prompts.IMAGE_PRODUCT_EXTRACTION, image_data)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sachinpb/PycharmProjects/upc_image_text/services/ai_client_service.py", line 93, in make_image_api_call
+    raise APICallError(Config.SELECTED_MODEL.value, str(e))
+exceptions.APICallError: 500: Error in Groq API call: Error code: 400 - {'error': {'message': 'Invalid base64 image_url.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_base64'}}
+2024-10-21 12:56:35,253 - controllers.conversation_controller - INFO - conversation_controller.py:18 - Received conversation request for conversation ID: conv-12345
+2024-10-21 12:56:42,420 - controllers.conversation_controller - INFO - conversation_controller.py:38 - Processing image message
+2024-10-21 12:56:43,447 - controllers.conversation_controller - ERROR - conversation_controller.py:120 - Error in conversation_endpoint: 500: Error in Groq API call: Error code: 400 - {'error': {'message': 'Invalid base64 image_url.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_base64'}}
+Traceback (most recent call last):
+  File "/opt/homebrew/anaconda3/envs/upc/lib/python3.11/site-packages/instructor/retry.py", line 192, in retry_sync
+    response = func(*args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/upc/lib/python3.11/site-packages/openai/_utils/_utils.py", line 274, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/upc/lib/python3.11/site-packages/openai/resources/chat/completions.py", line 742, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/upc/lib/python3.11/site-packages/openai/_base_client.py", line 1277, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/upc/lib/python3.11/site-packages/openai/_base_client.py", line 954, in request
+    return self._request(
+           ^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/upc/lib/python3.11/site-packages/openai/_base_client.py", line 1058, in _request
+    raise self._make_status_error_from_response(err.response) from None
+openai.BadRequestError: Error code: 400 - {'error': {'message': 'Invalid base64 image_url.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_base64'}}
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/opt/homebrew/anaconda3/envs/upc/lib/python3.11/site-packages/instructor/retry.py", line 189, in retry_sync
+    for attempt in max_retries:
+  File "/opt/homebrew/anaconda3/envs/upc/lib/python3.11/site-packages/tenacity/__init__.py", line 443, in __iter__
+    do = self.iter(retry_state=retry_state)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/upc/lib/python3.11/site-packages/tenacity/__init__.py", line 376, in iter
+    result = action(retry_state)
+             ^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/upc/lib/python3.11/site-packages/tenacity/__init__.py", line 419, in exc_check
+    raise retry_exc from fut.exception()
+tenacity.RetryError: RetryError[<Future at 0x107519690 state=finished raised BadRequestError>]
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/sachinpb/PycharmProjects/upc_image_text/services/ai_client_service.py", line 76, in make_image_api_call
+    response = image_client.chat.completions.create(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/upc/lib/python3.11/site-packages/instructor/patch.py", line 291, in new_create_sync
+    response = retry_sync(
+               ^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/upc/lib/python3.11/site-packages/instructor/retry.py", line 227, in retry_sync
+    raise InstructorRetryException(
+instructor.exceptions.InstructorRetryException: Error code: 400 - {'error': {'message': 'Invalid base64 image_url.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_base64'}}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/sachinpb/PycharmProjects/upc_image_text/controllers/conversation_controller.py", line 42, in conversation_endpoint
+    extracted_content = image_processor.extract_image_content(image_data)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sachinpb/PycharmProjects/upc_image_text/services/image_processor_service.py", line 11, in extract_image_content
+    content = make_image_api_call(Prompts.IMAGE_PRODUCT_EXTRACTION, image_data)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sachinpb/PycharmProjects/upc_image_text/services/ai_client_service.py", line 93, in make_image_api_call
+    raise APICallError(Config.SELECTED_MODEL.value, str(e))
+exceptions.APICallError: 500: Error in Groq API call: Error code: 400 - {'error': {'message': 'Invalid base64 image_url.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_base64'}}
+2024-10-21 12:58:08,541 - controllers.conversation_controller - INFO - conversation_controller.py:18 - Received conversation request for conversation ID: conv-12345
+2024-10-21 12:58:09,680 - controllers.conversation_controller - INFO - conversation_controller.py:38 - Processing image message
+2024-10-21 12:58:10,489 - controllers.conversation_controller - ERROR - conversation_controller.py:120 - Error in conversation_endpoint: 500: Error in Groq API call: Error code: 400 - {'error': {'message': 'Invalid base64 image_url.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_base64'}}
+Traceback (most recent call last):
+  File "/opt/homebrew/anaconda3/envs/upc/lib/python3.11/site-packages/instructor/retry.py", line 192, in retry_sync
+    response = func(*args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/upc/lib/python3.11/site-packages/openai/_utils/_utils.py", line 274, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/upc/lib/python3.11/site-packages/openai/resources/chat/completions.py", line 742, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/upc/lib/python3.11/site-packages/openai/_base_client.py", line 1277, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/upc/lib/python3.11/site-packages/openai/_base_client.py", line 954, in request
+    return self._request(
+           ^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/upc/lib/python3.11/site-packages/openai/_base_client.py", line 1058, in _request
+    raise self._make_status_error_from_response(err.response) from None
+openai.BadRequestError: Error code: 400 - {'error': {'message': 'Invalid base64 image_url.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_base64'}}
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/opt/homebrew/anaconda3/envs/upc/lib/python3.11/site-packages/instructor/retry.py", line 189, in retry_sync
+    for attempt in max_retries:
+  File "/opt/homebrew/anaconda3/envs/upc/lib/python3.11/site-packages/tenacity/__init__.py", line 443, in __iter__
+    do = self.iter(retry_state=retry_state)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/upc/lib/python3.11/site-packages/tenacity/__init__.py", line 376, in iter
+    result = action(retry_state)
+             ^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/upc/lib/python3.11/site-packages/tenacity/__init__.py", line 419, in exc_check
+    raise retry_exc from fut.exception()
+tenacity.RetryError: RetryError[<Future at 0x10752ba10 state=finished raised BadRequestError>]
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/sachinpb/PycharmProjects/upc_image_text/services/ai_client_service.py", line 76, in make_image_api_call
+    response = image_client.chat.completions.create(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/upc/lib/python3.11/site-packages/instructor/patch.py", line 291, in new_create_sync
+    response = retry_sync(
+               ^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/upc/lib/python3.11/site-packages/instructor/retry.py", line 227, in retry_sync
+    raise InstructorRetryException(
+instructor.exceptions.InstructorRetryException: Error code: 400 - {'error': {'message': 'Invalid base64 image_url.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_base64'}}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/sachinpb/PycharmProjects/upc_image_text/controllers/conversation_controller.py", line 42, in conversation_endpoint
+    extracted_content = image_processor.extract_image_content(image_data)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sachinpb/PycharmProjects/upc_image_text/services/image_processor_service.py", line 11, in extract_image_content
+    content = make_image_api_call(Prompts.IMAGE_PRODUCT_EXTRACTION, image_data)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sachinpb/PycharmProjects/upc_image_text/services/ai_client_service.py", line 93, in make_image_api_call
+    raise APICallError(Config.SELECTED_MODEL.value, str(e))
+exceptions.APICallError: 500: Error in Groq API call: Error code: 400 - {'error': {'message': 'Invalid base64 image_url.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_base64'}}
+2024-10-21 13:00:09,541 - controllers.conversation_controller - INFO - conversation_controller.py:18 - Received conversation request for conversation ID: conv-12345
+2024-10-21 13:00:10,500 - controllers.conversation_controller - INFO - conversation_controller.py:38 - Processing image message
+2024-10-21 13:01:11,523 - controllers.conversation_controller - INFO - conversation_controller.py:18 - Received conversation request for conversation ID: conv-12345
+2024-10-21 13:01:12,157 - controllers.conversation_controller - INFO - conversation_controller.py:38 - Processing image message
+2024-10-21 13:01:55,551 - controllers.conversation_controller - DEBUG - conversation_controller.py:43 - Extracted content from image: Here’s the extracted content in JSON format based on the provided image:
+
+```json
+{
+  "plan_name": "BOJ",
+  "validity": "Not specified",
+  "units": {
+    "off_net_minutes": 0,
+    "on_net_minutes": 20,
+    "peak_minutes": 10
+  },
+  "duration": "Not specified",
+  "price": 0.60
+}
+``` 
+
+Feel free to adjust any fields as necessary!
+2024-10-21 13:02:29,529 - controllers.conversation_controller - DEBUG - conversation_controller.py:58 - Formatted messages: [
+  {
+    "role": "user",
+    "content": "Here\u2019s the extracted content in JSON format based on the provided image:\n\n```json\n{\n  \"plan_name\": \"BOJ\",\n  \"validity\": \"Not specified\",\n  \"units\": {\n    \"off_net_minutes\": 0,\n    \"on_net_minutes\": 20,\n    \"peak_minutes\": 10\n  },\n  \"duration\": \"Not specified\",\n  \"price\": 0.60\n}\n``` \n\nFeel free to adjust any fields as necessary!"
+  }
+]
+2024-10-21 13:02:31,996 - controllers.conversation_controller - INFO - conversation_controller.py:61 - Conversation is product-related
+2024-10-21 13:02:34,726 - controllers.conversation_controller - DEBUG - conversation_controller.py:63 - Extracted plan: {'product_name': 'BOJ', 'product_description': None, 'product_family': 'GSM', 'product_group': 'Prepaid', 'product_offer_price': '0.60', 'pop_type': 'Normal', 'price_category': 'Base Price', 'price_mode': 'Non-Recurring', 'product_specification_type': 'ADDON'}
+2024-10-21 13:02:35,945 - controllers.conversation_controller - INFO - conversation_controller.py:80 - Sending final confirmation message
+2024-10-21 13:37:05,574 - controllers.conversation_controller - INFO - conversation_controller.py:18 - Received conversation request for conversation ID: conv-12345
+2024-10-21 13:37:06,098 - controllers.conversation_controller - INFO - conversation_controller.py:38 - Processing image message
+2024-10-21 13:37:10,646 - controllers.conversation_controller - DEBUG - conversation_controller.py:43 - Extracted content from image: Based on the content extracted from the image, here is the corresponding JSON representation:
+
+```json
+{
+    "plan_name": "BOJ",
+    "validity": "unknown",
+    "units": {
+        "offnet_minutes": 0,
+        "onnet_minutes": 20,
+        "peak_minutes": 10
+    },
+    "duration": "unknown",
+    "price": "$0.60"
+}
+``` 
+
+Note: Validity and duration are not specified in the image, so they are marked as "unknown."
+2024-10-21 13:37:10,647 - controllers.conversation_controller - DEBUG - conversation_controller.py:58 - Formatted messages: [
+  {
+    "role": "user",
+    "content": "Based on the content extracted from the image, here is the corresponding JSON representation:\n\n```json\n{\n    \"plan_name\": \"BOJ\",\n    \"validity\": \"unknown\",\n    \"units\": {\n        \"offnet_minutes\": 0,\n        \"onnet_minutes\": 20,\n        \"peak_minutes\": 10\n    },\n    \"duration\": \"unknown\",\n    \"price\": \"$0.60\"\n}\n``` \n\nNote: Validity and duration are not specified in the image, so they are marked as \"unknown.\""
+  }
+]
+2024-10-21 13:37:11,837 - controllers.conversation_controller - INFO - conversation_controller.py:61 - Conversation is product-related
+2024-10-21 13:37:13,153 - controllers.conversation_controller - DEBUG - conversation_controller.py:63 - Extracted plan: {'product_name': None, 'product_description': None, 'product_family': 'GSM', 'product_group': 'Prepaid', 'product_offer_price': '0.60', 'pop_type': 'Normal', 'price_category': 'Base Price', 'price_mode': 'Non-Recurring', 'product_specification_type': 'ADDON'}
+2024-10-21 13:37:13,153 - controllers.conversation_controller - DEBUG - conversation_controller.py:94 - Final extracted plan: {
+  "product_name": null,
+  "product_description": null,
+  "product_family": "GSM",
+  "product_group": "Prepaid",
+  "product_offer_price": "0.60",
+  "pop_type": "Normal",
+  "price_category": "Base Price",
+  "price_mode": "Non-Recurring",
+  "product_specification_type": "ADDON"
+}
+2024-10-21 13:43:10,651 - controllers.conversation_controller - INFO - conversation_controller.py:18 - Received conversation request for conversation ID: conv-12345
+2024-10-21 13:43:16,960 - controllers.conversation_controller - INFO - conversation_controller.py:38 - Processing image message
+2024-10-21 13:43:20,881 - controllers.conversation_controller - DEBUG - conversation_controller.py:43 - Extracted content from image: Here is the extracted content in JSON format:
+
+```json
+{
+  "plan_name": "Hayyak 20",
+  "validity": "4 Weeks",
+  "units": {
+    "data_allowance": "34 GB",
+    "flexi_minutes": "650 min"
+  },
+  "duration": "4 Weeks",
+  "price": "20 OMR"
+}
+```
+2024-10-21 13:43:20,881 - controllers.conversation_controller - DEBUG - conversation_controller.py:58 - Formatted messages: [
+  {
+    "role": "user",
+    "content": "Here is the extracted content in JSON format:\n\n```json\n{\n  \"plan_name\": \"Hayyak 20\",\n  \"validity\": \"4 Weeks\",\n  \"units\": {\n    \"data_allowance\": \"34 GB\",\n    \"flexi_minutes\": \"650 min\"\n  },\n  \"duration\": \"4 Weeks\",\n  \"price\": \"20 OMR\"\n}\n```"
+  }
+]
+2024-10-21 13:43:21,790 - controllers.conversation_controller - INFO - conversation_controller.py:61 - Conversation is product-related
+2024-10-21 13:43:22,914 - controllers.conversation_controller - DEBUG - conversation_controller.py:63 - Extracted plan: {'product_name': 'Hayyak 20', 'product_description': None, 'product_family': 'GSM', 'product_group': 'Prepaid', 'product_offer_price': '20', 'pop_type': 'Normal', 'price_category': 'Base Price', 'price_mode': 'Non-Recurring', 'product_specification_type': 'ADDON'}
+2024-10-21 13:43:24,563 - controllers.conversation_controller - INFO - conversation_controller.py:80 - Sending final confirmation message
+2024-10-21 13:49:16,252 - controllers.conversation_controller - INFO - conversation_controller.py:18 - Received conversation request for conversation ID: conv-12345
+2024-10-21 13:49:16,794 - controllers.conversation_controller - INFO - conversation_controller.py:38 - Processing image message
+2024-10-21 13:49:19,971 - controllers.conversation_controller - DEBUG - conversation_controller.py:43 - Extracted content from image: Here is the extracted content formatted in JSON:
+
+```json
+{
+  "plan_name": "Hayyak 20",
+  "validity": "4 Weeks",
+  "units": {
+    "data_allowance": "34 GB",
+    "flexi_minutes": "650 min"
+  },
+  "price": "20 OMR"
+}
+```
+2024-10-21 13:49:19,972 - controllers.conversation_controller - DEBUG - conversation_controller.py:58 - Formatted messages: [
+  {
+    "role": "user",
+    "content": "Here is the extracted content formatted in JSON:\n\n```json\n{\n  \"plan_name\": \"Hayyak 20\",\n  \"validity\": \"4 Weeks\",\n  \"units\": {\n    \"data_allowance\": \"34 GB\",\n    \"flexi_minutes\": \"650 min\"\n  },\n  \"price\": \"20 OMR\"\n}\n```"
+  }
+]
+2024-10-21 13:49:20,705 - controllers.conversation_controller - INFO - conversation_controller.py:61 - Conversation is product-related
+2024-10-21 13:49:21,833 - controllers.conversation_controller - DEBUG - conversation_controller.py:63 - Extracted plan: {'product_name': 'Hayyak 20', 'product_description': None, 'product_family': 'GSM', 'product_group': 'Prepaid', 'product_offer_price': '20', 'pop_type': 'Normal', 'price_category': 'Base Price', 'price_mode': 'Non-Recurring', 'product_specification_type': 'ADDON'}
+2024-10-21 13:49:23,440 - controllers.conversation_controller - INFO - conversation_controller.py:80 - Sending final confirmation message
+2024-10-21 13:52:11,513 - controllers.conversation_controller - INFO - conversation_controller.py:18 - Received conversation request for conversation ID: conv-12345
+2024-10-21 13:52:12,041 - controllers.conversation_controller - INFO - conversation_controller.py:38 - Processing image message
+2024-10-21 13:52:14,976 - controllers.conversation_controller - DEBUG - conversation_controller.py:43 - Extracted content from image: Based on the provided image, here is the extracted content formatted as JSON:
+
+```json
+{
+  "plan_name": "BOJ",
+  "validity": "Not specified",
+  "units": {
+    "OffNet": "0 Min",
+    "OnNet": "20 Min",
+    "Peak": "10 Min"
+  },
+  "duration": "Not specified",
+  "price": "$0.60"
+}
+```
+
+Note: The validity and duration were not specified in the image content.
+2024-10-21 13:52:14,976 - controllers.conversation_controller - DEBUG - conversation_controller.py:58 - Formatted messages: [
+  {
+    "role": "user",
+    "content": "Based on the provided image, here is the extracted content formatted as JSON:\n\n```json\n{\n  \"plan_name\": \"BOJ\",\n  \"validity\": \"Not specified\",\n  \"units\": {\n    \"OffNet\": \"0 Min\",\n    \"OnNet\": \"20 Min\",\n    \"Peak\": \"10 Min\"\n  },\n  \"duration\": \"Not specified\",\n  \"price\": \"$0.60\"\n}\n```\n\nNote: The validity and duration were not specified in the image content."
+  }
+]
+2024-10-21 13:52:15,959 - controllers.conversation_controller - INFO - conversation_controller.py:61 - Conversation is product-related
+2024-10-21 13:52:17,127 - controllers.conversation_controller - DEBUG - conversation_controller.py:63 - Extracted plan: {'product_name': 'BOJ', 'product_description': None, 'product_family': 'GSM', 'product_group': 'Prepaid', 'product_offer_price': '0.60', 'pop_type': 'Normal', 'price_category': 'Base Price', 'price_mode': 'Non-Recurring', 'product_specification_type': 'ADDON'}
+2024-10-21 13:52:18,784 - controllers.conversation_controller - INFO - conversation_controller.py:80 - Sending final confirmation message
+2024-10-21 13:52:31,078 - controllers.conversation_controller - INFO - conversation_controller.py:18 - Received conversation request for conversation ID: conv-12345
+2024-10-21 13:53:46,082 - controllers.conversation_controller - INFO - conversation_controller.py:38 - Processing image message
+2024-10-21 13:53:48,814 - controllers.conversation_controller - DEBUG - conversation_controller.py:43 - Extracted content from image: Here’s the extracted content in JSON format:
+
+```json
+{
+  "plan_name": "BOJ",
+  "validity": "",
+  "units": {
+    "off_net": "0 Min",
+    "on_net": "20 Min",
+    "peak": "10 Min"
+  },
+  "duration": "",
+  "price": "$0.60"
+}
+``` 
+
+Note: The validity and duration fields are empty because that information is not provided in the text.
+2024-10-21 13:53:48,814 - controllers.conversation_controller - DEBUG - conversation_controller.py:58 - Formatted messages: [
+  {
+    "role": "user",
+    "content": "Here\u2019s the extracted content in JSON format:\n\n```json\n{\n  \"plan_name\": \"BOJ\",\n  \"validity\": \"\",\n  \"units\": {\n    \"off_net\": \"0 Min\",\n    \"on_net\": \"20 Min\",\n    \"peak\": \"10 Min\"\n  },\n  \"duration\": \"\",\n  \"price\": \"$0.60\"\n}\n``` \n\nNote: The validity and duration fields are empty because that information is not provided in the text."
+  }
+]
+2024-10-21 13:53:49,551 - controllers.conversation_controller - INFO - conversation_controller.py:61 - Conversation is product-related
+2024-10-21 13:53:50,826 - controllers.conversation_controller - DEBUG - conversation_controller.py:63 - Extracted plan: {'product_name': '', 'product_description': '', 'product_family': 'GSM', 'product_group': 'Prepaid', 'product_offer_price': '0.60', 'pop_type': 'Normal', 'price_category': 'Base Price', 'price_mode': 'Non-Recurring', 'product_specification_type': 'ADDON'}
+2024-10-21 13:53:50,826 - controllers.conversation_controller - DEBUG - conversation_controller.py:94 - Final extracted plan: {
+  "product_name": "",
+  "product_description": "",
+  "product_family": "GSM",
+  "product_group": "Prepaid",
+  "product_offer_price": "0.60",
+  "pop_type": "Normal",
+  "price_category": "Base Price",
+  "price_mode": "Non-Recurring",
+  "product_specification_type": "ADDON"
+}
+2024-10-21 13:55:58,192 - controllers.conversation_controller - INFO - conversation_controller.py:18 - Received conversation request for conversation ID: conv-12345
+2024-10-21 13:57:13,196 - controllers.conversation_controller - INFO - conversation_controller.py:38 - Processing image message
+2024-10-21 13:57:16,395 - controllers.conversation_controller - DEBUG - conversation_controller.py:43 - Extracted content from image: Based on the content extracted from the image, here is the JSON representation:
+
+```json
+{
+  "plan_name": "BOJ",
+  "validity": "0 Min OffNet, 20 Min OnNet",
+  "units": {
+    "OffNet": "0 Min",
+    "OnNet": "20 Min"
+  },
+  "duration": "Peak 10 Min",
+  "price": "$0.60"
+}
+```
+2024-10-21 13:57:16,396 - controllers.conversation_controller - DEBUG - conversation_controller.py:58 - Formatted messages: [
+  {
+    "role": "user",
+    "content": "Based on the content extracted from the image, here is the JSON representation:\n\n```json\n{\n  \"plan_name\": \"BOJ\",\n  \"validity\": \"0 Min OffNet, 20 Min OnNet\",\n  \"units\": {\n    \"OffNet\": \"0 Min\",\n    \"OnNet\": \"20 Min\"\n  },\n  \"duration\": \"Peak 10 Min\",\n  \"price\": \"$0.60\"\n}\n```"
+  }
+]
+2024-10-21 13:57:17,231 - controllers.conversation_controller - INFO - conversation_controller.py:61 - Conversation is product-related
+2024-10-21 13:57:18,389 - controllers.conversation_controller - DEBUG - conversation_controller.py:63 - Extracted plan: {'product_name': 'BOJ', 'product_description': None, 'product_family': 'GSM', 'product_group': 'Prepaid', 'product_offer_price': '0.60', 'pop_type': 'Normal', 'price_category': 'Base Price', 'price_mode': 'Non-Recurring', 'product_specification_type': 'ADDON'}
+2024-10-21 13:57:20,025 - controllers.conversation_controller - INFO - conversation_controller.py:80 - Sending final confirmation message
+2024-10-21 13:58:57,298 - controllers.conversation_controller - INFO - conversation_controller.py:18 - Received conversation request for conversation ID: conv-12345
+2024-10-21 14:00:12,320 - controllers.conversation_controller - INFO - conversation_controller.py:38 - Processing image message
+2024-10-21 14:00:19,040 - controllers.conversation_controller - DEBUG - conversation_controller.py:43 - Extracted content from image: Based on the content of the image, here is the JSON representation:
+
+```json
+{
+  "plan_name": "BOJ OffNet",
+  "validity": "Not specified",
+  "units": {
+    "off_net_minutes": 0,
+    "on_net_minutes": 20,
+    "peak_minutes": 10
+  },
+  "duration": "Not specified",
+  "price": "$0.60"
+}
+``` 
+
+Feel free to modify any of the values as needed!
+2024-10-21 14:00:19,041 - controllers.conversation_controller - DEBUG - conversation_controller.py:58 - Formatted messages: [
+  {
+    "role": "user",
+    "content": "Based on the content of the image, here is the JSON representation:\n\n```json\n{\n  \"plan_name\": \"BOJ OffNet\",\n  \"validity\": \"Not specified\",\n  \"units\": {\n    \"off_net_minutes\": 0,\n    \"on_net_minutes\": 20,\n    \"peak_minutes\": 10\n  },\n  \"duration\": \"Not specified\",\n  \"price\": \"$0.60\"\n}\n``` \n\nFeel free to modify any of the values as needed!"
+  }
+]
+2024-10-21 14:00:19,756 - controllers.conversation_controller - INFO - conversation_controller.py:61 - Conversation is product-related
+2024-10-21 14:00:20,987 - controllers.conversation_controller - DEBUG - conversation_controller.py:63 - Extracted plan: {'product_name': 'BOJ OffNet', 'product_description': None, 'product_family': 'GSM', 'product_group': 'Prepaid', 'product_offer_price': '0.60', 'pop_type': 'Normal', 'price_category': 'Base Price', 'price_mode': 'Non-Recurring', 'product_specification_type': 'ADDON'}
+2024-10-21 14:00:22,622 - controllers.conversation_controller - INFO - conversation_controller.py:80 - Sending final confirmation message
+2024-10-21 14:00:30,060 - controllers.conversation_controller - INFO - conversation_controller.py:18 - Received conversation request for conversation ID: conv-12345
+2024-10-21 14:01:45,065 - controllers.conversation_controller - INFO - conversation_controller.py:38 - Processing image message
+2024-10-21 14:01:49,357 - controllers.conversation_controller - DEBUG - conversation_controller.py:43 - Extracted content from image: Here's the extracted content from the image formatted in JSON:
+
+```json
+{
+  "plan_name": "BOJ",
+  "validity": "N/A",
+  "units": {
+    "off_net": "0 Min",
+    "on_net": "20 Min",
+    "peak": "10 Min"
+  },
+  "duration": "N/A",
+  "price": "$0.60"
+}
+```
+2024-10-21 14:01:49,357 - controllers.conversation_controller - DEBUG - conversation_controller.py:58 - Formatted messages: [
+  {
+    "role": "user",
+    "content": "Here's the extracted content from the image formatted in JSON:\n\n```json\n{\n  \"plan_name\": \"BOJ\",\n  \"validity\": \"N/A\",\n  \"units\": {\n    \"off_net\": \"0 Min\",\n    \"on_net\": \"20 Min\",\n    \"peak\": \"10 Min\"\n  },\n  \"duration\": \"N/A\",\n  \"price\": \"$0.60\"\n}\n```"
+  }
+]
+2024-10-21 14:01:50,101 - controllers.conversation_controller - INFO - conversation_controller.py:61 - Conversation is product-related
+2024-10-21 14:01:51,212 - controllers.conversation_controller - DEBUG - conversation_controller.py:63 - Extracted plan: {'product_name': 'BOJ', 'product_description': None, 'product_family': 'GSM', 'product_group': 'Prepaid', 'product_offer_price': '0.60', 'pop_type': 'Normal', 'price_category': 'Base Price', 'price_mode': 'Non-Recurring', 'product_specification_type': 'ADDON'}
+2024-10-21 14:01:52,733 - controllers.conversation_controller - INFO - conversation_controller.py:80 - Sending final confirmation message
+2024-10-21 14:04:03,587 - controllers.conversation_controller - INFO - conversation_controller.py:18 - Received conversation request for conversation ID: conv-12345
+2024-10-21 14:05:18,592 - controllers.conversation_controller - INFO - conversation_controller.py:38 - Processing image message
+2024-10-21 14:05:22,557 - controllers.conversation_controller - DEBUG - conversation_controller.py:43 - Extracted content from image: Based on the content extracted from the image, here's the JSON representation:
+
+```json
+{
+  "plan_name": "BOJ",
+  "validity": "Not specified",
+  "units": {
+    "off_net_minutes": "0",
+    "on_net_minutes": "20",
+    "peak_minutes": "10"
+  },
+  "duration": "Not specified",
+  "price": "$0.60"
+}
+```
+2024-10-21 14:05:22,557 - controllers.conversation_controller - DEBUG - conversation_controller.py:58 - Formatted messages: [
+  {
+    "role": "user",
+    "content": "Based on the content extracted from the image, here's the JSON representation:\n\n```json\n{\n  \"plan_name\": \"BOJ\",\n  \"validity\": \"Not specified\",\n  \"units\": {\n    \"off_net_minutes\": \"0\",\n    \"on_net_minutes\": \"20\",\n    \"peak_minutes\": \"10\"\n  },\n  \"duration\": \"Not specified\",\n  \"price\": \"$0.60\"\n}\n```"
+  }
+]
+2024-10-21 14:05:23,478 - controllers.conversation_controller - INFO - conversation_controller.py:61 - Conversation is product-related
+2024-10-21 14:05:25,425 - controllers.conversation_controller - DEBUG - conversation_controller.py:63 - Extracted plan: {'product_name': None, 'product_description': None, 'product_family': 'GSM', 'product_group': 'Prepaid', 'product_offer_price': '0.60', 'pop_type': 'Normal', 'price_category': 'Base Price', 'price_mode': 'Non-Recurring', 'product_specification_type': 'ADDON'}
+2024-10-21 14:05:25,425 - controllers.conversation_controller - DEBUG - conversation_controller.py:94 - Final extracted plan: {
+  "product_name": null,
+  "product_description": null,
+  "product_family": "GSM",
+  "product_group": "Prepaid",
+  "product_offer_price": "0.60",
+  "pop_type": "Normal",
+  "price_category": "Base Price",
+  "price_mode": "Non-Recurring",
+  "product_specification_type": "ADDON"
+}
+2024-10-21 14:09:55,959 - controllers.conversation_controller - INFO - conversation_controller.py:18 - Received conversation request for conversation ID: conv-12345
+2024-10-21 14:11:10,964 - controllers.conversation_controller - INFO - conversation_controller.py:38 - Processing image message
+2024-10-21 14:11:14,405 - controllers.conversation_controller - DEBUG - conversation_controller.py:43 - Extracted content from image: Here is the extracted content from the image formatted in JSON:
+
+```json
+{
+  "plan_name": "BOJ OffNet",
+  "validity": null,
+  "units": {
+    "off_net_minutes": 0,
+    "on_net_minutes": 20,
+    "peak_minutes": 10
+  },
+  "duration": null,
+  "price": "$0.60"
+}
+```
+
+Note: The validity and duration fields are marked as null since that information is not provided in the image.
+2024-10-21 14:11:14,405 - controllers.conversation_controller - DEBUG - conversation_controller.py:58 - Formatted messages: [
+  {
+    "role": "user",
+    "content": "Here is the extracted content from the image formatted in JSON:\n\n```json\n{\n  \"plan_name\": \"BOJ OffNet\",\n  \"validity\": null,\n  \"units\": {\n    \"off_net_minutes\": 0,\n    \"on_net_minutes\": 20,\n    \"peak_minutes\": 10\n  },\n  \"duration\": null,\n  \"price\": \"$0.60\"\n}\n```\n\nNote: The validity and duration fields are marked as null since that information is not provided in the image."
+  }
+]
+2024-10-21 14:11:15,244 - controllers.conversation_controller - INFO - conversation_controller.py:61 - Conversation is product-related
+2024-10-21 14:11:16,556 - controllers.conversation_controller - DEBUG - conversation_controller.py:63 - Extracted plan: {'product_name': 'BOJ OffNet', 'product_description': None, 'product_family': 'GSM', 'product_group': 'Prepaid', 'product_offer_price': '0.60', 'pop_type': 'Normal', 'price_category': 'Base Price', 'price_mode': 'Non-Recurring', 'product_specification_type': 'ADDON'}
+2024-10-21 14:11:18,090 - controllers.conversation_controller - INFO - conversation_controller.py:80 - Sending final confirmation message
+2024-10-21 14:31:03,202 - controllers.conversation_controller - INFO - conversation_controller.py:20 - Received conversation request for conversation ID: conv-12345
+2024-10-21 14:31:10,547 - controllers.conversation_controller - INFO - conversation_controller.py:42 - Processing image message
+2024-10-21 14:31:15,882 - controllers.conversation_controller - DEBUG - conversation_controller.py:47 - Extracted content from image: Based on the content extracted from the image, here is the JSON representation:
+
+```json
+{
+  "plan_name": "BOJ",
+  "validity": "Not specified",
+  "units": {
+    "off_net": "0 Min",
+    "on_net": "20 Min",
+    "peak": "10 Min"
+  },
+  "duration": "Not specified",
+  "price": "$0.60"
+}
+```
+2024-10-21 14:31:15,882 - controllers.conversation_controller - DEBUG - conversation_controller.py:62 - Formatted messages: [
+  {
+    "role": "user",
+    "content": "Based on the content extracted from the image, here is the JSON representation:\n\n```json\n{\n  \"plan_name\": \"BOJ\",\n  \"validity\": \"Not specified\",\n  \"units\": {\n    \"off_net\": \"0 Min\",\n    \"on_net\": \"20 Min\",\n    \"peak\": \"10 Min\"\n  },\n  \"duration\": \"Not specified\",\n  \"price\": \"$0.60\"\n}\n```"
+  }
+]
+2024-10-21 14:31:17,105 - controllers.conversation_controller - INFO - conversation_controller.py:65 - Conversation is product-related
+2024-10-21 14:31:18,350 - controllers.conversation_controller - DEBUG - conversation_controller.py:67 - Extracted plan: {'product_name': None, 'product_description': None, 'product_family': 'GSM', 'product_group': 'Prepaid', 'product_offer_price': '0.60', 'pop_type': 'Normal', 'price_category': 'Base Price', 'price_mode': 'Non-Recurring', 'product_specification_type': 'ADDON'}
+2024-10-21 14:31:19,148 - controllers.conversation_controller - INFO - conversation_controller.py:85 - Sending final confirmation message
+2024-10-21 14:34:08,073 - controllers.conversation_controller - INFO - conversation_controller.py:20 - Received conversation request for conversation ID: conv-12345
+2024-10-21 14:34:08,074 - controllers.conversation_controller - DEBUG - conversation_controller.py:62 - Formatted messages: [
+  {
+    "role": "user",
+    "content": "I want to create product priced at 20 rupees "
+  }
+]
+2024-10-21 14:34:08,821 - controllers.conversation_controller - INFO - conversation_controller.py:65 - Conversation is product-related
+2024-10-21 14:34:09,848 - controllers.conversation_controller - DEBUG - conversation_controller.py:67 - Extracted plan: {'product_name': None, 'product_description': None, 'product_family': 'GSM', 'product_group': 'Prepaid', 'product_offer_price': '20', 'pop_type': 'Normal', 'price_category': 'Base Price', 'price_mode': 'Non-Recurring', 'product_specification_type': 'ADDON'}
+2024-10-21 14:34:09,848 - controllers.conversation_controller - DEBUG - conversation_controller.py:99 - Final extracted plan: {
+  "product_name": null,
+  "product_description": null,
+  "product_family": "GSM",
+  "product_group": "Prepaid",
+  "product_offer_price": "20",
+  "pop_type": "Normal",
+  "price_category": "Base Price",
+  "price_mode": "Non-Recurring",
+  "product_specification_type": "ADDON"
+}
+2024-10-21 15:26:23,101 - controllers.conversation_controller - INFO - conversation_controller.py:20 - Received conversation request for conversation ID: conv-12345
+2024-10-21 15:26:27,851 - controllers.conversation_controller - INFO - conversation_controller.py:42 - Processing image message
+2024-10-21 15:26:33,999 - controllers.conversation_controller - DEBUG - conversation_controller.py:47 - Extracted content from image: Here's the extracted content in JSON format:
+
+```json
+{
+  "plan_name": "Hayyak 20",
+  "validity": "4 Weeks",
+  "units": {
+    "data_allowance": "34 GB",
+    "flexi_minutes": "650 min"
+  },
+  "duration": "4 Weeks",
+  "price": "20 OMR"
+}
+```
+2024-10-21 15:26:33,999 - controllers.conversation_controller - DEBUG - conversation_controller.py:62 - Formatted messages: [
+  {
+    "role": "user",
+    "content": "Here's the extracted content in JSON format:\n\n```json\n{\n  \"plan_name\": \"Hayyak 20\",\n  \"validity\": \"4 Weeks\",\n  \"units\": {\n    \"data_allowance\": \"34 GB\",\n    \"flexi_minutes\": \"650 min\"\n  },\n  \"duration\": \"4 Weeks\",\n  \"price\": \"20 OMR\"\n}\n```"
+  }
+]
+2024-10-21 15:26:34,713 - controllers.conversation_controller - INFO - conversation_controller.py:65 - Conversation is product-related
+2024-10-21 15:26:35,737 - controllers.conversation_controller - DEBUG - conversation_controller.py:67 - Extracted plan: {'product_name': 'Hayyak 20', 'product_description': '', 'product_family': 'GSM', 'product_group': 'Prepaid', 'product_offer_price': '20', 'pop_type': 'Normal', 'price_category': 'Base Price', 'price_mode': 'Non-Recurring', 'product_specification_type': 'ADDON'}
+2024-10-21 15:26:36,450 - controllers.conversation_controller - INFO - conversation_controller.py:85 - Sending final confirmation message
+2024-10-21 15:34:31,601 - controllers.conversation_controller - INFO - conversation_controller.py:20 - Received conversation request for conversation ID: conv-12345
+2024-10-21 15:34:36,185 - controllers.conversation_controller - INFO - conversation_controller.py:42 - Processing image message
+2024-10-21 15:34:40,186 - controllers.conversation_controller - DEBUG - conversation_controller.py:47 - Extracted content from image: Here's the extracted content in JSON format:
+
+```json
+{
+  "plan_name": "Hayyak 20",
+  "validity": "4 Weeks",
+  "units": {
+    "data_allowance": "34 GB",
+    "flexi_minutes": "650 min"
+  },
+  "price": "20 OMR"
+}
+```
+2024-10-21 15:34:40,187 - controllers.conversation_controller - DEBUG - conversation_controller.py:62 - Formatted messages: [
+  {
+    "role": "user",
+    "content": "Here's the extracted content in JSON format:\n\n```json\n{\n  \"plan_name\": \"Hayyak 20\",\n  \"validity\": \"4 Weeks\",\n  \"units\": {\n    \"data_allowance\": \"34 GB\",\n    \"flexi_minutes\": \"650 min\"\n  },\n  \"price\": \"20 OMR\"\n}\n```"
+  }
+]
+2024-10-21 15:34:40,904 - controllers.conversation_controller - INFO - conversation_controller.py:65 - Conversation is product-related
+2024-10-21 15:34:41,822 - controllers.conversation_controller - DEBUG - conversation_controller.py:67 - Extracted plan: {'product_name': 'Hayyak 20', 'product_description': '', 'product_family': 'GSM', 'product_group': 'Prepaid', 'product_offer_price': '20', 'pop_type': 'Normal', 'price_category': 'Base Price', 'price_mode': 'Non-Recurring', 'product_specification_type': 'ADDON'}
+2024-10-21 15:34:42,532 - controllers.conversation_controller - INFO - conversation_controller.py:85 - Sending final confirmation message
+2024-10-21 15:37:49,469 - controllers.conversation_controller - INFO - conversation_controller.py:20 - Received conversation request for conversation ID: conv-12345
+2024-10-21 15:37:50,026 - controllers.conversation_controller - INFO - conversation_controller.py:42 - Processing image message
+2024-10-21 15:38:22,343 - controllers.conversation_controller - DEBUG - conversation_controller.py:47 - Extracted content from image: Here is the extracted content in JSON format:
+
+```json
+{
+  "plan_name": "Hayyak 20",
+  "validity": "4 Weeks",
+  "units": {
+    "data_allowance": "34 GB",
+    "flexi_minutes": "650 min"
+  },
+  "price": "20 OMR",
+  "duration": "5% VAT included"
+}
+```
+2024-10-21 15:38:26,723 - controllers.conversation_controller - DEBUG - conversation_controller.py:62 - Formatted messages: [
+  {
+    "role": "user",
+    "content": "Here is the extracted content in JSON format:\n\n```json\n{\n  \"plan_name\": \"Hayyak 20\",\n  \"validity\": \"4 Weeks\",\n  \"units\": {\n    \"data_allowance\": \"34 GB\",\n    \"flexi_minutes\": \"650 min\"\n  },\n  \"price\": \"20 OMR\",\n  \"duration\": \"5% VAT included\"\n}\n```"
+  }
+]
+2024-10-21 15:38:30,003 - controllers.conversation_controller - INFO - conversation_controller.py:65 - Conversation is product-related
+2024-10-21 15:43:24,760 - controllers.conversation_controller - INFO - conversation_controller.py:20 - Received conversation request for conversation ID: conv-12345
+2024-10-21 15:43:44,027 - controllers.conversation_controller - INFO - conversation_controller.py:42 - Processing image message
+2024-10-21 15:43:49,155 - controllers.conversation_controller - DEBUG - conversation_controller.py:47 - Extracted content from image: Here’s the JSON representation based on the content extracted from the image:
+
+```json
+{
+  "plan_name": "Hayyak 20",
+  "validity": "4 Weeks",
+  "units": {
+    "data_allowance": "34 GB",
+    "flexi_minutes": "650 min"
+  },
+  "price": "20 OMR"
+}
+```
+2024-10-21 15:43:49,156 - controllers.conversation_controller - DEBUG - conversation_controller.py:62 - Formatted messages: [
+  {
+    "role": "user",
+    "content": "Here\u2019s the JSON representation based on the content extracted from the image:\n\n```json\n{\n  \"plan_name\": \"Hayyak 20\",\n  \"validity\": \"4 Weeks\",\n  \"units\": {\n    \"data_allowance\": \"34 GB\",\n    \"flexi_minutes\": \"650 min\"\n  },\n  \"price\": \"20 OMR\"\n}\n```"
+  }
+]
+2024-10-21 15:43:49,870 - controllers.conversation_controller - INFO - conversation_controller.py:65 - Conversation is product-related
+2024-10-21 15:45:12,171 - controllers.conversation_controller - INFO - conversation_controller.py:20 - Received conversation request for conversation ID: conv-12345
+2024-10-21 15:45:19,344 - controllers.conversation_controller - INFO - conversation_controller.py:42 - Processing image message
+2024-10-21 15:45:23,351 - controllers.conversation_controller - DEBUG - conversation_controller.py:47 - Extracted content from image: Here's the extracted content in JSON format:
+
+```json
+{
+  "plan_name": "Hayyak 20",
+  "validity": "4 Weeks",
+  "units": {
+    "data_allowance": "34 GB",
+    "flexi_minutes": "650 min"
+  },
+  "price": "20 OMR"
+}
+```
+2024-10-21 15:45:23,351 - controllers.conversation_controller - DEBUG - conversation_controller.py:62 - Formatted messages: [
+  {
+    "role": "user",
+    "content": "Here's the extracted content in JSON format:\n\n```json\n{\n  \"plan_name\": \"Hayyak 20\",\n  \"validity\": \"4 Weeks\",\n  \"units\": {\n    \"data_allowance\": \"34 GB\",\n    \"flexi_minutes\": \"650 min\"\n  },\n  \"price\": \"20 OMR\"\n}\n```"
+  }
+]
+2024-10-21 15:45:24,064 - controllers.conversation_controller - INFO - conversation_controller.py:65 - Conversation is product-related
+2024-10-21 15:45:25,093 - controllers.conversation_controller - DEBUG - conversation_controller.py:67 - Extracted plan: {'product_name': 'Hayyak 20', 'product_description': None, 'product_family': 'GSM', 'product_group': 'Prepaid', 'product_offer_price': '20', 'pop_type': 'Normal', 'price_category': 'Base Price', 'price_mode': 'Non-Recurring', 'product_specification_type': 'ADDON', 'data_allowance': '34 GB', 'voice_allowance': '650 min'}
+2024-10-21 15:45:25,901 - controllers.conversation_controller - INFO - conversation_controller.py:85 - Sending final confirmation message
