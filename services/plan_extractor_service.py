@@ -8,10 +8,13 @@ from utils.prompts import Prompts
 from exceptions import JSONParseError
 from config import Config, ModelType
 import instructor
-
+from logger import setup_logger
+logger = setup_logger(__name__)
 inst_client = instructor.from_groq(client, mode=instructor.Mode.TOOLS)
 def check_confirmation(messages: str) -> bool:
     prompt = Prompts.CONFIRMATION_MESSAGE_CHECKER.format(message=messages)
+    logger.info(" the prompt for conformation")
+    logger.info(prompt)
     resp = inst_client.chat.completions.create(
         model="llama3-70b-8192",
         messages=[
@@ -26,6 +29,7 @@ def check_confirmation(messages: str) -> bool:
     # response = make_api_call(prompt)
     val = resp.model_dump()
     val =val.get("value")
+    logger.info(f" the value got for conformation message is {val}")
     return val.lower() == 'true'
 
 
