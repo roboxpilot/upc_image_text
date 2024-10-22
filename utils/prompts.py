@@ -30,14 +30,15 @@ class Prompts:
     # reply with  only either True or False nothing else
     # """
     CONFIRMATION_MESSAGE_CHECKER = """
-    Please confirm whether confirmation is made by the user by going through the conversations:
-    - Only consider it confirmed if the user explicitly states they want to continue or proceed with the full details provided.
-    - A simple "proceed" without further confirmation of the details does not count as confirmation.
-    - Ignore conversations where the user asks for changes, or where additional information is requested but not yet provided.
-    conversations:
-    {message}
-    Expected output:
-    reply with only either True or False nothing else
+Please confirm whether confirmation is made by the user by going through the conversations:
+    - Consider it confirmed if the user explicitly states they want to continue or proceed with the full details provided.
+    - If the user says "proceed" after receiving all necessary details, count it as confirmation.
+    - Ignore conversations where the user asks for changes or where additional information is requested but not yet provided.
+    - If the user says "proceed" but hasn't been given all the necessary details yet, do not count it as confirmation.
+conversations:
+{message}
+Expected output:
+reply with only either True or False nothing else
     """
 
     FINAL_MESSAGE_TEMPLATE = """
