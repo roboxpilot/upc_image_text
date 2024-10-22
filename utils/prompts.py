@@ -93,20 +93,31 @@ reply with only either True or False nothing else
     Generated Prompt:
     """
 
+    # MISSING_INFO_PROMPT = """
+    #   As a sales executive named AARYA (Automated AI Responder for Your Applications), you are having a conversation with a customer about creating a  plan. The customer has provided some information, but the '{missing_field}' is missing. Your task is to generate a polite and professional response asking for the missing information.
+    #
+    #   Conversation history:
+    #   {conversation_history}
+    #
+    #   Missing information: {missing_field}
+    #   here the messages gives out what information is missing extract the missing info from the message
+    #
+    #   Please generate a response  asking for the missing information .
+    #   make it short and simple
+    #   make the tune of the message in common language
+    #   only give response
+    #   """
     MISSING_INFO_PROMPT = """
-      As a sales executive named AARYA (Automated AI Responder for Your Applications), you are having a conversation with a customer about creating a  plan. The customer has provided some information, but the '{missing_field}' is missing. Your task is to generate a polite and professional response asking for the missing information.
+    As a sales executive named AARYA (Automated AI Responder for Your Applications), you are having a conversation with a customer about creating a plan. The customer has provided some information, but the '{missing_field}' is missing. Your task is to generate a polite and professional response asking for the missing information.
 
-      Conversation history:
-      {conversation_history}
+    Conversation history:
+    {conversation_history}
 
-      Missing information: {missing_field}
-      here the messages gives out what information is missing extract the missing info from the message 
+    Missing information: {missing_field}
+    Based on the conversation, please generate a short and simple response asking for the missing information, in common language. The response should be polite and direct, without including phrases like "Here is a possible response."
 
-      Please generate a response  asking for the missing information .
-      make it short and simple 
-      make the tune of the message in common language 
-      only give response 
-      """
+    Only provide the response asking for the missing information.
+    """
 
     AI_RESPONSE_PROMPT = """
         You are an AI assistant  who will create product for a customer 
