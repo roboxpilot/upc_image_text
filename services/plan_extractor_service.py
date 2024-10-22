@@ -2,17 +2,31 @@ import json
 from typing import List, Dict, Any
 from models.conversation_models import Message
 from models.product_models import ProductMessage
+from models.response_models import ConformationMessage
 from services.ai_client_service import make_api_call, client
 from utils.prompts import Prompts
 from exceptions import JSONParseError
 from config import Config, ModelType
 import instructor
 
-
+inst_client = instructor.from_groq(client, mode=instructor.Mode.TOOLS)
 def check_confirmation(messages: str) -> bool:
     prompt = Prompts.CONFIRMATION_MESSAGE_CHECKER.format(message=messages)
-    response = make_api_call(prompt)
-    return response.lower() == 'true'
+    resp = inst_client.chat.completions.create(
+        model="llama3-70b-8192",
+        messages=[
+            {"role": "system",
+             "content": "You are a helpful assistant "},
+            {"role": "user", "content": prompt}
+        ],
+        max_tokens=400,
+        response_model=ConformationMessage,
+    )
+    resp.model_dump()
+    # response = make_api_call(prompt)
+    val = resp.model_dump()
+    val =val.get("value")
+    return val.lower() == 'true'
 
 
 def form_final_message(extracted_plan: Dict[str, Any]) -> str:

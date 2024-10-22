@@ -116,7 +116,18 @@ async def conversation_endpoint(request: ConversationRequest):
                 if value == "0":
                     extracted_plan[key] = "None"
             logger.debug(f"Final extracted plan: {json.dumps(extracted_plan, indent=2)}")
-
+            if not check_confirmation(messages):
+                final_message = form_final_message(extracted_plan)
+                logger.info("Sending final confirmation message")
+                return PlanResponse(
+                    conversationId=request.conversationId,
+                    currentMessage={
+                        "source": "AI",
+                        "status": "success",
+                        "messageType": "text",
+                        "payload": {"text": final_message}
+                    }
+                )
             return PlanResponse(
                 conversationId=request.conversationId,
                 currentMessage={

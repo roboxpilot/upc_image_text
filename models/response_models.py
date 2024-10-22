@@ -44,3 +44,6 @@ class PlanResponseBack(BaseModel):
         "messageType": "text",
         "payload": {"text": "Hello! How can I assist you today?"}
     })
+
+class ConformationMessage(BaseModel):
+    value: str =  Field(..., example="true")

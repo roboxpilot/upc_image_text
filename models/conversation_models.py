@@ -34,3 +34,4 @@ class Message(BaseModel):
 
 class GreetingRequest(BaseModel):
     sender: User
+
