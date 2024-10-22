@@ -20,14 +20,24 @@ give response in only this format  json
 
 
 class Prompts:
+    # CONFIRMATION_MESSAGE_CHECKER = """
+    # Please confirm whether confirmation is made by the user by going through the conversations:
+    # see if confirmation message: is present in the conversation message
+    # if the user said continue with confirmation message its confirmed
+    # conversations:
+    # {message}
+    # Expected output:
+    # reply with  only either True or False nothing else
+    # """
     CONFIRMATION_MESSAGE_CHECKER = """
     Please confirm whether confirmation is made by the user by going through the conversations:
-    see if confirmation message: is present in the conversation message
-    if the user said continue with confirmation message its confirmed
+    - Only consider it confirmed if the user explicitly states they want to continue or proceed with the full details provided.
+    - A simple "proceed" without further confirmation of the details does not count as confirmation.
+    - Ignore conversations where the user asks for changes, or where additional information is requested but not yet provided.
     conversations:
     {message}
     Expected output:
-    reply with  only either True or False nothing else
+    reply with only either True or False nothing else
     """
 
     FINAL_MESSAGE_TEMPLATE = """
