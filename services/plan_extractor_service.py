@@ -22,7 +22,7 @@ def check_confirmation(messages: str) -> bool:
              "content": "You are a helpful assistant "},
             {"role": "user", "content": prompt}
         ],
-        max_tokens=400,
+        max_tokens=800,
         response_model=ConformationMessage,
     )
     resp.model_dump()
