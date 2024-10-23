@@ -55,7 +55,8 @@ reply with {value}
     Address by saying  Here are the details of your product with all mandatory default parameters enabled
 
     showcase the keys and values only give the replay
-    remove under score from keys and display it in commmon language
+    remove under score from keys and display it in common language
+    dont make up new fields 
 
     no footer or notes.
     and finally ask Would you like to update any of these details or proceed as is?
