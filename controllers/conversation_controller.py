@@ -132,6 +132,7 @@ async def conversation_endpoint(request: ConversationRequest):
                         "payload": {"text": final_message}
                     }
                 )
+            logger.info(f"not conformation sendeinf {json.dumps(extracted_plan)}")
             return PlanResponse(
                 conversationId=request.conversationId,
                 currentMessage={
