@@ -64,18 +64,20 @@ reply with {value}
     expected output :
     Please confirm the following details:
 
-Product Name: Wasel Flexi Plan
-Product Description: plan offering flexible data and voice options for users.
-Product Family: GSM
-Product Group: Prepaid
-Product Offer Price: 100 AED
-POP Type: Normal
-Price Category: Base Price
-Price Mode: Non-Recurring
-Product Specification Type: ADDON
-Data Allowance: 10 GB
-Voice Allowance: 500 minutes
-Would you like to update any of these details or proceed as is?
+    Product Name: Wasel Flexi Plan
+    Product Description: plan offering flexible data and voice options for users.
+    Product Family: GSM
+    Product Group: Prepaid
+    Product Offer Price: 100 AED
+    POP Type: Normal
+    Price Category: Base Price
+    Price Mode: Non-Recurring
+    Product Specification Type: ADDON
+    Data Allowance: 10 GB
+    Voice Allowance: 500 minutes
+    Would you like to update any of these details or proceed as is?
+    
+    Note: please format the  expected output with correct new lines 
     """
 
     PRODUCT_INFO_EXTRACTION = """Extract the following information from the conversation and format it as JSON. Use the exact field names from the provided schema.
