@@ -42,7 +42,7 @@ def make_api_call(prompt: str) -> str:
                      "content": "You are a helpful assistant that extracts information and formats it as JSON."},
                     {"role": "user", "content": prompt}
                 ],
-                max_tokens=400
+                max_tokens=1200
             )
             logger.debug(f"Groq API response: {response.choices[0].message.content}")
             return response.choices[0].message.content
@@ -62,7 +62,7 @@ def make_api_call(prompt: str) -> str:
             response = client.completions.create(
                 model=Config.get_model_name(),
                 prompt=f"Human: {prompt}\n\nAssistant:",
-                max_tokens_to_sample=200
+                max_tokens_to_sample=1000
             )
             logger.debug(f"Claude API response: {response.completion}")
             return response.completion
@@ -84,7 +84,7 @@ def make_image_api_call(prompt: str, image_data: str) -> str:
                     ]
                 }
             ],
-            max_tokens=300
+            max_tokens=1000
         )
         logger.debug(f"OpenAI image API response: {response.choices[0].message.content}")
         return response.choices[0].message.content

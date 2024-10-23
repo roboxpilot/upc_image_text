@@ -58,7 +58,7 @@ def extract_plan(messages: List[Message], product_schema: Dict[str, Any]) -> Dic
                          "content": "You are a helpful assistant that extracts information and formats it as JSON."},
                         {"role": "user", "content": prompt}
                     ],
-                    max_tokens=400,
+                    max_tokens=1000,
                     response_model=ProductMessage,
                 )
                 return resp.model_dump()
