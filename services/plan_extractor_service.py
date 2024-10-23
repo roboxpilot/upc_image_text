@@ -12,7 +12,7 @@ from logger import setup_logger
 logger = setup_logger(__name__)
 inst_client = instructor.from_groq(client, mode=instructor.Mode.TOOLS)
 def check_confirmation(messages: str) -> bool:
-    prompt = Prompts.CONFIRMATION_MESSAGE_CHECKER.format(message=messages)
+    prompt = Prompts.CONFIRMATION_MESSAGE_CHECKER.format(message=messages,value = "{'value':'true/false'}")
     logger.info(" the prompt for conformation")
     logger.info(prompt)
     resp = inst_client.chat.completions.create(
