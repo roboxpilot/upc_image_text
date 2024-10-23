@@ -67,7 +67,9 @@ reply with only either True or False nothing else
      Conversation:
      {messages}
 
-      Product Schema: {product_schema} Type means basic / add on  it does not include product specification like 1 GB 
+      Product Schema: {product_schema}
+       keep the default params ins chema as it is 
+       Type means basic / add on  it does not include product specification like 1 GB 
       price, 2 GB price etc the price should be in numeric string nothing should follow after that 
       product_offer_price the field means  the price of the product  / cost of the product . anything related to  price extract it in this field 
       special discount price will be Product_offer_price
