@@ -1,5 +1,5 @@
 import json
-from services.ai_client_service import make_api_call
+from services.ai_client_service import make_classification_call
 from utils.prompts import PRODUCT_CONVERSATION_CLASSIFIER_PROMPT
 from logger import setup_logger
 
@@ -16,7 +16,7 @@ def is_product_related(message: str) -> bool:
     response =None
     try:
         logger.debug(f"Sending classification prompt to AI: {prompt[:100]}...")  # Log first 100 chars of prompt
-        response = make_api_call(prompt)
+        response = make_classification_call(prompt)
         logger.debug(f"Received classification response: {response}")
 
         response_data = json.loads(response)

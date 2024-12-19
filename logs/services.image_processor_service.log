@@ -320,3 +320,3437 @@ Note: The validity and duration fields are marked as null since that information
   "price": "20 OMR"
 }
 ```
+2024-10-23 15:44:17,585 - services.image_processor_service - INFO - image_processor_service.py:10 - Extracting content from image
+2024-10-23 15:44:26,630 - services.image_processor_service - DEBUG - image_processor_service.py:12 - Extracted image content: Based on the content extracted from the image, here is the JSON representation:
+
+```json
+{
+  "plan_name": "BOJ",
+  "validity": "N/A",
+  "units": {
+    "off_net_minutes": 0,
+    "on_net_minutes": 20,
+    "peak_minutes": 10
+  },
+  "duration": "N/A",
+  "price": "$0.60"
+}
+```
+2024-10-23 15:46:37,644 - services.image_processor_service - INFO - image_processor_service.py:10 - Extracting content from image
+2024-10-23 15:46:45,233 - services.image_processor_service - DEBUG - image_processor_service.py:12 - Extracted image content: Here's the extracted content in JSON format:
+
+```json
+{
+  "plan_name": "Hayyak 20",
+  "validity": "4 Weeks",
+  "units": {
+    "data_allowance": "34 GB",
+    "flexi_minutes": "650 min"
+  },
+  "duration": "4 Weeks",
+  "price": "20 OMR"
+}
+```
+2024-10-23 15:54:31,717 - services.image_processor_service - INFO - image_processor_service.py:10 - Extracting content from image
+2024-10-23 15:54:40,364 - services.image_processor_service - DEBUG - image_processor_service.py:12 - Extracted image content: Here’s the extracted information formatted in JSON:
+
+```json
+{
+  "plan_name": "BOJ",
+  "validity": "N/A",
+  "units": {
+    "offNet": "0Min",
+    "onNet": "20Min",
+    "peak": "10Min"
+  },
+  "duration": "N/A",
+  "price": "$0.60"
+}
+```
+2024-10-23 15:55:21,178 - services.image_processor_service - INFO - image_processor_service.py:10 - Extracting content from image
+2024-10-23 15:55:27,274 - services.image_processor_service - DEBUG - image_processor_service.py:12 - Extracted image content: Here’s the extracted information from the image formatted as JSON:
+
+```json
+{
+    "Product Name": "BOJ OffNet",
+    "Validity": "O/Peak",
+    "Units": {
+        "OffNet": "0 Min",
+        "OnNet": "20 Min"
+    },
+    "Duration": "10 Min",
+    "Price": "$0.60"
+}
+```
+2024-10-23 17:58:38,003 - services.image_processor_service - INFO - image_processor_service.py:10 - Extracting content from image
+2024-10-23 17:58:51,080 - services.image_processor_service - DEBUG - image_processor_service.py:12 - Extracted image content: Based on the content from the image, here is the extracted information in JSON format:
+
+```json
+{
+  "Product Name": "Hayyak 20",
+  "Validity": "4 Weeks",
+  "Units": {
+    "Data allowance": "34 GB",
+    "Flexi Minutes": "650 min"
+  },
+  "Price": "20 OMR"
+}
+```
+2024-10-23 18:15:07,933 - services.image_processor_service - INFO - image_processor_service.py:10 - Extracting content from image
+2024-10-23 18:15:22,500 - services.image_processor_service - DEBUG - image_processor_service.py:12 - Extracted image content: ```json
+{
+  "Product Name": "Hayyak 20",
+  "Validity": "4 Weeks",
+  "Data Allowance": "34 GB",
+  "Flexi Minutes": "650 min",
+  "Price": "20 OMR",
+  "VAT": "5%"
+}
+```
+2024-10-28 11:07:34,028 - services.image_processor_service - INFO - image_processor_service.py:10 - Extracting content from image
+2024-10-28 11:07:55,192 - services.image_processor_service - DEBUG - image_processor_service.py:12 - Extracted image content: Here is the extracted content in JSON format:
+
+```json
+{
+  "Product Name": "Hayyak 20",
+  "Validity": "4 Weeks",
+  "Units": {
+    "Data allowance": "34 GB",
+    "Flexi Minutes": "650 min"
+  },
+  "Price": "20 OMR"
+}
+```
+2024-10-28 11:12:04,539 - services.image_processor_service - INFO - image_processor_service.py:10 - Extracting content from image
+2024-10-28 11:12:14,084 - services.image_processor_service - DEBUG - image_processor_service.py:12 - Extracted image content: ```json
+{
+  "Product Name": "Hayyak 20",
+  "Validity": "4 Weeks",
+  "Units": {
+    "Data allowance": "34 GB",
+    "Flexi Minutes": "650 min"
+  },
+  "Price": "20 OMR",
+  "VAT": "5%"
+}
+```
+2024-10-28 11:25:17,193 - services.image_processor_service - INFO - image_processor_service.py:10 - Extracting content from image
+2024-10-28 11:25:28,308 - services.image_processor_service - DEBUG - image_processor_service.py:12 - Extracted image content: Here’s the extracted content formatted as JSON:
+
+```json
+{
+  "Product Name": "BOJ OffNet",
+  "Validity": "N/A",
+  "Units": {
+    "OffNet Minutes": 0,
+    "OnNet Minutes": 20,
+    "Peak Minutes": 10
+  },
+  "Duration": "N/A",
+  "Price": "$0.60"
+}
+```
+2024-10-28 11:57:37,846 - services.image_processor_service - INFO - image_processor_service.py:10 - Extracting content from image
+2024-10-28 11:57:48,238 - services.image_processor_service - DEBUG - image_processor_service.py:12 - Extracted image content: ```json
+{
+  "Product Name": "Hayyak 20",
+  "Validity": "4 Weeks",
+  "Units": {
+    "Data allowance": "34 GB",
+    "Flexi Minutes": "650 min"
+  },
+  "Price": "20 OMR",
+  "VAT": "5%"
+}
+```
+2024-10-29 17:09:27,387 - services.image_processor_service - INFO - image_processor_service.py:10 - Extracting content from image
+2024-10-29 17:09:47,963 - services.image_processor_service - DEBUG - image_processor_service.py:12 - Extracted image content: Here’s the extracted content in JSON format:
+
+```json
+{
+  "Product Name": "BOJ",
+  "Validity": "Not specified",
+  "Units": {
+    "OffNet": "0 Min",
+    "OnNet": "20 Min",
+    "Peak": "10 Min"
+  },
+  "Duration": "Not specified",
+  "Price": "$0.60"
+}
+```
+2024-10-29 17:11:09,717 - services.image_processor_service - INFO - image_processor_service.py:10 - Extracting content from image
+2024-10-29 17:11:18,858 - services.image_processor_service - DEBUG - image_processor_service.py:12 - Extracted image content: Here's the JSON representation of the extracted content:
+
+```json
+{
+  "Product Name": "Hayyak 20",
+  "Validity": "4 Weeks",
+  "Units": {
+    "Data allowance": "34 GB",
+    "Flexi Minutes": "650 min"
+  },
+  "Price": "20 OMR"
+}
+```
+2024-10-29 17:13:18,804 - services.image_processor_service - INFO - image_processor_service.py:10 - Extracting content from image
+2024-10-29 17:13:26,587 - services.image_processor_service - DEBUG - image_processor_service.py:12 - Extracted image content: Here is the extracted content formatted as JSON:
+
+```json
+{
+  "Product Name": "BOJ",
+  "Validity": "N/A",
+  "Units": {
+    "OffNet": "0 Min",
+    "OnNet": "20 Min",
+    "Peak": "10 Min"
+  },
+  "Duration": "N/A",
+  "Price": "$0.60"
+}
+```
+2024-10-29 17:15:58,433 - services.image_processor_service - INFO - image_processor_service.py:10 - Extracting content from image
+2024-10-29 17:16:12,170 - services.image_processor_service - DEBUG - image_processor_service.py:12 - Extracted image content: Here is the extracted content in JSON format:
+
+```json
+{
+  "Product Name": "Hayyak 20",
+  "Validity": "4 Weeks",
+  "Units": {
+    "Data allowance": "34 GB",
+    "Flexi Minutes": "650 min"
+  },
+  "Price": "20 OMR",
+  "VAT": "5% included"
+}
+```
+2024-10-29 17:17:15,426 - services.image_processor_service - INFO - image_processor_service.py:10 - Extracting content from image
+2024-10-29 17:17:24,369 - services.image_processor_service - DEBUG - image_processor_service.py:12 - Extracted image content: Here’s the extracted content in JSON format:
+
+```json
+{
+  "Product Name": "Hayyak 20",
+  "Validity": "4 Weeks",
+  "Units": {
+    "Data allowance": "34 GB",
+    "Flexi Minutes": "650 min"
+  },
+  "Price": "20 OMR"
+}
+```
+2024-10-30 14:27:42,943 - services.image_processor_service - INFO - image_processor_service.py:10 - Extracting content from image
+2024-10-30 14:28:02,049 - services.image_processor_service - DEBUG - image_processor_service.py:12 - Extracted image content: Here is the extracted content formatted as JSON:
+
+```json
+{
+  "Product Name": "Hayyak 20",
+  "Validity": "4 Weeks",
+  "Units": {
+    "Data allowance": "34 GB",
+    "Flexi Minutes": "650 min"
+  },
+  "Duration": "4 Weeks",
+  "Price": "20 OMR"
+}
+```
+2024-11-04 10:40:54,211 - services.image_processor_service - INFO - image_processor_service.py:10 - Extracting content from image
+2024-11-04 10:41:05,465 - services.image_processor_service - DEBUG - image_processor_service.py:12 - Extracted image content: Here’s the extracted content formatted as JSON:
+
+```json
+{
+  "Product Name": "Hayyak 20",
+  "Validity": "4 Weeks",
+  "Data Allowance": "34 GB",
+  "Flexi Minutes": "650 min",
+  "Price": "20 OMR",
+  "VAT": "5% included"
+}
+```
+2024-11-04 10:45:06,657 - services.image_processor_service - INFO - image_processor_service.py:10 - Extracting content from image
+2024-11-04 10:45:20,739 - services.image_processor_service - DEBUG - image_processor_service.py:12 - Extracted image content: Here's the extracted content in JSON format:
+
+```json
+{
+  "Product Name": "Hayyak 20",
+  "Price": "20 OMR",
+  "Validity": "4 Weeks",
+  "Units": {
+    "Data allowance": "34 GB",
+    "Flexi Minutes": "650 min"
+  },
+  "VAT": "5% included"
+}
+```
+2024-11-04 10:46:20,976 - services.image_processor_service - INFO - image_processor_service.py:10 - Extracting content from image
+2024-11-04 10:46:32,518 - services.image_processor_service - DEBUG - image_processor_service.py:12 - Extracted image content: ```json
+{
+  "Product Name": "Hayyak 20",
+  "Price": "20 OMR",
+  "Validity": "4 Weeks",
+  "Data Allowance": "34 GB",
+  "Flexi Minutes": "650 min",
+  "VAT": "5%"
+}
+```
+2024-11-04 10:47:26,426 - services.image_processor_service - INFO - image_processor_service.py:10 - Extracting content from image
+2024-11-04 10:47:34,502 - services.image_processor_service - DEBUG - image_processor_service.py:12 - Extracted image content: ```json
+{
+  "Product Name": "Hayyak 20",
+  "Price": "20 OMR",
+  "Validity": "4 Weeks",
+  "Data Allowance": "34 GB",
+  "Flexi Minutes": "650 min",
+  "VAT": "5%"
+}
+```
+2024-11-04 11:02:21,462 - services.image_processor_service - INFO - image_processor_service.py:10 - Extracting content from image
+2024-11-04 11:02:41,273 - services.image_processor_service - DEBUG - image_processor_service.py:12 - Extracted image content: Here's the extracted content formatted as JSON:
+
+```json
+{
+  "Product Name": "Hayyak 20",
+  "Validity": "4 Weeks",
+  "Units": {
+    "Data allowance": "34 GB",
+    "Flexi Minutes": "650 min"
+  },
+  "Duration": "4 Weeks",
+  "Price": "20 OMR"
+}
+```
+2024-11-04 11:07:43,787 - services.image_processor_service - INFO - image_processor_service.py:10 - Extracting content from image
+2024-11-04 11:07:55,001 - services.image_processor_service - DEBUG - image_processor_service.py:12 - Extracted image content: Here’s the extracted content in JSON format:
+
+```json
+{
+  "Product Name": "Hayyak 20",
+  "Validity": "4 Weeks",
+  "Units": {
+    "Data allowance": "34 GB",
+    "Flexi Minutes": "650 min"
+  },
+  "Duration": "4 Weeks",
+  "Price": "20 OMR"
+}
+```
+2024-11-04 11:22:33,637 - services.image_processor_service - INFO - image_processor_service.py:10 - Extracting content from image
+2024-11-04 11:22:49,638 - services.image_processor_service - DEBUG - image_processor_service.py:12 - Extracted image content: Here’s the extracted content in JSON format:
+
+```json
+{
+  "Product Name": "Hayyak 15",
+  "Validity": "4 Weeks",
+  "Units": {
+    "Data Allowance": "22 GB",
+    "Flexi Minutes": "450 min"
+  },
+  "Duration": "4 Weeks",
+  "Price": "15 OMR"
+}
+```
+2024-11-04 11:29:56,240 - services.image_processor_service - INFO - image_processor_service.py:10 - Extracting content from image
+2024-11-04 11:30:08,199 - services.image_processor_service - DEBUG - image_processor_service.py:12 - Extracted image content: Here’s the extracted content formed into JSON format:
+
+```json
+{
+  "Product Name": "Hayyak 7",
+  "Validity": "4 Weeks",
+  "Units": {
+    "Data allowance": "7 GB",
+    "Flexi Minutes": "150 min"
+  },
+  "Price": "7 OMR"
+}
+```
+2024-11-04 11:31:48,911 - services.image_processor_service - INFO - image_processor_service.py:10 - Extracting content from image
+2024-11-04 11:31:56,918 - services.image_processor_service - DEBUG - image_processor_service.py:12 - Extracted image content: Based on the extracted content from the image, here is the JSON representation:
+
+```json
+{
+  "Product Name": "Hayyak 7",
+  "Validity": "4 Weeks",
+  "Units": {
+    "Data allowance": "7 GB",
+    "Flexi Minutes": "150 min"
+  },
+  "Duration": "4 Weeks",
+  "Price": "7 OMR",
+  "VAT": "5% included"
+}
+```
+2024-11-04 11:37:57,165 - services.image_processor_service - INFO - image_processor_service.py:10 - Extracting content from image
+2024-11-04 11:38:17,558 - services.image_processor_service - DEBUG - image_processor_service.py:12 - Extracted image content: Here's the extracted content in JSON format:
+
+```json
+{
+  "Product Name": "Hayyak 15 Long Validity",
+  "Validity": "12 weeks",
+  "Units": {
+    "Data allowance": "25 GB",
+    "Flexi Minutes": "300 Min"
+  },
+  "Price": "15 OMR"
+}
+```
+2024-11-04 13:21:06,481 - services.image_processor_service - INFO - image_processor_service.py:10 - Extracting content from image
+2024-11-04 13:21:27,148 - services.image_processor_service - DEBUG - image_processor_service.py:12 - Extracted image content: Based on the content extracted from the image, here is the JSON representation:
+
+```json
+{
+  "Product Name": "BOJ",
+  "Validity": null,
+  "Units": {
+    "OffNet Minutes": 0,
+    "OnNet Minutes": 20,
+    "Peak Minutes": 10
+  },
+  "Duration": null,
+  "Price": "$0.60"
+}
+``` 
+
+This JSON structure captures the details as per your request. Note that "validity" and "duration" are marked as null since that information wasn't provided in the image.
+2024-11-04 13:33:43,767 - services.image_processor_service - INFO - image_processor_service.py:10 - Extracting content from image
+2024-11-04 13:33:56,228 - services.image_processor_service - DEBUG - image_processor_service.py:12 - Extracted image content: Here's the extracted content in JSON format:
+
+```json
+{
+  "Product Name": "Daily Data",
+  "Validity": "1 Day",
+  "Units": "MB",
+  "Duration": "1 Day",
+  "Price": "1 OMR",
+  "Data Allowance": "50 MB"
+}
+```
+2024-11-04 14:33:33,723 - services.image_processor_service - INFO - image_processor_service.py:10 - Extracting content from image
+2024-11-04 14:33:42,578 - services.image_processor_service - DEBUG - image_processor_service.py:12 - Extracted image content: Here's the extracted content formatted as JSON:
+
+```json
+{
+  "Product Name": "Daily Data",
+  "Validity": "1 Day",
+  "Units": "MB",
+  "Duration": "1 Day",
+  "Price": "1 OMR",
+  "Data Allowance": "50 MB"
+}
+```
+2024-11-04 14:36:15,081 - services.image_processor_service - INFO - image_processor_service.py:10 - Extracting content from image
+2024-11-04 14:36:34,745 - services.image_processor_service - DEBUG - image_processor_service.py:12 - Extracted image content: Based on the content extracted from the image, here is the JSON representation:
+
+```json
+{
+  "Product Name": "Daily Data",
+  "Validity": "1 Day",
+  "Units": "MB",
+  "Duration": "1 Day",
+  "Price": "1 OMR",
+  "Data Allowance": "50 MB"
+}
+```
+2024-11-04 14:40:40,774 - services.image_processor_service - INFO - image_processor_service.py:10 - Extracting content from image
+2024-11-04 14:40:51,976 - services.image_processor_service - DEBUG - image_processor_service.py:12 - Extracted image content: Here’s the extracted content in JSON format:
+
+```json
+{
+    "Product Name": "Hayyak 20",
+    "Validity": "4 Weeks",
+    "Units": {
+        "Data Allowance": "34 GB",
+        "Flexi Minutes": "650 min"
+    },
+    "Duration": "4 Weeks",
+    "Price": "20 OMR"
+}
+```
+2024-11-04 15:07:23,846 - services.image_processor_service - INFO - image_processor_service.py:10 - Extracting content from image
+2024-11-04 15:07:35,925 - services.image_processor_service - DEBUG - image_processor_service.py:12 - Extracted image content: Here is the extracted content in JSON format:
+
+```json
+{
+  "Product Name": "Daily Data 50MB",
+  "Validity": "1 Day",
+  "Units": "MB",
+  "Duration": "1 Day",
+  "Price": "10 OMR",
+  "Data Allowance": "50 MB"
+}
+```
+2024-11-04 15:08:53,149 - services.image_processor_service - INFO - image_processor_service.py:10 - Extracting content from image
+2024-11-04 15:09:01,847 - services.image_processor_service - DEBUG - image_processor_service.py:12 - Extracted image content: Here’s the extracted information formatted as JSON:
+
+```json
+{
+  "Product Name": "Daily Data",
+  "Validity": "1 Day",
+  "Units": "MB",
+  "Duration": "1 Day",
+  "Price": "10 OMR",
+  "Data Allowance": "50 MB"
+}
+```
+2024-11-04 15:09:55,872 - services.image_processor_service - INFO - image_processor_service.py:10 - Extracting content from image
+2024-11-04 15:10:02,138 - services.image_processor_service - DEBUG - image_processor_service.py:12 - Extracted image content: Here's the extracted content in JSON format:
+
+```json
+{
+  "Product Name": "Daily Data",
+  "Validity": "1 Day",
+  "Units": "MB",
+  "Duration": "1 Day",
+  "Price": "10 OMR",
+  "Data Allowance": "50 MB"
+}
+```
+2024-11-04 15:11:26,223 - services.image_processor_service - INFO - image_processor_service.py:10 - Extracting content from image
+2024-11-04 15:11:44,991 - services.image_processor_service - DEBUG - image_processor_service.py:12 - Extracted image content: Here's the extracted content from the image formatted into JSON:
+
+```json
+{
+  "Product Name": "Daily Data",
+  "Validity": "1 Day",
+  "Units": "MB",
+  "Duration": "1 Day",
+  "Price": "10 OMR",
+  "Data Allowance": "50 MB"
+}
+```
+2024-11-04 15:13:59,884 - services.image_processor_service - INFO - image_processor_service.py:10 - Extracting content from image
+2024-11-04 15:14:12,623 - services.image_processor_service - DEBUG - image_processor_service.py:12 - Extracted image content: Here's the extracted content structured in JSON format:
+
+```json
+{
+  "Product Name": "Daily Data",
+  "Validity": "1 Day",
+  "Units": "MB",
+  "Duration": "1 Day",
+  "Price": "10 OMR",
+  "Data Allowance": "50 MB"
+}
+```
+2024-11-04 15:20:59,055 - services.image_processor_service - INFO - image_processor_service.py:10 - Extracting content from image
+2024-11-04 15:21:06,738 - services.image_processor_service - DEBUG - image_processor_service.py:12 - Extracted image content: Here’s the extracted content in JSON format:
+
+```json
+{
+  "Product Name": "Daily Data",
+  "Validity": "1 Day",
+  "Units": "MB",
+  "Duration": "1 Day",
+  "Price": "10 OMR",
+  "Data Allowance": "50 MB"
+}
+```
+2024-11-04 15:23:52,944 - services.image_processor_service - INFO - image_processor_service.py:10 - Extracting content from image
+2024-11-04 15:24:01,837 - services.image_processor_service - DEBUG - image_processor_service.py:12 - Extracted image content: Here is the extracted content from the image in JSON format:
+
+```json
+{
+  "Product Name": "Daily Data",
+  "Validity": "1 Day",
+  "Units": "MB",
+  "Data Allowance": "50 MB",
+  "Price": "10 OMR"
+}
+```
+2024-11-04 15:26:44,235 - services.image_processor_service - INFO - image_processor_service.py:10 - Extracting content from image
+2024-11-04 15:27:01,245 - services.image_processor_service - DEBUG - image_processor_service.py:12 - Extracted image content: Here's the extracted content in JSON format:
+
+```json
+{
+  "Product Name": "Daily Data 50MB",
+  "Validity": "1 Day",
+  "Units": "MB",
+  "Duration": "1 Day",
+  "Price": "10 OMR",
+  "Data Allowance": "50 MB"
+}
+```
+2024-11-04 15:27:36,056 - services.image_processor_service - INFO - image_processor_service.py:10 - Extracting content from image
+2024-11-04 15:27:43,335 - services.image_processor_service - DEBUG - image_processor_service.py:12 - Extracted image content: ```json
+{
+  "Product Name": "Daily Data 50MB",
+  "Validity": "1 Day",
+  "Units": "MB",
+  "Duration": "1 Day",
+  "Price": "10 OMR",
+  "Data Allowance": "50 MB"
+}
+```
+2024-11-04 15:28:56,291 - services.image_processor_service - INFO - image_processor_service.py:10 - Extracting content from image
+2024-11-04 15:29:07,089 - services.image_processor_service - DEBUG - image_processor_service.py:12 - Extracted image content: Here is the extracted content in JSON format:
+
+```json
+{
+  "Product Name": "Daily Data",
+  "Validity": "1 Day",
+  "Units": "MB",
+  "Duration": "1 Day",
+  "Price": "10 OMR",
+  "Data Allowance": "50 MB"
+}
+```
+2024-11-04 15:35:26,276 - services.image_processor_service - INFO - image_processor_service.py:10 - Extracting content from image
+2024-11-04 15:35:35,587 - services.image_processor_service - DEBUG - image_processor_service.py:12 - Extracted image content: ```json
+{
+    "plan_name": "daily_data",
+    "price": {
+        "amount": 10,
+        "currency": "OMR"
+    },
+    "validity": {
+        "duration": 1,
+        "unit": "Day"
+    },
+    "data_allowance": {
+        "amount": 50,
+        "unit": "MB"
+    }
+}
+```
+2024-11-04 15:37:40,703 - services.image_processor_service - INFO - image_processor_service.py:10 - Extracting content from image
+2024-11-04 15:37:52,123 - services.image_processor_service - DEBUG - image_processor_service.py:12 - Extracted image content: ```json
+{
+    "plan_name": "Daily Data 50MB",
+    "price": {
+        "amount": 10,
+        "currency": "OMR"
+    },
+    "validity": {
+        "duration": 1,
+        "unit": "Day"
+    },
+    "data_allowance": {
+        "amount": 50,
+        "unit": "MB"
+    }
+}
+```
+2024-11-04 15:41:04,928 - services.image_processor_service - INFO - image_processor_service.py:10 - Extracting content from image
+2024-11-04 15:41:14,528 - services.image_processor_service - DEBUG - image_processor_service.py:12 - Extracted image content: ```json
+{
+    "product name/plan name": "Daily Data 50MB",
+    "price": {
+        "amount": 10,
+        "currency": "OMR"
+    },
+    "validity": {
+        "duration": 1,
+        "unit": "day"
+    },
+    "data_allowance": {
+        "amount": 50,
+        "unit": "MB"
+    }
+}
+```
+2024-11-04 15:42:38,503 - services.image_processor_service - INFO - image_processor_service.py:10 - Extracting content from image
+2024-11-04 15:42:56,760 - services.image_processor_service - DEBUG - image_processor_service.py:12 - Extracted image content: Here's the extracted data formatted as JSON:
+
+```json
+{
+    "product name/plan name": "Daily Data 50MB",
+    "price": {
+        "amount": 10,
+        "currency": "OMR"
+    },
+    "validity": {
+        "duration": 1,
+        "unit": "day"
+    },
+    "data_allowance": {
+        "amount": 50,
+        "unit": "MB"
+    }
+}
+```
+2024-11-04 15:51:13,468 - services.image_processor_service - INFO - image_processor_service.py:10 - Extracting content from image
+2024-11-04 15:51:25,396 - services.image_processor_service - DEBUG - image_processor_service.py:12 - Extracted image content: ```json
+{
+    "product name/plan name": "Daily Data",
+    "price": {
+        "amount": 1,
+        "currency": "OMR"
+    },
+    "validity": {
+        "duration": 1,
+        "unit": "day"
+    },
+    "data_allowance": {
+        "amount": 50,
+        "unit": "MB"
+    }
+}
+```
+2024-11-04 15:52:51,871 - services.image_processor_service - INFO - image_processor_service.py:10 - Extracting content from image
+2024-11-04 15:52:59,452 - services.image_processor_service - DEBUG - image_processor_service.py:12 - Extracted image content: ```json
+{
+    "product name/plan name": "Daily Data 50MB",
+    "price": {
+        "amount": 1,
+        "currency": "OMR"
+    },
+    "validity": {
+        "duration": 1,
+        "unit": "day"
+    },
+    "data_allowance": {
+        "amount": 50,
+        "unit": "MB"
+    }
+}
+```
+2024-11-04 15:56:48,735 - services.image_processor_service - INFO - image_processor_service.py:10 - Extracting content from image
+2024-11-04 15:56:59,784 - services.image_processor_service - DEBUG - image_processor_service.py:12 - Extracted image content: ```json
+{
+    "product name/plan name": "Daily Data 50MB",
+    "price": {
+        "amount": 1,
+        "currency": "OMR"
+    },
+    "validity": {
+        "duration": 1,
+        "unit": "day"
+    },
+    "data_allowance": {
+        "amount": 50,
+        "unit": "MB"
+    }
+}
+```
+2024-11-04 16:01:21,297 - services.image_processor_service - INFO - image_processor_service.py:10 - Extracting content from image
+2024-11-04 16:01:36,911 - services.image_processor_service - DEBUG - image_processor_service.py:12 - Extracted image content: ```json
+{
+    "product name/plan name": "Daily Data 50MB",
+    "price": {
+        "amount": 1,
+        "currency": "OMR"
+    },
+    "validity": {
+        "duration": 1,
+        "unit": "day"
+    },
+    "data_allowance": {
+        "amount": 50,
+        "unit": "MB"
+    }
+}
+```
+2024-11-04 16:03:00,018 - services.image_processor_service - INFO - image_processor_service.py:10 - Extracting content from image
+2024-11-04 16:03:13,475 - services.image_processor_service - DEBUG - image_processor_service.py:12 - Extracted image content: ```json
+{
+    "product name/plan name": "Daily Data 50MB",
+    "price": {
+        "amount": 1,
+        "currency": "OMR"
+    },
+    "validity": {
+        "duration": 1,
+        "unit": "day"
+    },
+    "data_allowance": {
+        "amount": 50,
+        "unit": "MB"
+    }
+}
+```
+2024-11-04 16:07:36,338 - services.image_processor_service - INFO - image_processor_service.py:10 - Extracting content from image
+2024-11-04 16:07:45,576 - services.image_processor_service - DEBUG - image_processor_service.py:12 - Extracted image content: ```json
+{
+    "product name/plan name": "Daily Data",
+    "price": {
+        "amount": 1,
+        "currency": "OMR"
+    },
+    "validity": {
+        "duration": 1,
+        "unit": "day"
+    },
+    "data_allowance": {
+        "amount": 50,
+        "unit": "MB"
+    }
+}
+```
+2024-11-04 16:09:37,820 - services.image_processor_service - INFO - image_processor_service.py:10 - Extracting content from image
+2024-11-04 16:09:49,917 - services.image_processor_service - DEBUG - image_processor_service.py:12 - Extracted image content: ```json
+{
+    "product name/plan name": "Daily Data 50MB",
+    "price": {
+        "amount": 1,
+        "currency": "OMR"
+    },
+    "validity": {
+        "duration": 1,
+        "unit": "day"
+    },
+    "data_allowance": {
+        "amount": 50,
+        "unit": "MB"
+    }
+}
+```
+2024-11-04 16:18:36,311 - services.image_processor_service - INFO - image_processor_service.py:10 - Extracting content from image
+2024-11-04 16:18:52,837 - services.image_processor_service - DEBUG - image_processor_service.py:12 - Extracted image content: ```json
+{
+    "product name/plan name": "Daily Data 50MB",
+    "price": {
+        "amount": 1,
+        "currency": "OMR"
+    },
+    "validity": {
+        "duration": 1,
+        "unit": "day"
+    },
+    "data_allowance": {
+        "amount": 50,
+        "unit": "MB"
+    }
+}
+```
+2024-11-04 16:29:11,606 - services.image_processor_service - INFO - image_processor_service.py:10 - Extracting content from image
+2024-11-04 16:29:25,373 - services.image_processor_service - DEBUG - image_processor_service.py:12 - Extracted image content: ```json
+{
+    "product name/plan name": "Daily Data 50MB",
+    "price": {
+        "amount": 1,
+        "currency": "OMR"
+    },
+    "validity": {
+        "duration": 1,
+        "unit": "day"
+    },
+    "data_allowance": {
+        "amount": 50,
+        "unit": "MB"
+    }
+}
+```
+2024-11-04 17:13:30,082 - services.image_processor_service - INFO - image_processor_service.py:10 - Extracting content from image
+2024-11-04 17:13:48,889 - services.image_processor_service - DEBUG - image_processor_service.py:12 - Extracted image content: ```json
+{
+    "product name/plan name": "Daily Data 50MB",
+    "price": {
+        "amount": 1,
+        "currency": "OMR"
+    },
+    "validity": {
+        "duration": 1,
+        "unit": "day"
+    },
+    "data_allowance": {
+        "amount": 50,
+        "unit": "MB"
+    }
+}
+```
+2024-11-05 15:30:13,237 - services.image_processor_service - INFO - image_processor_service.py:10 - Extracting content from image
+2024-11-05 15:30:25,183 - services.image_processor_service - DEBUG - image_processor_service.py:12 - Extracted image content: I'm unable to analyze the content of the image as requested. If you have any specific details or text from the image that you can provide, I’ll be glad to assist you with that information!
+2024-11-06 11:59:42,638 - services.image_processor_service - INFO - image_processor_service.py:10 - Extracting content from image
+2024-11-06 11:59:54,577 - services.image_processor_service - DEBUG - image_processor_service.py:12 - Extracted image content: ```json
+{
+    "product name/plan name": "Hayyak 20",
+    "price": {
+        "amount": 20,
+        "currency": "OMR"
+    },
+    "validity": {
+        "duration": 28,
+        "unit": "day"
+    },
+    "data_allowance": {
+        "amount": 34,
+        "unit": "GB"
+    }
+}
+```
+2024-11-06 12:01:00,705 - services.image_processor_service - INFO - image_processor_service.py:10 - Extracting content from image
+2024-11-06 12:01:07,824 - services.image_processor_service - DEBUG - image_processor_service.py:12 - Extracted image content: ```json
+{
+    "product name/plan name": "Hayyak 20",
+    "price": {
+        "amount": 20,
+        "currency": "OMR"
+    },
+    "validity": {
+        "duration": 28,
+        "unit": "day"
+    },
+    "data_allowance": {
+        "amount": 34,
+        "unit": "GB"
+    }
+}
+```
+2024-11-06 12:02:34,394 - services.image_processor_service - INFO - image_processor_service.py:10 - Extracting content from image
+2024-11-06 12:02:42,704 - services.image_processor_service - DEBUG - image_processor_service.py:12 - Extracted image content: Based on the provided image, here is the extracted data formatted as requested in JSON:
+
+```json
+{
+    "product name/plan name": "Hayyak 20",
+    "price": {
+        "amount": 20,
+        "currency": "OMR"
+    },
+    "validity": {
+        "duration": 28,
+        "unit": "day"
+    },
+    "data_allowance": {
+        "amount": 34,
+        "unit": "GB"
+    }
+}
+``` 
+
+### Explanation:
+
+- **Plan Name**: "Hayyak 20"
+- **Price**: 20 OMR
+- **Validity**: 4 weeks corresponds to 28 days.
+- **Data Allowance**: 34 GB.
+2024-11-06 12:08:40,386 - services.image_processor_service - INFO - image_processor_service.py:10 - Extracting content from image
+2024-11-06 12:08:53,216 - services.image_processor_service - DEBUG - image_processor_service.py:12 - Extracted image content: Based on the image provided, here is the extracted information formatted as JSON:
+
+```json
+{
+    "product name/plan name": "Hayyak 20",
+    "price": {
+        "amount": 20,
+        "currency": "OMR"
+    },
+    "validity": {
+        "duration": 28,
+        "unit": "day"
+    },
+    "data_allowance": {
+        "amount": 34,
+        "unit": "GB"
+    }
+}
+``` 
+
+### Explanation of the Data Extraction:
+1. **Plan Name**: "Hayyak 20" (exactly as shown)
+2. **Price**: 20 OMR (verified as 20)
+3. **Validity**: 4 weeks converted to days is 28 days (exact number)
+4. **Data Allowance**: 34 GB (exact number and unit)
+
+All numerical values were checked for accuracy.
+2024-11-06 18:40:09,612 - services.image_processor_service - INFO - image_processor_service.py:10 - Extracting content from image
+2024-11-06 18:40:27,625 - services.image_processor_service - DEBUG - image_processor_service.py:12 - Extracted image content: ```json
+{
+    "product name/plan name": "Hayyak 20",
+    "price": {
+        "amount": 20,
+        "currency": "OMR"
+    },
+    "validity": {
+        "duration": 28,
+        "unit": "day"
+    },
+    "data_allowance": {
+        "amount": 34,
+        "unit": "GB"
+    }
+}
+```
+2024-11-08 11:09:14,397 - services.image_processor_service - INFO - image_processor_service.py:10 - Extracting content from image
+2024-11-08 11:09:27,064 - services.image_processor_service - DEBUG - image_processor_service.py:12 - Extracted image content: ```json
+{
+    "product name/plan name": "Hayyak 20",
+    "price": {
+        "amount": 20,
+        "currency": "OMR"
+    },
+    "validity": {
+        "duration": 28,
+        "unit": "day"
+    },
+    "data_allowance": {
+        "amount": 34,
+        "unit": "GB"
+    }
+}
+```
+2024-11-08 11:13:31,441 - services.image_processor_service - INFO - image_processor_service.py:10 - Extracting content from image
+2024-11-08 11:13:40,056 - services.image_processor_service - DEBUG - image_processor_service.py:12 - Extracted image content: ```json
+{
+    "product name/plan name": "Hayyak 20",
+    "price": {
+        "amount": 20,
+        "currency": "OMR"
+    },
+    "validity": {
+        "duration": 28,
+        "unit": "day"
+    },
+    "data_allowance": {
+        "amount": 34,
+        "unit": "GB"
+    }
+}
+```
+2024-11-08 11:51:05,099 - services.image_processor_service - INFO - image_processor_service.py:10 - Extracting content from image
+2024-11-08 11:51:13,309 - services.image_processor_service - DEBUG - image_processor_service.py:12 - Extracted image content: ```json
+{
+    "product name/plan name": "Hayyak 20",
+    "price": {
+        "amount": 20,
+        "currency": "OMR"
+    },
+    "validity": {
+        "duration": 28,
+        "unit": "day"
+    },
+    "data_allowance": {
+        "amount": 34,
+        "unit": "GB"
+    }
+}
+```
+2024-11-13 16:14:53,225 - services.image_processor_service - INFO - image_processor_service.py:10 - Extracting content from image
+2024-11-13 16:15:01,836 - services.image_processor_service - DEBUG - image_processor_service.py:12 - Extracted image content: I'm unable to analyze images directly. However, if you describe the content of the image or the relevant numerical details, I can help you format that information into the specified JSON structure.
+2024-11-13 16:52:36,813 - services.image_processor_service - INFO - image_processor_service.py:10 - Extracting content from image
+2024-11-13 16:52:55,611 - services.image_processor_service - DEBUG - image_processor_service.py:12 - Extracted image content: ```json
+{
+    "product name/plan name": "Hayyak 20",
+    "price": {
+        "amount": 20,
+        "currency": "OMR"
+    },
+    "validity": {
+        "duration": 28,
+        "unit": "day"
+    },
+    "data_allowance": {
+        "amount": 34,
+        "unit": "GB"
+    }
+}
+```
+2024-11-13 16:59:50,377 - services.image_processor_service - INFO - image_processor_service.py:10 - Extracting content from image
+2024-11-13 17:00:03,175 - services.image_processor_service - DEBUG - image_processor_service.py:12 - Extracted image content: ```json
+{
+    "product name/plan name": "Hayyak 20",
+    "price": {
+        "amount": 20,
+        "currency": "OMR"
+    },
+    "validity": {
+        "duration": 28,
+        "unit": "day"
+    },
+    "data_allowance": {
+        "amount": 34,
+        "unit": "GB"
+    }
+}
+```
+2024-11-13 17:13:11,636 - services.image_processor_service - INFO - image_processor_service.py:10 - Extracting content from image
+2024-11-13 17:13:30,638 - services.image_processor_service - DEBUG - image_processor_service.py:12 - Extracted image content: ```json
+{
+    "product name/plan name": "Hayyak 20",
+    "price": {
+        "amount": 20,
+        "currency": "OMR"
+    },
+    "validity": {
+        "duration": 28,
+        "unit": "day"
+    },
+    "data_allowance": {
+        "amount": 34,
+        "unit": "GB"
+    }
+}
+```
+2024-11-13 17:16:45,628 - services.image_processor_service - INFO - image_processor_service.py:10 - Extracting content from image
+2024-11-13 17:16:53,392 - services.image_processor_service - DEBUG - image_processor_service.py:12 - Extracted image content: ```json
+{
+    "product name/plan name": "Hayyak 20",
+    "price": {
+        "amount": 20,
+        "currency": "OMR"
+    },
+    "validity": {
+        "duration": 28,
+        "unit": "day"
+    },
+    "data_allowance": {
+        "amount": 34,
+        "unit": "GB"
+    }
+}
+```
+2024-11-20 11:13:20,817 - services.image_processor_service - INFO - image_processor_service.py:10 - Extracting content from image
+2024-11-20 11:13:31,268 - services.image_processor_service - DEBUG - image_processor_service.py:12 - Extracted image content: ```json
+{
+    "product name/plan name": "BOJ OffNet 0Min OnNet 20Min O/Peak 10 Min",
+    "price": {
+        "amount": 60,
+        "currency": "USD"
+    },
+    "validity": {
+        "duration": 0,
+        "unit": "day"
+    },
+    "data_allowance": {
+        "amount": 0,
+        "unit": "Min"
+    }
+}
+```
+2024-11-20 12:49:51,802 - services.image_processor_service - INFO - image_processor_service.py:10 - Extracting content from image
+2024-11-20 12:50:00,807 - services.image_processor_service - DEBUG - image_processor_service.py:12 - Extracted image content: Based on the details extracted from the image, here is the JSON output:
+
+```json
+{
+    "product name/plan name": "Hayyak 20",
+    "price": {
+        "amount": 20,
+        "currency": "OMR"
+    },
+    "validity": {
+        "duration": 28,
+        "unit": "day"
+    },
+    "data_allowance": {
+        "amount": 34,
+        "unit": "GB"
+    }
+}
+```
+
+### Breakdown:
+- **Plan Name**: "Hayyak 20"
+- **Price**: 20 OMR
+- **Validity**: 4 weeks = 28 days
+- **Data Allowance**: 34 GB
+
+All numerical values are verified with exact precision as requested.
+2024-11-20 12:58:32,146 - services.image_processor_service - INFO - image_processor_service.py:10 - Extracting content from image
+2024-11-20 12:58:41,102 - services.image_processor_service - DEBUG - image_processor_service.py:12 - Extracted image content: ```json
+{
+    "product name/plan name": "Hayyak 20",
+    "price": {
+        "amount": 20,
+        "currency": "OMR"
+    },
+    "validity": {
+        "duration": 28,
+        "unit": "day"
+    },
+    "data_allowance": {
+        "amount": 34,
+        "unit": "GB"
+    }
+}
+```
+2024-11-20 13:14:13,011 - services.image_processor_service - INFO - image_processor_service.py:10 - Extracting content from image
+2024-11-20 13:14:27,731 - services.image_processor_service - DEBUG - image_processor_service.py:12 - Extracted image content: ```json
+{
+    "product name/plan name": "Hayyak 20",
+    "price": {
+        "amount": 20,
+        "currency": "OMR"
+    },
+    "validity": {
+        "duration": 28,
+        "unit": "day"
+    },
+    "data_allowance": {
+        "amount": 34,
+        "unit": "GB"
+    }
+}
+```
+2024-11-20 13:17:39,849 - services.image_processor_service - INFO - image_processor_service.py:10 - Extracting content from image
+2024-11-20 13:17:48,772 - services.image_processor_service - DEBUG - image_processor_service.py:12 - Extracted image content: ```json
+{
+    "product name/plan name": "Hayyak 20",
+    "price": {
+        "amount": 20,
+        "currency": "OMR"
+    },
+    "validity": {
+        "duration": 28,
+        "unit": "day"
+    },
+    "data_allowance": {
+        "amount": 34,
+        "unit": "GB"
+    }
+}
+```
+2024-11-21 12:17:36,160 - services.image_processor_service - INFO - image_processor_service.py:10 - Extracting content from image
+2024-11-21 12:17:48,379 - services.image_processor_service - DEBUG - image_processor_service.py:12 - Extracted image content: ```json
+{
+    "product name/plan name": "Hayyak 20",
+    "price": {
+        "amount": 20,
+        "currency": "OMR"
+    },
+    "validity": {
+        "duration": 28,
+        "unit": "day"
+    },
+    "data_allowance": {
+        "amount": 34,
+        "unit": "GB"
+    }
+}
+```
+2024-11-21 12:18:57,461 - services.image_processor_service - INFO - image_processor_service.py:10 - Extracting content from image
+2024-11-21 12:19:08,273 - services.image_processor_service - DEBUG - image_processor_service.py:12 - Extracted image content: ```json
+{
+    "product name/plan name": "Hayyak 20",
+    "price": {
+        "amount": 20,
+        "currency": "OMR"
+    },
+    "validity": {
+        "duration": 28,
+        "unit": "day"
+    },
+    "data_allowance": {
+        "amount": 34,
+        "unit": "GB"
+    }
+}
+```
+2024-11-22 12:50:21,787 - services.image_processor_service - INFO - image_processor_service.py:10 - Extracting content from image
+2024-11-22 12:50:43,196 - services.image_processor_service - DEBUG - image_processor_service.py:12 - Extracted image content: Here’s the extracted data in the requested JSON format:
+
+```json
+{
+    "product name/plan name": "Hayyak 20",
+    "price": {
+        "amount": 20,
+        "currency": "OMR"
+    },
+    "validity": {
+        "duration": 28,
+        "unit": "day"
+    },
+    "data_allowance": {
+        "amount": 34,
+        "unit": "GB"
+    }
+}
+``` 
+
+### Breakdown:
+- **Plan Name:** "Hayyak 20"
+- **Price:** 20 OMR (20 confirmed as a double digit)
+- **Validity:** 4 weeks, converted to 28 days
+- **Data Allowance:** 34 GB (exactly as shown)
+2024-11-22 12:51:05,140 - services.image_processor_service - INFO - image_processor_service.py:10 - Extracting content from image
+2024-11-22 12:51:12,050 - services.image_processor_service - DEBUG - image_processor_service.py:12 - Extracted image content: ```json
+{
+    "product name/plan name": "Hayyak 20",
+    "price": {
+        "amount": 20,
+        "currency": "OMR"
+    },
+    "validity": {
+        "duration": 28,
+        "unit": "day"
+    },
+    "data_allowance": {
+        "amount": 34,
+        "unit": "GB"
+    }
+}
+```
+2024-11-22 12:57:03,086 - services.image_processor_service - INFO - image_processor_service.py:10 - Extracting content from image
+2024-11-22 12:57:16,584 - services.image_processor_service - DEBUG - image_processor_service.py:12 - Extracted image content: ```json
+{
+    "product name/plan name": "Hayyak 20",
+    "price": {
+        "amount": 20,
+        "currency": "OMR"
+    },
+    "validity": {
+        "duration": 28,
+        "unit": "day"
+    },
+    "data_allowance": {
+        "amount": 34,
+        "unit": "GB"
+    }
+}
+```
+2024-11-22 12:59:31,918 - services.image_processor_service - INFO - image_processor_service.py:10 - Extracting content from image
+2024-11-22 12:59:41,592 - services.image_processor_service - DEBUG - image_processor_service.py:12 - Extracted image content: ```json
+{
+    "product name/plan name": "Hayyak 20",
+    "price": {
+        "amount": 20,
+        "currency": "OMR"
+    },
+    "validity": {
+        "duration": 28,
+        "unit": "day"
+    },
+    "data_allowance": {
+        "amount": 34,
+        "unit": "GB"
+    }
+}
+```
+2024-11-22 13:03:59,576 - services.image_processor_service - INFO - image_processor_service.py:10 - Extracting content from image
+2024-11-22 13:04:11,531 - services.image_processor_service - DEBUG - image_processor_service.py:12 - Extracted image content: ```json
+{
+    "product name/plan name": "Hayyak 20",
+    "price": {
+        "amount": 20,
+        "currency": "OMR"
+    },
+    "validity": {
+        "duration": 28,
+        "unit": "day"
+    },
+    "data_allowance": {
+        "amount": 34,
+        "unit": "GB"
+    }
+}
+```
+2024-11-22 17:08:55,450 - services.image_processor_service - INFO - image_processor_service.py:10 - Extracting content from image
+2024-11-22 17:09:10,583 - services.image_processor_service - DEBUG - image_processor_service.py:12 - Extracted image content: ```json
+{
+    "product name/plan name": "Hayyak Data Only",
+    "price": {
+        "amount": 3,
+        "currency": "OMR"
+    },
+    "validity": {
+        "duration": 28,
+        "unit": "day"
+    },
+    "data_allowance": {
+        "amount": 3,
+        "unit": "GB"
+    }
+}
+```
+2024-11-22 17:13:34,488 - services.image_processor_service - INFO - image_processor_service.py:10 - Extracting content from image
+2024-11-22 17:13:43,074 - services.image_processor_service - DEBUG - image_processor_service.py:12 - Extracted image content: ```json
+{
+    "product name/plan name": "TELE VOICE",
+    "price": {
+        "amount": 100,
+        "currency": "ETB"
+    },
+    "validity": {
+        "duration": 30,
+        "unit": "day"
+    },
+    "data_allowance": {
+        "amount": 400,
+        "unit": "MINS"
+    }
+}
+```
+2024-11-22 18:29:14,356 - services.image_processor_service - INFO - image_processor_service.py:10 - Extracting content from image
+2024-11-22 18:29:32,112 - services.image_processor_service - DEBUG - image_processor_service.py:12 - Extracted image content: ```json
+{
+    "product name/plan name": "Hayyak 20",
+    "price": {
+        "amount": 20,
+        "currency": "OMR"
+    },
+    "validity": {
+        "duration": 28,
+        "unit": "day"
+    },
+    "data_allowance": {
+        "amount": 34,
+        "unit": "GB"
+    }
+}
+```
+2024-11-22 18:41:35,987 - services.image_processor_service - INFO - image_processor_service.py:10 - Extracting content from image
+2024-11-22 18:41:44,305 - services.image_processor_service - DEBUG - image_processor_service.py:12 - Extracted image content: ```json
+{
+    "product name/plan name": "4G WI-FI",
+    "price": {
+        "amount": 1250,
+        "currency": "ETB"
+    },
+    "validity": {
+        "duration": 30,
+        "unit": "day"
+    },
+    "data_allowance": {
+        "amount": 100,
+        "unit": "GB"
+    }
+}
+```
+2024-11-22 18:45:12,045 - services.image_processor_service - INFO - image_processor_service.py:10 - Extracting content from image
+2024-11-22 18:45:28,787 - services.image_processor_service - DEBUG - image_processor_service.py:12 - Extracted image content: ```json
+{
+    "product name/plan name": "TELE SMS",
+    "price": {
+        "amount": 50,
+        "currency": "BR"
+    },
+    "validity": {
+        "duration": 30,
+        "unit": "day"
+    },
+    "data_allowance": {
+        "amount": 1500,
+        "unit": "SMS"
+    }
+}
+```
+2024-11-22 18:49:56,982 - services.image_processor_service - INFO - image_processor_service.py:10 - Extracting content from image
+2024-11-22 18:50:10,544 - services.image_processor_service - DEBUG - image_processor_service.py:12 - Extracted image content: ```json
+{
+    "product name/plan name": "DATA MONTHLY",
+    "price": {
+        "amount": 50,
+        "currency": "BIRR"
+    },
+    "validity": {
+        "duration": 30,
+        "unit": "day"
+    },
+    "data_allowance": {
+        "amount": 850,
+        "unit": "MB"
+    }
+}
+```
+2024-11-22 18:50:14,342 - services.image_processor_service - INFO - image_processor_service.py:10 - Extracting content from image
+2024-11-22 18:50:16,956 - services.image_processor_service - DEBUG - image_processor_service.py:12 - Extracted image content: ```json
+{
+    "product name/plan name": "DATA MONTHLY",
+    "price": {
+        "amount": 50,
+        "currency": "BIRR"
+    },
+    "validity": {
+        "duration": 30,
+        "unit": "day"
+    },
+    "data_allowance": {
+        "amount": 850,
+        "unit": "MB"
+    }
+}
+```
+2024-11-22 18:55:54,494 - services.image_processor_service - INFO - image_processor_service.py:10 - Extracting content from image
+2024-11-22 18:56:07,513 - services.image_processor_service - DEBUG - image_processor_service.py:12 - Extracted image content: ```json
+{
+    "product name/plan name": "TELE VOICE",
+    "price": {
+        "amount": 100,
+        "currency": "ETB"
+    },
+    "validity": {
+        "duration": 30,
+        "unit": "day"
+    },
+    "data_allowance": {
+        "amount": 400,
+        "unit": "MINS"
+    }
+}
+```
+2024-11-24 10:49:39,864 - services.image_processor_service - INFO - image_processor_service.py:10 - Extracting content from image
+2024-11-24 10:49:57,283 - services.image_processor_service - DEBUG - image_processor_service.py:12 - Extracted image content: ```json
+{
+    "product name/plan name": "Hayyak 20",
+    "price": {
+        "amount": 20,
+        "currency": "OMR"
+    },
+    "validity": {
+        "duration": 28,
+        "unit": "day"
+    },
+    "data_allowance": {
+        "amount": 34,
+        "unit": "GB"
+    }
+}
+```
+2024-11-24 22:16:05,346 - services.image_processor_service - INFO - image_processor_service.py:10 - Extracting content from image
+2024-11-24 22:16:22,094 - services.image_processor_service - DEBUG - image_processor_service.py:12 - Extracted image content: ```json
+{
+    "product name/plan name": "TELE VOICE",
+    "price": {
+        "amount": 100,
+        "currency": "BRR"
+    },
+    "validity": {
+        "duration": 30,
+        "unit": "day"
+    },
+    "data_allowance": {
+        "amount": 400,
+        "unit": "MINS"
+    }
+}
+```
+2024-11-24 22:17:32,335 - services.image_processor_service - INFO - image_processor_service.py:10 - Extracting content from image
+2024-11-24 22:17:42,135 - services.image_processor_service - DEBUG - image_processor_service.py:12 - Extracted image content: Here is the extracted data formatted as JSON:
+
+```json
+{
+    "product name/plan name": "TELE VOICE",
+    "price": {
+        "amount": 100,
+        "currency": "ETB"
+    },
+    "validity": {
+        "duration": 30,
+        "unit": "day"
+    },
+    "data_allowance": {
+        "amount": 400,
+        "unit": "MINS"
+    }
+}
+```
+
+### Breakdown:
+- **Plan Name**: "TELE VOICE"
+- **Price**: 100 Birr (confirmed as 100)
+- **Validity**: 30 days (assumed typical monthly plan duration)
+- **Data Allowance**: 400 MINS
+2024-11-24 22:37:30,858 - services.image_processor_service - INFO - image_processor_service.py:10 - Extracting content from image
+2024-11-24 22:37:46,874 - services.image_processor_service - DEBUG - image_processor_service.py:12 - Extracted image content: ```json
+{
+    "product name/plan name": "TELE VOICE",
+    "price": {
+        "amount": 100,
+        "currency": "BRR"
+    },
+    "validity": {
+        "duration": 30,
+        "unit": "day"
+    },
+    "data_allowance": {
+        "amount": 0,
+        "unit": "MB"
+    },
+    "voice_allowance": {
+        "amount": 400,
+        "unit": "MINS"
+    }
+}
+```
+2024-11-24 22:38:37,728 - services.image_processor_service - INFO - image_processor_service.py:10 - Extracting content from image
+2024-11-24 22:38:45,337 - services.image_processor_service - DEBUG - image_processor_service.py:12 - Extracted image content: ```json
+{
+    "product name/plan name": "Hayyak 20",
+    "price": {
+        "amount": 20,
+        "currency": "OMR"
+    },
+    "validity": {
+        "duration": 28,
+        "unit": "day"
+    },
+    "data_allowance": {
+        "amount": 34,
+        "unit": "GB"
+    },
+    "voice_allowance": {
+        "amount": 650,
+        "unit": "min"
+    }
+}
+```
+2024-11-24 22:54:55,069 - services.image_processor_service - INFO - image_processor_service.py:10 - Extracting content from image
+2024-11-24 22:55:10,910 - services.image_processor_service - DEBUG - image_processor_service.py:12 - Extracted image content: ```json
+{
+    "product name/plan name": "TELE VOICE",
+    "price": {
+        "amount": 100,
+        "currency": "BRR"
+    },
+    "validity": {
+        "duration": 30,
+        "unit": "day"
+    },
+    "data_allowance": {
+        "amount": 0,
+        "unit": "MB"
+    },
+    "voice_allowance": {
+        "amount": 400,
+        "unit": "MINS"
+    }
+}
+```
+2024-11-24 23:09:02,649 - services.image_processor_service - INFO - image_processor_service.py:10 - Extracting content from image
+2024-11-24 23:09:18,380 - services.image_processor_service - DEBUG - image_processor_service.py:12 - Extracted image content: Here is the JSON output based on the provided image data:
+
+```json
+[
+    {
+        "product name/plan name": "TELE VOICE",
+        "price": {
+            "amount": 100,
+            "currency": "BIRR"
+        },
+        "validity": {
+            "duration": 30,
+            "unit": "day"
+        },
+        "data_allowance": {
+            "amount": 400,
+            "unit": "MINS"
+        },
+        "voice_allowance": {
+            "amount": 50,
+            "unit": "SMS"
+        }
+    },
+    {
+        "product name/plan name": "DATA",
+        "price": {
+            "amount": 50,
+            "currency": "BIRR"
+        },
+        "validity": {
+            "duration": 30,
+            "unit": "day"
+        },
+        "data_allowance": {
+            "amount": 850,
+            "unit": "MB"
+        },
+        "voice_allowance": {
+            "amount": 0,
+            "unit": ""
+        }
+    },
+    {
+        "product name/plan name": "TELE SMS",
+        "price": {
+            "amount": 50,
+            "currency": "BIRR"
+        },
+        "validity": {
+            "duration": 30,
+            "unit": "day"
+        },
+        "data_allowance": {
+            "amount": 1500,
+            "unit": ""
+        },
+        "voice_allowance": {
+            "amount": 1500,
+            "unit": ""
+        }
+    },
+    {
+        "product name/plan name": "4G WI-FI",
+        "price": {
+            "amount": 1250,
+            "currency": "BIRR"
+        },
+        "validity": {
+            "duration": 30,
+            "unit": "day"
+        },
+        "data_allowance": {
+            "amount": 100,
+            "unit": "GB"
+        },
+        "voice_allowance": {
+            "amount": 0,
+            "unit": ""
+        }
+    }
+]
+```
+
+### Notes:
+- Each plan has been accurately represented with careful attention to the numbers and their respective units.
+- The validity period is assumed to be monthly based on the layout of the image. If other durations were indicated, please clarify.
+2024-11-24 23:11:59,837 - services.image_processor_service - INFO - image_processor_service.py:10 - Extracting content from image
+2024-11-24 23:12:13,476 - services.image_processor_service - DEBUG - image_processor_service.py:12 - Extracted image content: ```json
+[
+    {
+        "product name/plan name": "TELE VOICE",
+        "price": {
+            "amount": 100,
+            "currency": "BIRR"
+        },
+        "validity": {
+            "duration": 30,
+            "unit": "day"
+        },
+        "data_allowance": {
+            "amount": 0,
+            "unit": "MB"
+        },
+        "voice_allowance": {
+            "amount": 400,
+            "unit": "MINS"
+        }
+    },
+    {
+        "product name/plan name": "DATA",
+        "price": {
+            "amount": 50,
+            "currency": "BIRR"
+        },
+        "validity": {
+            "duration": 30,
+            "unit": "day"
+        },
+        "data_allowance": {
+            "amount": 850,
+            "unit": "MB"
+        },
+        "voice_allowance": {
+            "amount": 0,
+            "unit": "MINS"
+        }
+    },
+    {
+        "product name/plan name": "TELE SMS",
+        "price": {
+            "amount": 50,
+            "currency": "BIRR"
+        },
+        "validity": {
+            "duration": 30,
+            "unit": "day"
+        },
+        "data_allowance": {
+            "amount": 0,
+            "unit": "MB"
+        },
+        "voice_allowance": {
+            "amount": 3000,
+            "unit": "SMS"
+        }
+    },
+    {
+        "product name/plan name": "4G WI-FI",
+        "price": {
+            "amount": 1250,
+            "currency": "BIRR"
+        },
+        "validity": {
+            "duration": 30,
+            "unit": "day"
+        },
+        "data_allowance": {
+            "amount": 100,
+            "unit": "GB"
+        },
+        "voice_allowance": {
+            "amount": 0,
+            "unit": "MINS"
+        }
+    }
+]
+```
+2024-11-24 23:15:21,975 - services.image_processor_service - INFO - image_processor_service.py:10 - Extracting content from image
+2024-11-24 23:15:40,270 - services.image_processor_service - DEBUG - image_processor_service.py:12 - Extracted image content: Here is the JSON output based on the provided image data:
+
+```json
+[
+    {
+        "product name/plan name": "TELE VOICE",
+        "price": {
+            "amount": 100,
+            "currency": "BIRR"
+        },
+        "validity": {
+            "duration": 30,
+            "unit": "day"
+        },
+        "data_allowance": {
+            "amount": 400,
+            "unit": "MINS"
+        },
+        "voice_allowance": {
+            "amount": 50,
+            "unit": "SMS"
+        }
+    },
+    {
+        "product name/plan name": "DATA",
+        "price": {
+            "amount": 50,
+            "currency": "BIRR"
+        },
+        "validity": {
+            "duration": 30,
+            "unit": "day"
+        },
+        "data_allowance": {
+            "amount": 850,
+            "unit": "MB"
+        },
+        "voice_allowance": {
+            "amount": 0,
+            "unit": ""
+        }
+    },
+    {
+        "product name/plan name": "TELE SMS",
+        "price": {
+            "amount": 50,
+            "currency": "BIRR"
+        },
+        "validity": {
+            "duration": 30,
+            "unit": "day"
+        },
+        "data_allowance": {
+            "amount": 1500,
+            "unit": "SMS"
+        },
+        "voice_allowance": {
+            "amount": 1500,
+            "unit": "SMS"
+        }
+    },
+    {
+        "product name/plan name": "4G WI-FI",
+        "price": {
+            "amount": 1250,
+            "currency": "BIRR"
+        },
+        "validity": {
+            "duration": 30,
+            "unit": "day"
+        },
+        "data_allowance": {
+            "amount": 100,
+            "unit": "GB"
+        },
+        "voice_allowance": {
+            "amount": 0,
+            "unit": ""
+        }
+    }
+]
+```
+
+This JSON follows the requested format, ensuring numerical accuracy and validation for each field extracted from the image.
+2024-11-25 11:23:23,874 - services.image_processor_service - INFO - image_processor_service.py:10 - Extracting content from image
+2024-11-25 11:23:37,455 - services.image_processor_service - DEBUG - image_processor_service.py:12 - Extracted image content: ```json
+{
+    "product name/plan name": "Data 850MB",
+    "price": {
+        "amount": 50,
+        "currency": "BIRR"
+    },
+    "validity": {
+        "duration": 30,
+        "unit": "day"
+    },
+    "data_allowance": {
+        "amount": 850,
+        "unit": "MB"
+    },
+    "voice_allowance": {
+        "amount": 0,
+        "unit": "units"
+    }
+}
+```
+2024-11-25 11:28:24,515 - services.image_processor_service - INFO - image_processor_service.py:10 - Extracting content from image
+2024-11-25 11:28:41,101 - services.image_processor_service - DEBUG - image_processor_service.py:12 - Extracted image content: ```json
+{
+    "product name/plan name": "DATA 850MB",
+    "price": {
+        "amount": 50,
+        "currency": "BIRR"
+    },
+    "validity": {
+        "duration": 30,
+        "unit": "day"
+    },
+    "data_allowance": {
+        "amount": 850,
+        "unit": "MB"
+    },
+    "voice_allowance": {
+        "amount": 0,
+        "unit": "min"
+    }
+}
+```
+2024-11-25 11:29:52,907 - services.image_processor_service - INFO - image_processor_service.py:10 - Extracting content from image
+2024-11-25 11:30:05,531 - services.image_processor_service - DEBUG - image_processor_service.py:12 - Extracted image content: ```json
+{
+    "product name/plan name": "DATA 850MB",
+    "price": {
+        "amount": 50,
+        "currency": "BIRR"
+    },
+    "validity": {
+        "duration": 30,
+        "unit": "day"
+    },
+    "data_allowance": {
+        "amount": 850,
+        "unit": "MB"
+    },
+    "voice_allowance": {
+        "amount": 0,
+        "unit": "minutes"
+    }
+}
+```
+2024-11-25 11:30:09,376 - services.image_processor_service - INFO - image_processor_service.py:10 - Extracting content from image
+2024-11-25 11:30:13,336 - services.image_processor_service - DEBUG - image_processor_service.py:12 - Extracted image content: ```json
+{
+    "product name/plan name": "DATA 850MB",
+    "price": {
+        "amount": 50,
+        "currency": "BIRR"
+    },
+    "validity": {
+        "duration": 30,
+        "unit": "day"
+    },
+    "data_allowance": {
+        "amount": 850,
+        "unit": "MB"
+    },
+    "voice_allowance": {
+        "amount": 0,
+        "unit": "minutes"
+    }
+}
+```
+2024-11-25 11:30:33,996 - services.image_processor_service - INFO - image_processor_service.py:10 - Extracting content from image
+2024-11-25 11:30:43,670 - services.image_processor_service - DEBUG - image_processor_service.py:12 - Extracted image content: ```json
+{
+    "product name/plan name": "Data 850MB",
+    "price": {
+        "amount": 50,
+        "currency": "BIRR"
+    },
+    "validity": {
+        "duration": 30,
+        "unit": "day"
+    },
+    "data_allowance": {
+        "amount": 850,
+        "unit": "MB"
+    },
+    "voice_allowance": {
+        "amount": 0,
+        "unit": "minutes"
+    }
+}
+```
+2024-11-25 13:27:28,885 - services.image_processor_service - INFO - image_processor_service.py:10 - Extracting content from image
+2024-11-25 13:27:41,648 - services.image_processor_service - DEBUG - image_processor_service.py:12 - Extracted image content: ```json
+{
+    "product name/plan name": "TELE VOICE",
+    "price": {
+        "amount": 100,
+        "currency": "ETB"
+    },
+    "validity": {
+        "duration": 30,
+        "unit": "day"
+    },
+    "data_allowance": {
+        "amount": 0,
+        "unit": "MB"
+    },
+    "voice_allowance": {
+        "amount": 400,
+        "unit": "MINS"
+    }
+}
+```
+2024-11-25 13:28:57,624 - services.image_processor_service - INFO - image_processor_service.py:10 - Extracting content from image
+2024-11-25 13:29:11,097 - services.image_processor_service - DEBUG - image_processor_service.py:12 - Extracted image content: ```json
+{
+    "product name/plan name": "Data 850MB",
+    "price": {
+        "amount": 50,
+        "currency": "BIRR"
+    },
+    "validity": {
+        "duration": 30,
+        "unit": "day"
+    },
+    "data_allowance": {
+        "amount": 850,
+        "unit": "MB"
+    },
+    "voice_allowance": {
+        "amount": 0,
+        "unit": "minutes"
+    }
+}
+```
+2024-11-25 16:50:30,762 - services.image_processor_service - INFO - image_processor_service.py:10 - Extracting content from image
+2024-11-25 16:50:51,453 - services.image_processor_service - DEBUG - image_processor_service.py:12 - Extracted image content: ```json
+{
+    "product name/plan name": "DATA 850MB",
+    "price": {
+        "amount": 50,
+        "currency": "BIRR"
+    },
+    "validity": {
+        "duration": 30,
+        "unit": "day"
+    },
+    "data_allowance": {
+        "amount": 850,
+        "unit": "MB"
+    },
+    "voice_allowance": {
+        "amount": 0,
+        "unit": "N/A"
+    }
+}
+```
+2024-11-25 16:56:22,769 - services.image_processor_service - INFO - image_processor_service.py:10 - Extracting content from image
+2024-11-25 16:56:36,922 - services.image_processor_service - DEBUG - image_processor_service.py:12 - Extracted image content: ```json
+{
+    "product name/plan name": "DATA 850MB",
+    "price": {
+        "amount": 50,
+        "currency": "BRR"
+    },
+    "validity": {
+        "duration": 30,
+        "unit": "day"
+    },
+    "data_allowance": {
+        "amount": 850,
+        "unit": "MB"
+    },
+    "voice_allowance": {
+        "amount": 0,
+        "unit": "minutes"
+    }
+}
+```
+2024-11-25 16:58:26,921 - services.image_processor_service - INFO - image_processor_service.py:10 - Extracting content from image
+2024-11-25 16:58:36,508 - services.image_processor_service - DEBUG - image_processor_service.py:12 - Extracted image content: ```json
+{
+    "product name/plan name": "DATA 850MB",
+    "price": {
+        "amount": 50,
+        "currency": "BIRR"
+    },
+    "validity": {
+        "duration": 30,
+        "unit": "day"
+    },
+    "data_allowance": {
+        "amount": 850,
+        "unit": "MB"
+    },
+    "voice_allowance": {
+        "amount": 0,
+        "unit": "minute"
+    }
+}
+```
+2024-11-25 17:04:13,884 - services.image_processor_service - INFO - image_processor_service.py:10 - Extracting content from image
+2024-11-25 17:04:27,826 - services.image_processor_service - DEBUG - image_processor_service.py:12 - Extracted image content: ```json
+{
+    "product name/plan name": "4G WI-FI",
+    "price": {
+        "amount": 1250,
+        "currency": "BIRR"
+    },
+    "validity": {
+        "duration": 30,
+        "unit": "day"
+    },
+    "data_allowance": {
+        "amount": 100,
+        "unit": "GB"
+    },
+    "voice_allowance": {
+        "amount": 0,
+        "unit": "min"
+    }
+}
+```
+2024-11-25 17:05:34,828 - services.image_processor_service - INFO - image_processor_service.py:10 - Extracting content from image
+2024-11-25 17:05:47,588 - services.image_processor_service - DEBUG - image_processor_service.py:12 - Extracted image content: ```json
+{
+    "product name/plan name": "4G WI-FI",
+    "price": {
+        "amount": 1250,
+        "currency": "BIRR"
+    },
+    "validity": {
+        "duration": 30,
+        "unit": "day"
+    },
+    "data_allowance": {
+        "amount": 100,
+        "unit": "GB"
+    },
+    "voice_allowance": {
+        "amount": 0,
+        "unit": "minutes"
+    }
+}
+```
+2024-11-25 17:07:54,947 - services.image_processor_service - INFO - image_processor_service.py:10 - Extracting content from image
+2024-11-25 17:08:11,726 - services.image_processor_service - DEBUG - image_processor_service.py:12 - Extracted image content: ```json
+{
+    "product name/plan name": "4G WI-FI",
+    "price": {
+        "amount": 1250,
+        "currency": "ETB"
+    },
+    "validity": {
+        "duration": 30,
+        "unit": "day"
+    },
+    "data_allowance": {
+        "amount": 100,
+        "unit": "GB"
+    },
+    "voice_allowance": {
+        "amount": 0,
+        "unit": "min"
+    }
+}
+```
+2024-11-25 17:10:38,581 - services.image_processor_service - INFO - image_processor_service.py:10 - Extracting content from image
+2024-11-25 17:10:51,835 - services.image_processor_service - DEBUG - image_processor_service.py:12 - Extracted image content: ```json
+{
+    "product name/plan name": "4G WI-FI",
+    "price": {
+        "amount": 1250,
+        "currency": "BIRR"
+    },
+    "validity": {
+        "duration": 30,
+        "unit": "day"
+    },
+    "data_allowance": {
+        "amount": 100,
+        "unit": "GB"
+    },
+    "voice_allowance": {
+        "amount": 0,
+        "unit": "min"
+    }
+}
+```
+2024-11-25 17:13:19,647 - services.image_processor_service - INFO - image_processor_service.py:10 - Extracting content from image
+2024-11-25 17:13:30,344 - services.image_processor_service - DEBUG - image_processor_service.py:12 - Extracted image content: ```json
+{
+    "product name/plan name": "DATA 850MB",
+    "price": {
+        "amount": 50,
+        "currency": "BIRR"
+    },
+    "validity": {
+        "duration": 30,
+        "unit": "day"
+    },
+    "data_allowance": {
+        "amount": 850,
+        "unit": "MB"
+    },
+    "voice_allowance": {
+        "amount": 0,
+        "unit": "minutes"
+    }
+}
+```
+2024-11-25 17:15:29,986 - services.image_processor_service - INFO - image_processor_service.py:10 - Extracting content from image
+2024-11-25 17:15:42,710 - services.image_processor_service - DEBUG - image_processor_service.py:12 - Extracted image content: Here's the JSON output based on the provided image data:
+
+```json
+{
+    "product name/plan name": "DATA 850MB",
+    "price": {
+        "amount": 50,
+        "currency": "BIRR"
+    },
+    "validity": {
+        "duration": 30,
+        "unit": "day"
+    },
+    "data_allowance": {
+        "amount": 850,
+        "unit": "MB"
+    },
+    "voice_allowance": {
+        "amount": 0,
+        "unit": "minutes"
+    }
+}
+```
+
+### Notes:
+- The "validity" is assumed as 30 days since "Monthly" was mentioned.
+- Voice allowance was not specified in the image, so it's marked as "0 minutes." Adjust if more information is available.
+2024-11-25 17:17:14,726 - services.image_processor_service - INFO - image_processor_service.py:10 - Extracting content from image
+2024-11-25 17:17:29,259 - services.image_processor_service - DEBUG - image_processor_service.py:12 - Extracted image content: ```json
+{
+    "product name/plan name": "DATA 850MB",
+    "price": {
+        "amount": 50,
+        "currency": "BIRR"
+    },
+    "validity": {
+        "duration": 30,
+        "unit": "day"
+    },
+    "data_allowance": {
+        "amount": 850,
+        "unit": "MB"
+    },
+    "voice_allowance": {
+        "amount": 0,
+        "unit": "minutes"
+    }
+}
+```
+2024-11-25 17:19:03,455 - services.image_processor_service - INFO - image_processor_service.py:10 - Extracting content from image
+2024-11-25 17:19:21,867 - services.image_processor_service - DEBUG - image_processor_service.py:12 - Extracted image content: ```json
+{
+    "product name/plan name": "4G WI-FI",
+    "price": {
+        "amount": 1250,
+        "currency": "BIRR"
+    },
+    "validity": {
+        "duration": 30,
+        "unit": "day"
+    },
+    "data_allowance": {
+        "amount": 100,
+        "unit": "GB"
+    },
+    "voice_allowance": {
+        "amount": 0,
+        "unit": "minutes"
+    }
+}
+```
+2024-11-25 17:20:31,638 - services.image_processor_service - INFO - image_processor_service.py:10 - Extracting content from image
+2024-11-25 17:20:42,740 - services.image_processor_service - DEBUG - image_processor_service.py:12 - Extracted image content: ```json
+{
+    "product name/plan name": "4G WI-FI",
+    "price": {
+        "amount": 1250,
+        "currency": "BIRR"
+    },
+    "validity": {
+        "duration": 30,
+        "unit": "day"
+    },
+    "data_allowance": {
+        "amount": 100,
+        "unit": "GB"
+    },
+    "voice_allowance": {
+        "amount": 0,
+        "unit": "minutes"
+    }
+}
+```
+2024-11-25 17:21:52,109 - services.image_processor_service - INFO - image_processor_service.py:10 - Extracting content from image
+2024-11-25 17:22:02,377 - services.image_processor_service - DEBUG - image_processor_service.py:12 - Extracted image content: ```json
+{
+    "product name/plan name": "4G WI-FI",
+    "price": {
+        "amount": 1250,
+        "currency": "BRR"
+    },
+    "validity": {
+        "duration": 30,
+        "unit": "day"
+    },
+    "data_allowance": {
+        "amount": 100,
+        "unit": "GB"
+    },
+    "voice_allowance": {
+        "amount": 0,
+        "unit": "min"
+    }
+}
+```
+2024-11-25 17:41:39,107 - services.image_processor_service - INFO - image_processor_service.py:10 - Extracting content from image
+2024-11-25 17:41:54,712 - services.image_processor_service - DEBUG - image_processor_service.py:12 - Extracted image content: ```json
+{
+    "product name/plan name": "4G WI-FI",
+    "price": {
+        "amount": 1250,
+        "currency": "BIRR"
+    },
+    "validity": {
+        "duration": 30,
+        "unit": "day"
+    },
+    "data_allowance": {
+        "amount": 100,
+        "unit": "GB"
+    },
+    "voice_allowance": {
+        "amount": 0,
+        "unit": "minutes"
+    }
+}
+```
+2024-11-25 17:42:48,696 - services.image_processor_service - INFO - image_processor_service.py:10 - Extracting content from image
+2024-11-25 17:42:58,483 - services.image_processor_service - DEBUG - image_processor_service.py:12 - Extracted image content: ```json
+{
+    "product name/plan name": "4G WI-FI",
+    "price": {
+        "amount": 1250,
+        "currency": "BIRR"
+    },
+    "validity": {
+        "duration": 30,
+        "unit": "day"
+    },
+    "data_allowance": {
+        "amount": 100,
+        "unit": "GB"
+    },
+    "voice_allowance": {
+        "amount": 0,
+        "unit": "minutes"
+    }
+}
+```
+2024-11-25 17:45:07,554 - services.image_processor_service - INFO - image_processor_service.py:10 - Extracting content from image
+2024-11-25 17:45:17,747 - services.image_processor_service - DEBUG - image_processor_service.py:12 - Extracted image content: ```json
+{
+    "product name/plan name": "4G WI-FI",
+    "price": {
+        "amount": 1250,
+        "currency": "BIRR"
+    },
+    "validity": {
+        "duration": 30,
+        "unit": "day"
+    },
+    "data_allowance": {
+        "amount": 100,
+        "unit": "GB"
+    },
+    "voice_allowance": {
+        "amount": 0,
+        "unit": "minutes"
+    }
+}
+```
+2024-11-25 17:45:38,561 - services.image_processor_service - INFO - image_processor_service.py:10 - Extracting content from image
+2024-11-25 17:45:43,510 - services.image_processor_service - DEBUG - image_processor_service.py:12 - Extracted image content: ```json
+{
+    "product name/plan name": "4G WI-FI",
+    "price": {
+        "amount": 1250,
+        "currency": "BIRR"
+    },
+    "validity": {
+        "duration": 30,
+        "unit": "day"
+    },
+    "data_allowance": {
+        "amount": 100,
+        "unit": "GB"
+    },
+    "voice_allowance": {
+        "amount": 0,
+        "unit": "minutes"
+    }
+}
+```
+2024-11-25 17:47:12,052 - services.image_processor_service - INFO - image_processor_service.py:10 - Extracting content from image
+2024-11-25 17:47:27,539 - services.image_processor_service - DEBUG - image_processor_service.py:12 - Extracted image content: ```json
+{
+    "product name/plan name": "DATA 850MB",
+    "price": {
+        "amount": 50,
+        "currency": "BIRR"
+    },
+    "validity": {
+        "duration": 30,
+        "unit": "day"
+    },
+    "data_allowance": {
+        "amount": 850,
+        "unit": "MB"
+    },
+    "voice_allowance": {
+        "amount": 0,
+        "unit": "minutes"
+    }
+}
+```
+2024-11-25 17:47:36,411 - services.image_processor_service - INFO - image_processor_service.py:10 - Extracting content from image
+2024-11-25 17:47:44,292 - services.image_processor_service - DEBUG - image_processor_service.py:12 - Extracted image content: ```json
+{
+    "product name/plan name": "DATA 850MB",
+    "price": {
+        "amount": 50,
+        "currency": "BIRR"
+    },
+    "validity": {
+        "duration": 30,
+        "unit": "day"
+    },
+    "data_allowance": {
+        "amount": 850,
+        "unit": "MB"
+    },
+    "voice_allowance": {
+        "amount": 0,
+        "unit": "MIN"
+    }
+}
+```
+2024-11-25 17:49:09,087 - services.image_processor_service - INFO - image_processor_service.py:10 - Extracting content from image
+2024-11-25 17:49:21,023 - services.image_processor_service - DEBUG - image_processor_service.py:12 - Extracted image content: ```json
+{
+    "product name/plan name": "4G WI-FI",
+    "price": {
+        "amount": 1250,
+        "currency": "BIRR"
+    },
+    "validity": {
+        "duration": 30,
+        "unit": "day"
+    },
+    "data_allowance": {
+        "amount": 100,
+        "unit": "GB"
+    },
+    "voice_allowance": {
+        "amount": 0,
+        "unit": "minutes"
+    }
+}
+```
+2024-11-25 17:50:52,326 - services.image_processor_service - INFO - image_processor_service.py:10 - Extracting content from image
+2024-11-25 17:51:05,951 - services.image_processor_service - DEBUG - image_processor_service.py:12 - Extracted image content: Based on the provided image data, here is the extracted information in the requested JSON format:
+
+```json
+{
+    "product name/plan name": "DATA 850MB",
+    "price": {
+        "amount": 50,
+        "currency": "BIRR"
+    },
+    "validity": {
+        "duration": 30,
+        "unit": "day"
+    },
+    "data_allowance": {
+        "amount": 850,
+        "unit": "MB"
+    },
+    "voice_allowance": {
+        "amount": 0,
+        "unit": "minutes"
+    }
+}
+```
+
+### Explanation of Extraction:
+- **Plan Name**: "DATA 850MB"
+- **Price**: 50 BIRR
+- **Validity**: Monthly interpreted as 30 days
+- **Data Allowance**: 850 MB
+- **Voice Allowance**: Not explicitly mentioned, assumed to be 0 minutes (as not stated).
+2024-11-25 17:51:24,627 - services.image_processor_service - INFO - image_processor_service.py:10 - Extracting content from image
+2024-11-25 17:51:36,258 - services.image_processor_service - DEBUG - image_processor_service.py:12 - Extracted image content: Based on the analysis of the provided image, here is the extracted data formatted as JSON:
+
+```json
+{
+    "product name/plan name": "DATA 850MB",
+    "price": {
+        "amount": 50,
+        "currency": "BIRR"
+    },
+    "validity": {
+        "duration": 30,
+        "unit": "day"
+    },
+    "data_allowance": {
+        "amount": 850,
+        "unit": "MB"
+    },
+    "voice_allowance": {
+        "amount": 0,
+        "unit": "MIN"
+    }
+}
+```
+
+### Notes:
+- Validity is assumed as 30 days based on the typical monthly billing cycle.
+- Voice allowance is set to 0 as it's not specified in the image. Adjust as necessary if further information is provided.
+2024-11-25 17:52:46,531 - services.image_processor_service - INFO - image_processor_service.py:10 - Extracting content from image
+2024-11-25 17:53:00,655 - services.image_processor_service - DEBUG - image_processor_service.py:12 - Extracted image content: ```json
+{
+    "product name/plan name": "DATA 850MB",
+    "price": {
+        "amount": 50,
+        "currency": "BIRR"
+    },
+    "validity": {
+        "duration": 30,
+        "unit": "day"
+    },
+    "data_allowance": {
+        "amount": 850,
+        "unit": "MB"
+    },
+    "voice_allowance": {
+        "amount": 0,
+        "unit": "minutes"
+    }
+}
+```
+2024-11-26 20:04:22,621 - services.image_processor_service - INFO - image_processor_service.py:10 - Extracting content from image
+2024-11-26 20:04:35,417 - services.image_processor_service - DEBUG - image_processor_service.py:12 - Extracted image content: I'm unable to analyze images as requested. If you have specific details or text from an image that you would like me to assist with, please provide that, and I'll be happy to help!
+2024-11-27 16:07:29,170 - services.image_processor_service - INFO - image_processor_service.py:10 - Extracting content from image
+2024-11-27 16:07:45,159 - services.image_processor_service - DEBUG - image_processor_service.py:12 - Extracted image content: ```json
+{
+    "product name/plan name": "TELE VOICE",
+    "price": {
+        "amount": 100,
+        "currency": "BIRR"
+    },
+    "validity": {
+        "duration": 30,
+        "unit": "day"
+    },
+    "data_allowance": {
+        "amount": 400,
+        "unit": "MINS"
+    },
+    "voice_allowance": {
+        "amount": 50,
+        "unit": "SMS"
+    }
+}
+```
+2024-11-27 16:13:19,249 - services.image_processor_service - INFO - image_processor_service.py:10 - Extracting content from image
+2024-11-27 16:13:26,200 - services.image_processor_service - DEBUG - image_processor_service.py:12 - Extracted image content: ```json
+{
+    "product name/plan name": "TELE VOICE",
+    "price": {
+        "amount": 100,
+        "currency": "BIRR"
+    },
+    "validity": {
+        "duration": 30,
+        "unit": "day"
+    },
+    "data_allowance": {
+        "amount": 0,
+        "unit": "GB"
+    },
+    "voice_allowance": {
+        "amount": 400,
+        "unit": "MINS"
+    }
+}
+```
+2024-11-27 16:21:15,757 - services.image_processor_service - INFO - image_processor_service.py:10 - Extracting content from image
+2024-11-27 16:21:25,107 - services.image_processor_service - DEBUG - image_processor_service.py:12 - Extracted image content: ```json
+{
+    "product name/plan name": "TELE VOICE",
+    "price": {
+        "amount": 100,
+        "currency": "BIRR"
+    },
+    "validity": {
+        "duration": 30,
+        "unit": "day"
+    },
+    "data_allowance": {
+        "amount": 0,
+        "unit": "GB"
+    },
+    "voice_allowance": {
+        "amount": 400,
+        "unit": "MINS"
+    }
+}
+```
+2024-11-28 10:37:13,180 - services.image_processor_service - INFO - image_processor_service.py:10 - Extracting content from image
+2024-11-28 10:37:32,737 - services.image_processor_service - DEBUG - image_processor_service.py:12 - Extracted image content: ```json
+{
+    "product name/plan name": "DATA 850MB",
+    "price": {
+        "amount": 50,
+        "currency": "BRR"
+    },
+    "validity": {
+        "duration": 30,
+        "unit": "day"
+    },
+    "data_allowance": {
+        "amount": 850,
+        "unit": "MB"
+    },
+    "voice_allowance": {
+        "amount": 0,
+        "unit": "MIN"
+    }
+}
+```
+2024-12-02 12:00:02,233 - services.image_processor_service - INFO - image_processor_service.py:10 - Extracting content from image
+2024-12-02 12:00:22,660 - services.image_processor_service - DEBUG - image_processor_service.py:12 - Extracted image content: Here is the extracted data in JSON format:
+
+```json
+{
+    "product name/plan name": "4G WI-FI",
+    "price": {
+        "amount": 1250,
+        "currency": "BIRR"
+    },
+    "validity": {
+        "duration": 30,
+        "unit": "day"
+    },
+    "data_allowance": {
+        "amount": 100,
+        "unit": "GB"
+    },
+    "voice_allowance": {
+        "amount": 0,
+        "unit": "minutes"
+    }
+}
+```
+
+### Notes:
+- The price has been carefully verified as "1,250" Birr, which is treated as 1250.
+- There is no specific "voice allowance" indicated in the image, which I've noted as 0 minutes. Please adjust if there is information not visible in the image.
+2024-12-09 10:34:22,065 - services.image_processor_service - INFO - image_processor_service.py:10 - Extracting content from image
+2024-12-09 10:34:29,982 - services.image_processor_service - DEBUG - image_processor_service.py:12 - Extracted image content: ```json
+{
+    "product name/plan name": "TELE VOICE",
+    "price": {
+        "amount": 100,
+        "currency": "BRR"
+    },
+    "validity": {
+        "duration": 30,
+        "unit": "day"
+    },
+    "data_allowance": {
+        "amount": 0,
+        "unit": "GB"
+    },
+    "voice_allowance": {
+        "amount": 400,
+        "unit": "MIN"
+    }
+}
+```
+2024-12-09 14:47:48,076 - services.image_processor_service - INFO - image_processor_service.py:10 - Extracting content from image
+2024-12-09 14:48:01,572 - services.image_processor_service - DEBUG - image_processor_service.py:12 - Extracted image content: ```json
+{
+    "product name/plan name": "TELE VOICE",
+    "price": {
+        "amount": 100,
+        "currency": "ETB"
+    },
+    "validity": {
+        "duration": 30,
+        "unit": "day"
+    },
+    "data_allowance": {
+        "amount": 0,
+        "unit": "GB"
+    },
+    "voice_allowance": {
+        "amount": 400,
+        "unit": "MINS"
+    }
+}
+```
+2024-12-12 15:35:30,791 - services.image_processor_service - INFO - image_processor_service.py:10 - Extracting content from image
+2024-12-12 15:35:45,349 - services.image_processor_service - DEBUG - image_processor_service.py:12 - Extracted image content: ```json
+{
+    "product name/plan name": "4G WI-FI",
+    "price": {
+        "amount": 1250,
+        "currency": "BIRR"
+    },
+    "validity": {
+        "duration": 30,
+        "unit": "day"
+    },
+    "data_allowance": {
+        "amount": 100,
+        "unit": "GB"
+    },
+    "voice_allowance": {
+        "amount": 0,
+        "unit": "minutes"
+    }
+}
+``` 
+
+**Note:** The validity is inferred as 30 days typically for monthly plans. If specified differently in the image, please adjust accordingly.
+2024-12-16 10:39:24,958 - services.image_processor_service - INFO - image_processor_service.py:10 - Extracting content from image
+2024-12-16 10:39:35,357 - services.image_processor_service - INFO - image_processor_service.py:10 - Extracting content from image
+2024-12-17 20:28:35,592 - services.image_processor_service - INFO - image_processor_service.py:10 - Extracting content from image
+2024-12-17 20:28:53,529 - services.image_processor_service - DEBUG - image_processor_service.py:12 - Extracted image content: ```json
+{
+    "product name/plan name": "4G WI-FI",
+    "price": {
+        "amount": 1250,
+        "currency": "BIRR"
+    },
+    "validity": {
+        "duration": 30,
+        "unit": "day"
+    },
+    "data_allowance": {
+        "amount": 100,
+        "unit": "GB"
+    },
+    "voice_allowance": {
+        "amount": 0,
+        "unit": "minutes"
+    }
+}
+```
+2024-12-17 20:40:48,100 - services.image_processor_service - INFO - image_processor_service.py:10 - Extracting content from image
+2024-12-17 20:40:59,698 - services.image_processor_service - DEBUG - image_processor_service.py:12 - Extracted image content: ```json
+{
+    "product name/plan name": "DATA",
+    "price": {
+        "amount": 50,
+        "currency": "BRR"
+    },
+    "validity": {
+        "duration": 30,
+        "unit": "day"
+    },
+    "data_allowance": {
+        "amount": 850,
+        "unit": "MB"
+    },
+    "voice_allowance": {
+        "amount": 0,
+        "unit": "minutes"
+    }
+}
+```
+2024-12-17 20:41:02,965 - services.image_processor_service - INFO - image_processor_service.py:10 - Extracting content from image
+2024-12-17 20:41:08,540 - services.image_processor_service - DEBUG - image_processor_service.py:12 - Extracted image content: ```json
+{
+    "product name/plan name": "4G WI-FI",
+    "price": {
+        "amount": 1250,
+        "currency": "BIRR"
+    },
+    "validity": {
+        "duration": 30,
+        "unit": "day"
+    },
+    "data_allowance": {
+        "amount": 100,
+        "unit": "GB"
+    },
+    "voice_allowance": {
+        "amount": 0,
+        "unit": "minutes"
+    }
+}
+```
+2024-12-17 20:46:11,789 - services.image_processor_service - INFO - image_processor_service.py:10 - Extracting content from image
+2024-12-17 20:46:29,378 - services.image_processor_service - DEBUG - image_processor_service.py:12 - Extracted image content: ```json
+{
+    "product name/plan name": "4G WI-FI",
+    "price": {
+        "amount": 1250,
+        "currency": "BIRR"
+    },
+    "validity": {
+        "duration": 30,
+        "unit": "day"
+    },
+    "data_allowance": {
+        "amount": 100,
+        "unit": "GB"
+    },
+    "voice_allowance": {
+        "amount": 0,
+        "unit": "minutes"
+    }
+}
+```
+2024-12-17 21:20:47,915 - services.image_processor_service - INFO - image_processor_service.py:10 - Extracting content from image
+2024-12-17 21:21:03,804 - services.image_processor_service - DEBUG - image_processor_service.py:12 - Extracted image content: ```json
+{
+    "product name/plan name": "TELE VOICE",
+    "price": {
+        "amount": 100,
+        "currency": "ETB"
+    },
+    "validity": {
+        "duration": 30,
+        "unit": "day"
+    },
+    "data_allowance": {
+        "amount": 0,
+        "unit": "GB"
+    },
+    "voice_allowance": {
+        "amount": 400,
+        "unit": "MIN"
+    }
+}
+```
+2024-12-17 21:54:14,372 - services.image_processor_service - INFO - image_processor_service.py:10 - Extracting content from image
+2024-12-17 21:54:33,379 - services.image_processor_service - DEBUG - image_processor_service.py:12 - Extracted image content: ```json
+{
+    "product name/plan name": "4G WI-FI",
+    "price": {
+        "amount": 1250,
+        "currency": "BIRR"
+    },
+    "validity": {
+        "duration": 30,
+        "unit": "day"
+    },
+    "data_allowance": {
+        "amount": 100,
+        "unit": "GB"
+    },
+    "voice_allowance": {
+        "amount": 0,
+        "unit": "minutes"
+    }
+}
+```
+2024-12-17 22:26:30,293 - services.image_processor_service - INFO - image_processor_service.py:10 - Extracting content from image
+2024-12-17 22:26:49,846 - services.image_processor_service - DEBUG - image_processor_service.py:12 - Extracted image content: ```json
+{
+    "product name/plan name": "Hayyak 20",
+    "price": {
+        "amount": 20,
+        "currency": "OMR"
+    },
+    "validity": {
+        "duration": 28,
+        "unit": "day"
+    },
+    "data_allowance": {
+        "amount": 34,
+        "unit": "GB"
+    },
+    "voice_allowance": {
+        "amount": 650,
+        "unit": "min"
+    }
+}
+```
+2024-12-17 22:35:52,440 - services.image_processor_service - INFO - image_processor_service.py:10 - Extracting content from image
+2024-12-17 22:36:04,023 - services.image_processor_service - DEBUG - image_processor_service.py:12 - Extracted image content: ```json
+{
+    "product name/plan name": "Hayyak 20",
+    "price": {
+        "amount": 20,
+        "currency": "OMR"
+    },
+    "validity": {
+        "duration": 28,
+        "unit": "day"
+    },
+    "data_allowance": {
+        "amount": 34,
+        "unit": "GB"
+    },
+    "voice_allowance": {
+        "amount": 650,
+        "unit": "min"
+    }
+}
+```
+2024-12-17 23:37:13,589 - services.image_processor_service - INFO - image_processor_service.py:10 - Extracting content from image
+2024-12-17 23:37:33,079 - services.image_processor_service - DEBUG - image_processor_service.py:12 - Extracted image content: ```json
+{
+    "product name/plan name": "TELE VOICE",
+    "price": {
+        "amount": 100,
+        "currency": "ETB"
+    },
+    "validity": {
+        "duration": 30,
+        "unit": "day"
+    },
+    "data_allowance": {
+        "amount": 0,
+        "unit": "GB"
+    },
+    "voice_allowance": {
+        "amount": 400,
+        "unit": "MINS"
+    }
+}
+```
+2024-12-17 23:50:36,834 - services.image_processor_service - INFO - image_processor_service.py:10 - Extracting content from image
+2024-12-17 23:50:48,097 - services.image_processor_service - DEBUG - image_processor_service.py:12 - Extracted image content: ```json
+{
+    "product name/plan name": "Hayyak 20",
+    "price": {
+        "amount": 20,
+        "currency": "OMR"
+    },
+    "validity": {
+        "duration": 28,
+        "unit": "day"
+    },
+    "data_allowance": {
+        "amount": 34,
+        "unit": "GB"
+    },
+    "voice_allowance": {
+        "amount": 650,
+        "unit": "min"
+    }
+}
+```
+2024-12-18 00:10:31,651 - services.image_processor_service - INFO - image_processor_service.py:10 - Extracting content from image
+2024-12-18 00:10:47,866 - services.image_processor_service - DEBUG - image_processor_service.py:12 - Extracted image content: ```json
+{
+    "product name/plan name": "TELE VOICE",
+    "price": {
+        "amount": 100,
+        "currency": "BRR"
+    },
+    "validity": {
+        "duration": 30,
+        "unit": "day"
+    },
+    "data_allowance": {
+        "amount": 0,
+        "unit": "GB"
+    },
+    "voice_allowance": {
+        "amount": 400,
+        "unit": "mins"
+    }
+}
+```
+2024-12-18 00:26:18,936 - services.image_processor_service - INFO - image_processor_service.py:10 - Extracting content from image
+2024-12-18 00:26:33,543 - services.image_processor_service - DEBUG - image_processor_service.py:12 - Extracted image content: ```json
+{
+    "product name/plan name": "TELE VOICE",
+    "price": {
+        "amount": 100,
+        "currency": "BIRR"
+    },
+    "validity": {
+        "duration": 30,
+        "unit": "day"
+    },
+    "data_allowance": {
+        "amount": 0,
+        "unit": "GB"
+    },
+    "voice_allowance": {
+        "amount": 400,
+        "unit": "MINS"
+    }
+}
+```
+2024-12-18 00:49:48,805 - services.image_processor_service - INFO - image_processor_service.py:10 - Extracting content from image
+2024-12-18 00:50:03,751 - services.image_processor_service - DEBUG - image_processor_service.py:12 - Extracted image content: ```json
+{
+    "product name/plan name": "TELE VOICE",
+    "price": {
+        "amount": 100,
+        "currency": "BR"
+    },
+    "validity": {
+        "duration": 30,
+        "unit": "day"
+    },
+    "data_allowance": {
+        "amount": 0,
+        "unit": "GB"
+    },
+    "voice_allowance": {
+        "amount": 400,
+        "unit": "mins"
+    }
+}
+```
+2024-12-18 08:22:22,093 - services.image_processor_service - INFO - image_processor_service.py:10 - Extracting content from image
+2024-12-18 08:22:34,962 - services.image_processor_service - DEBUG - image_processor_service.py:12 - Extracted image content: ```json
+{
+    "product name/plan name": "TELE VOICE",
+    "price": {
+        "amount": 100,
+        "currency": "ETB"
+    },
+    "validity": {
+        "duration": 30,
+        "unit": "day"
+    },
+    "data_allowance": {
+        "amount": 0,
+        "unit": "GB"
+    },
+    "voice_allowance": {
+        "amount": 400,
+        "unit": "MINS"
+    }
+}
+```
+2024-12-18 09:01:48,219 - services.image_processor_service - INFO - image_processor_service.py:10 - Extracting content from image
+2024-12-18 09:02:02,564 - services.image_processor_service - DEBUG - image_processor_service.py:12 - Extracted image content: ```json
+{
+    "product name/plan name": "Hayyak 7",
+    "price": {
+        "amount": 7,
+        "currency": "OMR"
+    },
+    "validity": {
+        "duration": 28,
+        "unit": "day"
+    },
+    "data_allowance": {
+        "amount": 7,
+        "unit": "GB"
+    },
+    "voice_allowance": {
+        "amount": 150,
+        "unit": "min"
+    }
+}
+```
+2024-12-18 09:08:07,037 - services.image_processor_service - INFO - image_processor_service.py:10 - Extracting content from image
+2024-12-18 09:08:19,149 - services.image_processor_service - DEBUG - image_processor_service.py:12 - Extracted image content: ```json
+{
+    "product name/plan name": "Daily Internet Bundle",
+    "price": {
+        "amount": 6,
+        "currency": "OMR"
+    },
+    "validity": {
+        "duration": 1,
+        "unit": "day"
+    },
+    "data_allowance": {
+        "amount": 7,
+        "unit": "MB"
+    },
+    "voice_allowance": {
+        "amount": 7,
+        "unit": "minute"
+    }
+}
+```
+2024-12-18 11:37:39,374 - services.image_processor_service - INFO - image_processor_service.py:10 - Extracting content from image
+2024-12-18 11:37:46,841 - services.image_processor_service - DEBUG - image_processor_service.py:12 - Extracted image content: ```json
+{
+    "product name/plan name": "35MIN @Ksh.35",
+    "price": {
+        "amount": 35,
+        "currency": "Ksh"
+    },
+    "validity": {
+        "duration": 1,
+        "unit": "day"
+    },
+    "data_allowance": {
+        "amount": 0,
+        "unit": "MB"
+    },
+    "voice_allowance": {
+        "amount": 35,
+        "unit": "MIN"
+    }
+}
+```
+2024-12-18 12:50:32,040 - services.image_processor_service - INFO - image_processor_service.py:10 - Extracting content from image
+2024-12-18 12:50:43,724 - services.image_processor_service - DEBUG - image_processor_service.py:12 - Extracted image content: ```json
+{
+    "product name/plan name": "35MIN @Ksh.35",
+    "price": {
+        "amount": 35,
+        "currency": "Ksh"
+    },
+    "validity": {
+        "duration": 1,
+        "unit": "day"
+    },
+    "data_allowance": {
+        "amount": 0,
+        "unit": "MB"
+    },
+    "voice_allowance": {
+        "amount": 35,
+        "unit": "MIN"
+    }
+}
+```
+2024-12-18 15:29:07,549 - services.image_processor_service - INFO - image_processor_service.py:10 - Extracting content from image
+2024-12-18 15:29:16,740 - services.image_processor_service - DEBUG - image_processor_service.py:12 - Extracted image content: ```json
+{
+    "product name/plan name": "Daily Internet Bundle",
+    "price": {
+        "amount": 7,
+        "currency": "OMR"
+    },
+    "validity": {
+        "duration": 1,
+        "unit": "day"
+    },
+    "data_allowance": {
+        "amount": 10,
+        "unit": "MB"
+    },
+    "voice_allowance": {
+        "amount": 10,
+        "unit": "minute"
+    }
+}
+```
+2024-12-18 15:31:49,292 - services.image_processor_service - INFO - image_processor_service.py:10 - Extracting content from image
+2024-12-18 15:31:58,527 - services.image_processor_service - DEBUG - image_processor_service.py:12 - Extracted image content: ```json
+{
+    "product name/plan name": "35MIN @Ksh.35",
+    "price": {
+        "amount": 35,
+        "currency": "Ksh"
+    },
+    "validity": {
+        "duration": 1,
+        "unit": "day"
+    },
+    "data_allowance": {
+        "amount": 0,
+        "unit": "MB"
+    },
+    "voice_allowance": {
+        "amount": 35,
+        "unit": "MIN"
+    }
+}
+```
+2024-12-18 15:32:04,687 - services.image_processor_service - INFO - image_processor_service.py:10 - Extracting content from image
+2024-12-18 15:32:07,675 - services.image_processor_service - DEBUG - image_processor_service.py:12 - Extracted image content: ```json
+{
+    "product name/plan name": "TELE VOICE",
+    "price": {
+        "amount": 100,
+        "currency": "BRR"
+    },
+    "validity": {
+        "duration": 30,
+        "unit": "day"
+    },
+    "data_allowance": {
+        "amount": 0,
+        "unit": "GB"
+    },
+    "voice_allowance": {
+        "amount": 400,
+        "unit": "MINS"
+    }
+}
+```
+2024-12-18 15:32:16,254 - services.image_processor_service - INFO - image_processor_service.py:10 - Extracting content from image
+2024-12-18 15:32:22,055 - services.image_processor_service - DEBUG - image_processor_service.py:12 - Extracted image content: ```json
+{
+    "product name/plan name": "4G WI-FI",
+    "price": {
+        "amount": 1250,
+        "currency": "BIRR"
+    },
+    "validity": {
+        "duration": 30,
+        "unit": "day"
+    },
+    "data_allowance": {
+        "amount": 100,
+        "unit": "GB"
+    },
+    "voice_allowance": {
+        "amount": 0,
+        "unit": "minutes"
+    }
+}
+```
+2024-12-18 15:51:58,018 - services.image_processor_service - INFO - image_processor_service.py:10 - Extracting content from image
+2024-12-18 15:52:06,950 - services.image_processor_service - DEBUG - image_processor_service.py:12 - Extracted image content: ```json
+{
+    "product name/plan name": "4G WI-FI",
+    "price": {
+        "amount": 1250,
+        "currency": "BIRR"
+    },
+    "validity": {
+        "duration": 30,
+        "unit": "day"
+    },
+    "data_allowance": {
+        "amount": 100,
+        "unit": "GB"
+    },
+    "voice_allowance": {
+        "amount": 0,
+        "unit": "minutes"
+    }
+}
+```
+2024-12-18 15:52:30,616 - services.image_processor_service - INFO - image_processor_service.py:10 - Extracting content from image
+2024-12-18 15:52:33,917 - services.image_processor_service - DEBUG - image_processor_service.py:12 - Extracted image content: ```json
+{
+    "product name/plan name": "35MIN @Ksh.35",
+    "price": {
+        "amount": 35,
+        "currency": "Ksh"
+    },
+    "validity": {
+        "duration": 1,
+        "unit": "day"
+    },
+    "data_allowance": {
+        "amount": 0,
+        "unit": "MB"
+    },
+    "voice_allowance": {
+        "amount": 35,
+        "unit": "MIN"
+    }
+}
+```
+2024-12-18 16:23:51,452 - services.image_processor_service - INFO - image_processor_service.py:10 - Extracting content from image
+2024-12-18 16:24:06,013 - services.image_processor_service - DEBUG - image_processor_service.py:12 - Extracted image content: ```json
+{
+    "product name/plan name": "35MIN @Ksh.35",
+    "price": {
+        "amount": 35,
+        "currency": "Ksh"
+    },
+    "validity": {
+        "duration": 1,
+        "unit": "day"
+    },
+    "data_allowance": {
+        "amount": 0,
+        "unit": "GB"
+    },
+    "voice_allowance": {
+        "amount": 35,
+        "unit": "MIN"
+    }
+}
+```
+2024-12-18 16:37:49,540 - services.image_processor_service - INFO - image_processor_service.py:10 - Extracting content from image
+2024-12-18 16:37:58,554 - services.image_processor_service - DEBUG - image_processor_service.py:12 - Extracted image content: ```json
+{
+    "product name/plan name": "35MIN @Ksh.35",
+    "price": {
+        "amount": 35,
+        "currency": "Ksh"
+    },
+    "validity": {
+        "duration": 1,
+        "unit": "day"
+    },
+    "data_allowance": {
+        "amount": 0,
+        "unit": "MB"
+    },
+    "voice_allowance": {
+        "amount": 35,
+        "unit": "MIN"
+    }
+}
+```
+2024-12-18 16:42:11,397 - services.image_processor_service - INFO - image_processor_service.py:10 - Extracting content from image
+2024-12-18 16:42:25,338 - services.image_processor_service - DEBUG - image_processor_service.py:12 - Extracted image content: Here’s the extracted data based on the provided image:
+
+```json
+{
+    "product name/plan name": "35MIN @Ksh.35",
+    "price": {
+        "amount": 35,
+        "currency": "Ksh"
+    },
+    "validity": {
+        "duration": 1,
+        "unit": "day"
+    },
+    "data_allowance": {
+        "amount": 0,
+        "unit": "MB"
+    },
+    "voice_allowance": {
+        "amount": 35,
+        "unit": "MIN"
+    }
+}
+```
+
+Here's the breakdown of the extracted information:
+- **Product Name:** "35MIN @Ksh.35" as seen in the image.
+- **Price:** 35 confirmed as the amount with "Ksh" as the currency.
+- **Validity:** 1 day as indicated.
+- **Data Allowance:** Not specified in the image, hence 0 MB.
+- **Voice Allowance:** 35 MIN as shown in the image.
+2024-12-18 16:55:56,822 - services.image_processor_service - INFO - image_processor_service.py:10 - Extracting content from image
+2024-12-18 16:56:07,892 - services.image_processor_service - DEBUG - image_processor_service.py:12 - Extracted image content: ```json
+{
+    "product name/plan name": "35MIN @Ksh.35",
+    "price": {
+        "amount": 35,
+        "currency": "Ksh"
+    },
+    "validity": {
+        "duration": 1,
+        "unit": "day"
+    },
+    "data_allowance": {
+        "amount": 0,
+        "unit": "MB"
+    },
+    "voice_allowance": {
+        "amount": 35,
+        "unit": "MIN"
+    }
+}
+```
+2024-12-18 17:01:59,455 - services.image_processor_service - INFO - image_processor_service.py:10 - Extracting content from image
+2024-12-18 17:02:11,311 - services.image_processor_service - DEBUG - image_processor_service.py:12 - Extracted image content: ```json
+{
+    "product name/plan name": "35MIN @Ksh.35",
+    "price": {
+        "amount": 35,
+        "currency": "Ksh"
+    },
+    "validity": {
+        "duration": 1,
+        "unit": "day"
+    },
+    "data_allowance": {
+        "amount": 0,
+        "unit": "MB"
+    },
+    "voice_allowance": {
+        "amount": 35,
+        "unit": "MIN"
+    }
+}
+```
+2024-12-18 17:32:46,542 - services.image_processor_service - INFO - image_processor_service.py:10 - Extracting content from image
+2024-12-18 17:32:56,478 - services.image_processor_service - DEBUG - image_processor_service.py:12 - Extracted image content: ```json
+{
+    "product name/plan name": "35MIN @Ksh.35",
+    "price": {
+        "amount": 35,
+        "currency": "Ksh"
+    },
+    "validity": {
+        "duration": 1,
+        "unit": "day"
+    },
+    "data_allowance": {
+        "amount": 0,
+        "unit": "MB"
+    },
+    "voice_allowance": {
+        "amount": 35,
+        "unit": "MIN"
+    }
+}
+```
+2024-12-18 18:03:57,767 - services.image_processor_service - INFO - image_processor_service.py:10 - Extracting content from image
+2024-12-18 18:04:24,457 - services.image_processor_service - DEBUG - image_processor_service.py:12 - Extracted image content: Here is the extracted data in JSON format based on the provided image:
+
+```json
+{
+    "product name/plan name": "4G WI-FI",
+    "price": {
+        "amount": 1250,
+        "currency": "BIRR"
+    },
+    "validity": {
+        "duration": 30,
+        "unit": "day"
+    },
+    "data_allowance": {
+        "amount": 100,
+        "unit": "GB"
+    },
+    "voice_allowance": {
+        "amount": 0,
+        "unit": "minutes"
+    }
+}
+```
+
+### Notes:
+- The price is confirmed as 1,250.
+- Validity assumed as monthly, hence set to 30 days.
+- Voice allowance is assumed as zero since none is specified in the image.
+2024-12-18 18:05:02,969 - services.image_processor_service - INFO - image_processor_service.py:10 - Extracting content from image
+2024-12-18 18:05:15,421 - services.image_processor_service - DEBUG - image_processor_service.py:12 - Extracted image content: ```json
+{
+    "product name/plan name": "4G WI-FI",
+    "price": {
+        "amount": 1250,
+        "currency": "BIRR"
+    },
+    "validity": {
+        "duration": 30,
+        "unit": "day"
+    },
+    "data_allowance": {
+        "amount": 100,
+        "unit": "GB"
+    },
+    "voice_allowance": {
+        "amount": 0,
+        "unit": "minutes"
+    }
+}
+```
+2024-12-18 18:07:51,269 - services.image_processor_service - INFO - image_processor_service.py:10 - Extracting content from image
+2024-12-18 18:08:16,629 - services.image_processor_service - DEBUG - image_processor_service.py:12 - Extracted image content: ```json
+{
+    "product name/plan name": "4G WI-FI",
+    "price": {
+        "amount": 1250,
+        "currency": "BIRR"
+    },
+    "validity": {
+        "duration": 30,
+        "unit": "day"
+    },
+    "data_allowance": {
+        "amount": 100,
+        "unit": "GB"
+    },
+    "voice_allowance": {
+        "amount": 0,
+        "unit": "minutes"
+    }
+}
+```

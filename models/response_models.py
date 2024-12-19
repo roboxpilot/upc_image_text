@@ -2,6 +2,11 @@ from pydantic import BaseModel, Field
 from typing import Dict, Any, Optional, Union
 from models.product_models import ProductMessage
 
+# schemas.py
+from pydantic import BaseModel
+
+
+
 class CurrentMessage(BaseModel):
     messageTime: Optional[str] = Field(None, exclude=True)
     messageId: Optional[str] = Field(None, exclude=True)

@@ -4,7 +4,10 @@ import groq
 import openai
 import anthropic
 import instructor
+from typing import Literal
+from pydantic import BaseModel
 from logger import setup_logger
+import json
 
 logger = setup_logger(__name__)
 
@@ -90,6 +93,60 @@ def make_image_api_call(prompt: str, image_data: str) -> str:
         return response.choices[0].message.content
     except Exception as e:
         logger.error(f"Error in OpenAI image API call: {str(e)}", exc_info=True)
+        raise APICallError(Config.SELECTED_MODEL.value, str(e))
+        
+        
+def make_classification_call(prompt: str) -> str:
+    """
+    Makes an API call specifically for classification tasks using instructor for response parsing.
+    
+    Args:
+        prompt (str): The formatted classification prompt
+        
+    Returns:
+        str: JSON string containing the classification result
+    """
+    try:
+        logger.info("Making classification API call")
+        
+        # Define the Pydantic model for classification
+        class ConversationClassification(BaseModel):
+            classification: Literal["product_related", "general_conversation"]
+            
+        if Config.SELECTED_MODEL == ModelType.GROQ:
+            # Use instructor-patched client for Groq
+            patched_client = instructor.patch(client)
+            response = patched_client.chat.completions.create(
+                model='llama3-70b-8192',
+                messages=[
+                    {"role": "user", "content": prompt}
+                ],
+                response_model=ConversationClassification
+            )
+            result = json.dumps({"classification": response.classification})
+            
+        elif Config.SELECTED_MODEL == ModelType.OPENAI:
+            # Use instructor-patched client for OpenAI
+            patched_client = instructor.patch(client)
+            response = patched_client.chat.completions.create(
+                model=Config.get_model_name(),
+                messages=[
+                    {"role": "user", "content": prompt}
+                ],
+                response_model=ConversationClassification
+            )
+            result = json.dumps({"classification": response.classification})
+            
+        elif Config.SELECTED_MODEL == ModelType.CLAUDE:
+            # For Claude, use regular API call since it doesn't support instructor
+            response = make_api_call(prompt)
+            result = response  # Claude should return properly formatted JSON
+            
+        logger.debug(f"Classification API response: {result}")
+        return result
+        
+    except Exception as e:
+        logger.error(f"Error in classification API call: {str(e)}", exc_info=True)
         raise APICallError(Config.SELECTED_MODEL.value, str(e))
 
 # Initialize clients when this module is imported

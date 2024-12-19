@@ -27,8 +27,8 @@ class Config:
     CLAUDE_API_KEY: str = os.getenv("CLAUDE_API_KEY")
 
     # Model-specific settings
-    GROQ_MODEL: str = "llama-3.1-70b-versatile"
-    OPENAI_MODEL: str = "gpt-4o-mini"
+    GROQ_MODEL: str = "llama-3.3-70b-versatile"
+    OPENAI_MODEL: str = "gpt-4o"
     CLAUDE_MODEL: str = "claude-2"
     OPENAI_IMAGE_MODEL: str = "gpt-4o-mini"
 
